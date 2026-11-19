@@ -1,0 +1,40 @@
+{
+  "id": "13_06_unconstrained_ports",
+  "section": 13,
+  "num": 6,
+  "name": "unconstrained_ports",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 4,
+      "low": 0
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 12,
+      "low": 0
+    },
+    {
+      "name": "ra",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 4,
+      "low": 0
+    },
+    {
+      "name": "rb",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 12,
+      "low": 0
+    }
+  ],
+  "extra_files": [
+    "rev.vhd"
+  ]
+}

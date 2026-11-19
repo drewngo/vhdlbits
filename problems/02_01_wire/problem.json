@@ -1,0 +1,19 @@
+{
+  "id": "02_01_wire",
+  "section": 2,
+  "num": 1,
+  "name": "wire",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

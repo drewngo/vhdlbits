@@ -1,0 +1,23 @@
+{
+  "id": "03_12_neighbor_xor",
+  "section": 3,
+  "num": 12,
+  "name": "neighbor_xor",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "din",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 15,
+      "low": 0
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 15,
+      "low": 0
+    }
+  ]
+}

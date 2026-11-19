@@ -1,0 +1,40 @@
+{
+  "id": "07_03_adder4_loop",
+  "section": 7,
+  "num": 3,
+  "name": "adder4_loop",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "cin",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "sum",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "cout",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

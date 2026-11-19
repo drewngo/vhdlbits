@@ -1,0 +1,35 @@
+{
+  "id": "06_03_signed_overflow",
+  "section": 6,
+  "num": 3,
+  "name": "signed_overflow",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "s",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "ovf",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

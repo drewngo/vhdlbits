@@ -1,0 +1,24 @@
+{
+  "id": "08_10_d_latch",
+  "section": 8,
+  "num": 10,
+  "name": "d_latch",
+  "mode": "stateful_comb",
+  "ports": [
+    {
+      "name": "d",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "en",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "q",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

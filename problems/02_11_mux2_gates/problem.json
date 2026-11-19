@@ -1,0 +1,29 @@
+{
+  "id": "02_11_mux2_gates",
+  "section": 2,
+  "num": 11,
+  "name": "mux2_gates",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "s",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

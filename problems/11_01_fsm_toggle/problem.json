@@ -1,0 +1,34 @@
+{
+  "id": "11_01_fsm_toggle",
+  "section": 11,
+  "num": 1,
+  "name": "fsm_toggle",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "t",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  }
+}

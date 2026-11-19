@@ -1,0 +1,35 @@
+{
+  "id": "04_09_add_sub",
+  "section": 4,
+  "num": 9,
+  "name": "add_sub",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    },
+    {
+      "name": "sub",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "result",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    }
+  ]
+}

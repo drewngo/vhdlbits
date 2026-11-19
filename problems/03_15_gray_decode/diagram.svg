@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="180" viewBox="0 0 560 180" role="img">
+<title>Gray decode: b7 = g7, then b(i) = b(i+1) xor g(i), rippling from MSB to LSB</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<text class="t b" x="20" y="30" text-anchor="middle" dominant-baseline="central">g</text>
+<text class="t b a" x="20" y="150" text-anchor="middle" dominant-baseline="central">b</text>
+<text class="t sm m" x="70" y="18" text-anchor="middle" dominant-baseline="central">7</text>
+<polyline class="s" points="70,26 70,150"/>
+<text class="t sm a b" x="70" y="162" text-anchor="middle" dominant-baseline="central">b7</text>
+<circle class="k" cx="70" cy="100" r="3"/>
+<text class="t sm m" x="134" y="18" text-anchor="middle" dominant-baseline="central">6</text>
+<path class="s" d="M123,70 Q142.2,70 155,90 Q142.2,110 123,110 Q131,90 123,70 Z"/>
+<path class="s" d="M116,70 Q124,90 116,110"/>
+<polyline class="s" points="104,26 104,80 119,80"/>
+<polyline class="s" points="70,100 78,100 78,100 119,100"/>
+<polyline class="s" points="155,90 161,90 161,150"/>
+<text class="t sm a b" x="161" y="162" text-anchor="middle" dominant-baseline="central">b6</text>
+<circle class="k" cx="161" cy="120" r="3"/>
+<text class="t sm m" x="198" y="18" text-anchor="middle" dominant-baseline="central">5</text>
+<path class="s" d="M187,70 Q206.2,70 219,90 Q206.2,110 187,110 Q195,90 187,70 Z"/>
+<path class="s" d="M180,70 Q188,90 180,110"/>
+<polyline class="s" points="168,26 168,80 183,80"/>
+<polyline class="s" points="161,120 169,120 169,100 183,100"/>
+<polyline class="s" points="219,90 225,90 225,150"/>
+<text class="t sm a b" x="225" y="162" text-anchor="middle" dominant-baseline="central">b5</text>
+<circle class="k" cx="225" cy="120" r="3"/>
+<text class="t sm m" x="262" y="18" text-anchor="middle" dominant-baseline="central">4</text>
+<path class="s" d="M251,70 Q270.2,70 283,90 Q270.2,110 251,110 Q259,90 251,70 Z"/>
+<path class="s" d="M244,70 Q252,90 244,110"/>
+<polyline class="s" points="232,26 232,80 247,80"/>
+<polyline class="s" points="225,120 233,120 233,100 247,100"/>
+<polyline class="s" points="283,90 289,90 289,150"/>
+<text class="t sm a b" x="289" y="162" text-anchor="middle" dominant-baseline="central">b4</text>
+<circle class="k" cx="289" cy="120" r="3"/>
+<text class="t sm m" x="326" y="18" text-anchor="middle" dominant-baseline="central">3</text>
+<path class="s" d="M315,70 Q334.2,70 347,90 Q334.2,110 315,110 Q323,90 315,70 Z"/>
+<path class="s" d="M308,70 Q316,90 308,110"/>
+<polyline class="s" points="296,26 296,80 311,80"/>
+<polyline class="s" points="289,120 297,120 297,100 311,100"/>
+<polyline class="s" points="347,90 353,90 353,150"/>
+<text class="t sm a b" x="353" y="162" text-anchor="middle" dominant-baseline="central">b3</text>
+<circle class="k" cx="353" cy="120" r="3"/>
+<text class="t sm m" x="390" y="18" text-anchor="middle" dominant-baseline="central">2</text>
+<path class="s" d="M379,70 Q398.2,70 411,90 Q398.2,110 379,110 Q387,90 379,70 Z"/>
+<path class="s" d="M372,70 Q380,90 372,110"/>
+<polyline class="s" points="360,26 360,80 375,80"/>
+<polyline class="s" points="353,120 361,120 361,100 375,100"/>
+<polyline class="s" points="411,90 417,90 417,150"/>
+<text class="t sm a b" x="417" y="162" text-anchor="middle" dominant-baseline="central">b2</text>
+<circle class="k" cx="417" cy="120" r="3"/>
+<text class="t sm m" x="454" y="18" text-anchor="middle" dominant-baseline="central">1</text>
+<path class="s" d="M443,70 Q462.2,70 475,90 Q462.2,110 443,110 Q451,90 443,70 Z"/>
+<path class="s" d="M436,70 Q444,90 436,110"/>
+<polyline class="s" points="424,26 424,80 439,80"/>
+<polyline class="s" points="417,120 425,120 425,100 439,100"/>
+<polyline class="s" points="475,90 481,90 481,150"/>
+<text class="t sm a b" x="481" y="162" text-anchor="middle" dominant-baseline="central">b1</text>
+<circle class="k" cx="481" cy="120" r="3"/>
+<text class="t sm m" x="518" y="18" text-anchor="middle" dominant-baseline="central">0</text>
+<path class="s" d="M507,70 Q526.2,70 539,90 Q526.2,110 507,110 Q515,90 507,70 Z"/>
+<path class="s" d="M500,70 Q508,90 500,110"/>
+<polyline class="s" points="488,26 488,80 503,80"/>
+<polyline class="s" points="481,120 489,120 489,100 503,100"/>
+<polyline class="s" points="539,90 545,90 545,150"/>
+<text class="t sm a b" x="545" y="162" text-anchor="middle" dominant-baseline="central">b0</text>
+<circle class="k" cx="545" cy="120" r="3"/>
+</svg>

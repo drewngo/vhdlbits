@@ -1,0 +1,36 @@
+{
+  "id": "11_06_debounce",
+  "section": 11,
+  "num": 6,
+  "name": "debounce",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "noisy",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "clean",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  },
+  "reset_prob": 0.01,
+  "cycles": 600
+}

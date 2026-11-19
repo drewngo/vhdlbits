@@ -1,0 +1,40 @@
+{
+  "id": "06_09_integer_range",
+  "section": 6,
+  "num": 9,
+  "name": "integer_range",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 6,
+      "low": 0
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 6,
+      "low": 0
+    },
+    {
+      "name": "s",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 6,
+      "low": 0
+    }
+  ],
+  "range": {
+    "a": [
+      0,
+      99
+    ],
+    "b": [
+      0,
+      99
+    ]
+  }
+}

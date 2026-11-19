@@ -1,0 +1,30 @@
+{
+  "id": "04_05_adder32",
+  "section": 4,
+  "num": 5,
+  "name": "adder32",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    },
+    {
+      "name": "sum",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "10_04_lfsr5",
+  "section": 10,
+  "num": 4,
+  "name": "lfsr5",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "q",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 4,
+      "low": 0
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  }
+}

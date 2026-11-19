@@ -1,0 +1,23 @@
+{
+  "id": "05_09_case_ranges",
+  "section": 5,
+  "num": 9,
+  "name": "case_ranges",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "ch",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "cls",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 1,
+      "low": 0
+    }
+  ]
+}

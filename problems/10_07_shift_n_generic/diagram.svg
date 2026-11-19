@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="150" viewBox="0 0 520 150" role="img">
+<title>an N-bit shift register: sin enters at q(0), sout is q(N-1)</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s" x="90" y="40" width="58" height="64" rx="3"/>
+<text class="t sm b" x="119" y="53" text-anchor="middle" dominant-baseline="central">q(0)</text>
+<text class="t sm m" x="95" y="68.8" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="90,85.2 99,91.2 90,97.2"/>
+<text class="t sm m" x="143" y="68.8" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s" x="190" y="40" width="58" height="64" rx="3"/>
+<text class="t sm b" x="219" y="53" text-anchor="middle" dominant-baseline="central">q(1)</text>
+<text class="t sm m" x="195" y="68.8" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="190,85.2 199,91.2 190,97.2"/>
+<text class="t sm m" x="243" y="68.8" text-anchor="end" dominant-baseline="central">q</text>
+<text class="t b m" x="318" y="72" text-anchor="middle" dominant-baseline="central">· · ·</text>
+<rect class="s" x="390" y="40" width="58" height="64" rx="3"/>
+<text class="t sm b" x="419" y="53" text-anchor="middle" dominant-baseline="central">q(N-1)</text>
+<text class="t sm m" x="395" y="68.8" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="390,85.2 399,91.2 390,97.2"/>
+<text class="t sm m" x="443" y="68.8" text-anchor="end" dominant-baseline="central">q</text>
+<polyline class="s" points="40,68.8 90,68.8"/>
+<text class="t" x="34" y="68.8" text-anchor="end" dominant-baseline="central">sin</text>
+<polyline class="s" points="148,68.8 190,68.8"/>
+<polyline class="s dash" points="248,68.8 274,68.8"/>
+<polyline class="s dash" points="364,68.8 390,68.8"/>
+<polyline class="s" points="448,68.8 470,68.8"/>
+<text class="t a b" x="476" y="68.8" text-anchor="start" dominant-baseline="central">sout</text>
+<text class="t sm m" x="260" y="135" text-anchor="middle" dominant-baseline="central">on each edge with en = 1, every bit moves one place up</text>
+</svg>

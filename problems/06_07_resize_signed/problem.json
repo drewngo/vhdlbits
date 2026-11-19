@@ -1,0 +1,37 @@
+{
+  "id": "06_07_resize_signed",
+  "section": 6,
+  "num": 7,
+  "name": "resize_signed",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "din",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "ext_s",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 15,
+      "low": 0
+    },
+    {
+      "name": "ext_u",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 15,
+      "low": 0
+    },
+    {
+      "name": "trunc",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    }
+  ]
+}

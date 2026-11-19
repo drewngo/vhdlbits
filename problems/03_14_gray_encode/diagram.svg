@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="372" height="184" viewBox="0 0 372 184" role="img">
+<title>Gray encode: each bit of g is the XOR of the bits in its column</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<text class="t" x="60" y="33" text-anchor="end" dominant-baseline="central">b</text>
+<rect class="s bg" x="70" y="18" width="36" height="30"/>
+<text class="t" x="88" y="33" text-anchor="middle" dominant-baseline="central">b7</text>
+<rect class="s bg" x="106" y="18" width="36" height="30"/>
+<text class="t" x="124" y="33" text-anchor="middle" dominant-baseline="central">b6</text>
+<rect class="s bg" x="142" y="18" width="36" height="30"/>
+<text class="t" x="160" y="33" text-anchor="middle" dominant-baseline="central">b5</text>
+<rect class="s bg" x="178" y="18" width="36" height="30"/>
+<text class="t" x="196" y="33" text-anchor="middle" dominant-baseline="central">b4</text>
+<rect class="s bg" x="214" y="18" width="36" height="30"/>
+<text class="t" x="232" y="33" text-anchor="middle" dominant-baseline="central">b3</text>
+<rect class="s bg" x="250" y="18" width="36" height="30"/>
+<text class="t" x="268" y="33" text-anchor="middle" dominant-baseline="central">b2</text>
+<rect class="s bg" x="286" y="18" width="36" height="30"/>
+<text class="t" x="304" y="33" text-anchor="middle" dominant-baseline="central">b1</text>
+<rect class="s bg" x="322" y="18" width="36" height="30"/>
+<text class="t" x="340" y="33" text-anchor="middle" dominant-baseline="central">b0</text>
+<text class="t" x="60" y="89" text-anchor="end" dominant-baseline="central">b &gt;&gt; 1</text>
+<rect class="s xf" x="70" y="74" width="36" height="30"/>
+<text class="t" x="88" y="89" text-anchor="middle" dominant-baseline="central">0</text>
+<rect class="s bg" x="106" y="74" width="36" height="30"/>
+<text class="t" x="124" y="89" text-anchor="middle" dominant-baseline="central">b7</text>
+<rect class="s bg" x="142" y="74" width="36" height="30"/>
+<text class="t" x="160" y="89" text-anchor="middle" dominant-baseline="central">b6</text>
+<rect class="s bg" x="178" y="74" width="36" height="30"/>
+<text class="t" x="196" y="89" text-anchor="middle" dominant-baseline="central">b5</text>
+<rect class="s bg" x="214" y="74" width="36" height="30"/>
+<text class="t" x="232" y="89" text-anchor="middle" dominant-baseline="central">b4</text>
+<rect class="s bg" x="250" y="74" width="36" height="30"/>
+<text class="t" x="268" y="89" text-anchor="middle" dominant-baseline="central">b3</text>
+<rect class="s bg" x="286" y="74" width="36" height="30"/>
+<text class="t" x="304" y="89" text-anchor="middle" dominant-baseline="central">b2</text>
+<rect class="s bg" x="322" y="74" width="36" height="30"/>
+<text class="t" x="340" y="89" text-anchor="middle" dominant-baseline="central">b1</text>
+<text class="t" x="60" y="145" text-anchor="end" dominant-baseline="central">g</text>
+<rect class="s af" x="70" y="130" width="36" height="30"/>
+<text class="t" x="88" y="145" text-anchor="middle" dominant-baseline="central">g7</text>
+<rect class="s af" x="106" y="130" width="36" height="30"/>
+<text class="t" x="124" y="145" text-anchor="middle" dominant-baseline="central">g6</text>
+<rect class="s af" x="142" y="130" width="36" height="30"/>
+<text class="t" x="160" y="145" text-anchor="middle" dominant-baseline="central">g5</text>
+<rect class="s af" x="178" y="130" width="36" height="30"/>
+<text class="t" x="196" y="145" text-anchor="middle" dominant-baseline="central">g4</text>
+<rect class="s af" x="214" y="130" width="36" height="30"/>
+<text class="t" x="232" y="145" text-anchor="middle" dominant-baseline="central">g3</text>
+<rect class="s af" x="250" y="130" width="36" height="30"/>
+<text class="t" x="268" y="145" text-anchor="middle" dominant-baseline="central">g2</text>
+<rect class="s af" x="286" y="130" width="36" height="30"/>
+<text class="t" x="304" y="145" text-anchor="middle" dominant-baseline="central">g1</text>
+<rect class="s af" x="322" y="130" width="36" height="30"/>
+<text class="t" x="340" y="145" text-anchor="middle" dominant-baseline="central">g0</text>
+<text class="t sm m" x="70" y="172" text-anchor="start" dominant-baseline="central">g = b xor (b &gt;&gt; 1), bit by bit (column-wise)</text>
+</svg>

@@ -1,0 +1,54 @@
+{
+  "id": "02_09_all_gates",
+  "section": 2,
+  "num": 9,
+  "name": "all_gates",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "o_and",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "o_or",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "o_xor",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "o_nand",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "o_nor",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "o_xnor",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "o_andnot",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

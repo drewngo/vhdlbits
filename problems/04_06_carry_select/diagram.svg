@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="380" viewBox="0 0 620 380" role="img">
+<title>carry-select adder: both upper sums are computed, the lower carry-out picks one</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s" x="150" y="20" width="110" height="64" rx="3"/>
+<text class="t b" x="205" y="52" text-anchor="middle" dominant-baseline="central">add16</text>
+<text class="t sm m" x="155" y="41.3" text-anchor="start" dominant-baseline="central">a</text>
+<text class="t sm m" x="155" y="62.7" text-anchor="start" dominant-baseline="central">b</text>
+<text class="t sm m" x="255" y="52" text-anchor="end" dominant-baseline="central">sum</text>
+<text class="t sm m" x="205" y="74" text-anchor="middle" dominant-baseline="central">cin</text>
+<rect class="s" x="150" y="130" width="110" height="64" rx="3"/>
+<text class="t b" x="205" y="162" text-anchor="middle" dominant-baseline="central">add16</text>
+<text class="t sm m" x="155" y="151.3" text-anchor="start" dominant-baseline="central">a</text>
+<text class="t sm m" x="155" y="172.7" text-anchor="start" dominant-baseline="central">b</text>
+<text class="t sm m" x="255" y="162" text-anchor="end" dominant-baseline="central">sum</text>
+<text class="t sm m" x="205" y="184" text-anchor="middle" dominant-baseline="central">cin</text>
+<rect class="s" x="150" y="260" width="110" height="64" rx="3"/>
+<text class="t b" x="205" y="292" text-anchor="middle" dominant-baseline="central">add16</text>
+<text class="t sm m" x="155" y="281.3" text-anchor="start" dominant-baseline="central">a</text>
+<text class="t sm m" x="155" y="302.7" text-anchor="start" dominant-baseline="central">b</text>
+<text class="t sm m" x="255" y="292" text-anchor="end" dominant-baseline="central">sum</text>
+<text class="t sm m" x="205" y="270" text-anchor="middle" dominant-baseline="central">cout</text>
+<text class="t sm m" x="205" y="314" text-anchor="middle" dominant-baseline="central">cin</text>
+<polyline class="s bus" points="100,41.3 150,41.3"/>
+<text class="t sm" x="96" y="41.3" text-anchor="end" dominant-baseline="central">a(31:16)</text>
+<polyline class="s bus" points="100,62.7 150,62.7"/>
+<text class="t sm" x="96" y="62.7" text-anchor="end" dominant-baseline="central">b(31:16)</text>
+<polyline class="s bus" points="100,151.3 150,151.3"/>
+<text class="t sm" x="96" y="151.3" text-anchor="end" dominant-baseline="central">a(31:16)</text>
+<polyline class="s bus" points="100,172.7 150,172.7"/>
+<text class="t sm" x="96" y="172.7" text-anchor="end" dominant-baseline="central">b(31:16)</text>
+<polyline class="s bus" points="100,281.3 150,281.3"/>
+<text class="t sm" x="96" y="281.3" text-anchor="end" dominant-baseline="central">a(15:0)</text>
+<polyline class="s bus" points="100,302.7 150,302.7"/>
+<text class="t sm" x="96" y="302.7" text-anchor="end" dominant-baseline="central">b(15:0)</text>
+<polyline class="s" points="205,84 205,98"/>
+<text class="t sm" x="205" y="108" text-anchor="middle" dominant-baseline="central">&#x27;0&#x27;</text>
+<polyline class="s" points="205,194 205,208"/>
+<text class="t sm" x="205" y="218" text-anchor="middle" dominant-baseline="central">&#x27;1&#x27;</text>
+<polyline class="s" points="205,324 205,338"/>
+<text class="t sm" x="205" y="348" text-anchor="middle" dominant-baseline="central">&#x27;0&#x27;</text>
+<polygon class="s" points="380,79 414,91 414,123 380,135"/>
+<text class="t sm m" x="385" y="97" text-anchor="start" dominant-baseline="central">0</text>
+<text class="t sm m" x="385" y="117" text-anchor="start" dominant-baseline="central">1</text>
+<polyline class="s bus" points="260,52 340,52 340,97 380,97"/>
+<polyline class="s bus" points="260,162 362,162 362,117 380,117"/>
+<text class="t sm m" x="268" y="43" text-anchor="start" dominant-baseline="central">sum if c=0</text>
+<text class="t sm m" x="268" y="153" text-anchor="start" dominant-baseline="central">sum if c=1</text>
+<polyline class="s" points="205,260 205,235 397,235 397,129"/>
+<text class="t sm m" x="403" y="222" text-anchor="start" dominant-baseline="central">c (lower carry-out)</text>
+<polyline class="s bus" points="414,107 470,107"/>
+<text class="t a b" x="476" y="107" text-anchor="start" dominant-baseline="central">sum(31:16)</text>
+<polyline class="s bus" points="260,292 470,292"/>
+<text class="t a b" x="476" y="292" text-anchor="start" dominant-baseline="central">sum(15:0)</text>
+</svg>

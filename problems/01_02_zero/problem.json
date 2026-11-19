@@ -1,0 +1,14 @@
+{
+  "id": "01_02_zero",
+  "section": 1,
+  "num": 2,
+  "name": "zero",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "o",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

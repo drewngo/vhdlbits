@@ -1,0 +1,33 @@
+{
+  "id": "13_04_array_of_vectors",
+  "section": 13,
+  "num": 4,
+  "name": "array_of_vectors",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "din",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 63,
+      "low": 0
+    },
+    {
+      "name": "maxv",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "maxi",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 2,
+      "low": 0
+    }
+  ],
+  "bias": {
+    "din": 0.8
+  }
+}

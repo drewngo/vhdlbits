@@ -1,0 +1,44 @@
+{
+  "id": "04_15_two_level_hier",
+  "section": 4,
+  "num": 15,
+  "name": "two_level_hier",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "c",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "d",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "e",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "y1",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "y2",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

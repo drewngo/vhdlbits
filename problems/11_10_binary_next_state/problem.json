@@ -1,0 +1,33 @@
+{
+  "id": "11_10_binary_next_state",
+  "section": 11,
+  "num": 10,
+  "name": "binary_next_state",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "state",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 1,
+      "low": 0
+    },
+    {
+      "name": "x",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "nxt",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 1,
+      "low": 0
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

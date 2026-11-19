@@ -1,0 +1,26 @@
+{
+  "id": "05_11_last_assignment_wins",
+  "section": 5,
+  "num": 11,
+  "name": "last_assignment_wins",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 1,
+      "low": 0
+    }
+  ]
+}

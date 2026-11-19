@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="120" viewBox="0 0 280 120" role="img">
+<title>a 100-bit 2-to-1 mux</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<polygon class="s" points="120,22 154,34 154,66 120,78"/>
+<text class="t sm m" x="125" y="40" text-anchor="start" dominant-baseline="central">0</text>
+<text class="t sm m" x="125" y="60" text-anchor="start" dominant-baseline="central">1</text>
+<polyline class="s bus" points="60,40 120,40"/>
+<text class="t" x="54" y="40" text-anchor="end" dominant-baseline="central">a</text>
+<polyline class="s bus" points="60,60 120,60"/>
+<text class="t" x="54" y="60" text-anchor="end" dominant-baseline="central">b</text>
+<polyline class="s" points="137,72 137,100"/>
+<text class="t" x="137" y="111" text-anchor="middle" dominant-baseline="central">sel</text>
+<polyline class="s bus" points="154,50 220,50"/>
+<text class="t a b" x="226" y="50" text-anchor="start" dominant-baseline="central">y</text>
+</svg>

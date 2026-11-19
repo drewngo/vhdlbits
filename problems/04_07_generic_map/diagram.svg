@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="190" viewBox="0 0 420 190" role="img">
+<title>two copies of reg_n with different generic N</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s thin ms dash" x="50" y="10" width="320" height="170" rx="4"/>
+<text class="t sm m" x="58" y="22" text-anchor="start" dominant-baseline="central">top_module</text>
+<rect class="s" x="160" y="26" width="110" height="64" rx="3"/>
+<text class="t sm b" x="215" y="39" text-anchor="middle" dominant-baseline="central">reg_n  N =&gt; 4</text>
+<text class="t sm m" x="165" y="54.8" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="160,71.2 169,77.2 160,83.2"/>
+<text class="t sm m" x="265" y="54.8" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s" x="160" y="104" width="110" height="64" rx="3"/>
+<text class="t sm b" x="215" y="117" text-anchor="middle" dominant-baseline="central">reg_n  N =&gt; 12</text>
+<text class="t sm m" x="165" y="132.8" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="160,149.2 169,155.2 160,161.2"/>
+<text class="t sm m" x="265" y="132.8" text-anchor="end" dominant-baseline="central">q</text>
+<polyline class="s bus" points="50,54.8 160,54.8"/>
+<text class="t" x="44" y="54.8" text-anchor="end" dominant-baseline="central">d4</text>
+<polyline class="s bus" points="270,54.8 370,54.8"/>
+<text class="t a b" x="376" y="54.8" text-anchor="start" dominant-baseline="central">q4</text>
+<polyline class="s bus" points="50,132.8 160,132.8"/>
+<text class="t" x="44" y="132.8" text-anchor="end" dominant-baseline="central">d12</text>
+<polyline class="s bus" points="270,132.8 370,132.8"/>
+<text class="t a b" x="376" y="132.8" text-anchor="start" dominant-baseline="central">q12</text>
+<polyline class="s" points="50,172 130,172 130,155.2 160,155.2"/>
+<text class="t" x="44" y="172" text-anchor="end" dominant-baseline="central">clk</text>
+<polyline class="s" points="130,155.2 130,77.2 160,77.2"/>
+<circle class="k" cx="130" cy="155.2" r="3"/>
+</svg>

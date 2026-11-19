@@ -1,0 +1,31 @@
+{
+  "id": "16_10_bug_integer_overflow",
+  "section": 16,
+  "num": 10,
+  "name": "bug_integer_overflow",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "din",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    },
+    {
+      "name": "count",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 5,
+      "low": 0
+    }
+  ],
+  "value_bias": {
+    "din": [
+      [
+        "FFFFFFFF",
+        0.02
+      ]
+    ]
+  }
+}

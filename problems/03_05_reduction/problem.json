@@ -1,0 +1,31 @@
+{
+  "id": "03_05_reduction",
+  "section": 3,
+  "num": 5,
+  "name": "reduction",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "v",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "all_ones",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "any_one",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "parity",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

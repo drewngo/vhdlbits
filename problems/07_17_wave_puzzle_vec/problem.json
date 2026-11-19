@@ -1,0 +1,23 @@
+{
+  "id": "07_17_wave_puzzle_vec",
+  "section": 7,
+  "num": 17,
+  "name": "wave_puzzle_vec",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "x",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "q",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    }
+  ]
+}

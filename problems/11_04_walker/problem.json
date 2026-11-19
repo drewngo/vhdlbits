@@ -1,0 +1,44 @@
+{
+  "id": "11_04_walker",
+  "section": 11,
+  "num": 4,
+  "name": "walker",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "areset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "bump_l",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "bump_r",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "go_l",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "go_r",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "areset",
+    "active": "1"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "06_02_signed_compare",
+  "section": 6,
+  "num": 2,
+  "name": "signed_compare",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "lt",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "eq",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "gt",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "lt_u",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "min_s",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    }
+  ],
+  "copy": [
+    [
+      "b",
+      "a",
+      0.1
+    ]
+  ]
+}

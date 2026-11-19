@@ -1,0 +1,25 @@
+{
+  "id": "04_03_three_dffs",
+  "section": 4,
+  "num": 3,
+  "name": "three_dffs",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "d",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "q",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk"
+}

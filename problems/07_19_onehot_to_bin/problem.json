@@ -1,0 +1,28 @@
+{
+  "id": "07_19_onehot_to_bin",
+  "section": 7,
+  "num": 19,
+  "name": "onehot_to_bin",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "oh",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "idx",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 2,
+      "low": 0
+    },
+    {
+      "name": "valid",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

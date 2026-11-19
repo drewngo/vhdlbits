@@ -1,0 +1,54 @@
+{
+  "id": "11_15_vending",
+  "section": 11,
+  "num": 15,
+  "name": "vending",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "nickel",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "dime",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "vend",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "change",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  },
+  "exclusive": [
+    [
+      "nickel",
+      "dime"
+    ]
+  ],
+  "bias": {
+    "nickel": 0.35,
+    "dime": 0.35
+  }
+}

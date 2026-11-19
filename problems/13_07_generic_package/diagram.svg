@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="170" viewBox="0 0 540 170" role="img">
+<title>one generic package, instantiated once per width</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s" x="20" y="50" width="160" height="60" rx="3"/>
+<text class="t sm b" x="100" y="68" text-anchor="middle" dominant-baseline="central">package sat_pkg</text>
+<text class="t sm m" x="100" y="88" text-anchor="middle" dominant-baseline="central">generic (W)</text>
+<rect class="s" x="270" y="20" width="220" height="50" rx="3"/>
+<text class="t sm b" x="380" y="37" text-anchor="middle" dominant-baseline="central">sat8: new sat_pkg</text>
+<text class="t sm m" x="380" y="55" text-anchor="middle" dominant-baseline="central">generic map (W =&gt; 8)</text>
+<polyline class="s" points="180,80 268,45"/>
+<polygon class="k" points="268,45 262.3,50.6 260,44.8"/>
+<rect class="s" x="270" y="100" width="220" height="50" rx="3"/>
+<text class="t sm b" x="380" y="117" text-anchor="middle" dominant-baseline="central">sat12: new sat_pkg</text>
+<text class="t sm m" x="380" y="135" text-anchor="middle" dominant-baseline="central">generic map (W =&gt; 12)</text>
+<polyline class="s" points="180,80 268,125"/>
+<polygon class="k" points="268,125 260,124.4 262.9,118.9"/>
+<text class="t sm m" x="380" y="162" text-anchor="middle" dominant-baseline="central">sat8.sat_add(a8, b8), sat12.sat_add(a12, b12)</text>
+</svg>

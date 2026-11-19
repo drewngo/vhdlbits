@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="330" viewBox="0 0 580 330" role="img">
+<title>the elevator&#x27;s phases; &#x27;decide&#x27; runs in IDLE and at the end of MOVE2</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<path class="s" d="M149.8,122.6 Q164,170 149.8,217.4"/>
+<polygon class="k" points="149.8,217.4 148.9,209.5 154.9,211.3"/>
+<path class="s" d="M130.2,217.4 Q116,170 130.2,122.6"/>
+<polygon class="k" points="130.2,122.6 131.1,130.5 125.1,128.7"/>
+<path class="s" d="M174,90 Q260,90 346,90"/>
+<polygon class="k" points="346,90 338.6,93.1 338.6,86.9"/>
+<path class="s" d="M380,124 Q380,170 380,216"/>
+<polygon class="k" points="380,216 376.9,208.6 383.1,208.6"/>
+<path class="s" d="M346,250 Q260,250 174,250"/>
+<polygon class="k" points="174,250 181.4,246.9 181.4,253.1"/>
+<path class="s" d="M395.2,219.6 Q420,170 395.2,120.4"/>
+<polygon class="k" points="395.2,120.4 401.3,125.6 395.7,128.4"/>
+<path class="s" d="M351.7,231.1 Q260,170 168.3,108.9"/>
+<polygon class="k" points="168.3,108.9 176.1,110.4 172.7,115.5"/>
+<path class="s" d="M125.2,59.4 C99.2,23.5 180.8,23.5 154.8,59.4"/>
+<polygon class="k" points="154.8,59.4 156.6,51.6 161.6,55.2"/>
+<polyline class="s as" points="70,90 106,90"/>
+<polygon class="ak" points="106,90 98.6,93.1 98.6,86.9"/>
+<text class="t sm a" x="60" y="90" text-anchor="end" dominant-baseline="central">reset</text>
+<circle class="s bg" cx="140" cy="90" r="34"/>
+<circle class="s" cx="140" cy="90" r="34"/>
+<text class="t b" x="140" y="90" text-anchor="middle" dominant-baseline="central">IDLE</text>
+<circle class="s bg" cx="140" cy="250" r="34"/>
+<circle class="s" cx="140" cy="250" r="34"/>
+<text class="t b" x="140" y="243" text-anchor="middle" dominant-baseline="central">DOOR</text>
+<text class="t sm a" x="140" y="259" text-anchor="middle" dominant-baseline="central">door=1</text>
+<circle class="s bg" cx="380" cy="90" r="34"/>
+<circle class="s" cx="380" cy="90" r="34"/>
+<text class="t b" x="380" y="90" text-anchor="middle" dominant-baseline="central">MOVE1</text>
+<circle class="s bg" cx="380" cy="250" r="34"/>
+<circle class="s" cx="380" cy="250" r="34"/>
+<text class="t b" x="380" y="250" text-anchor="middle" dominant-baseline="central">MOVE2</text>
+<rect class="bg" x="159.9" y="162" width="32.4" height="16"/>
+<text class="t sm" x="176.1" y="170" text-anchor="middle" dominant-baseline="central">P(f)</text>
+<rect class="bg" x="233.9" y="75" width="52.2" height="16"/>
+<text class="t sm" x="260" y="83" text-anchor="middle" dominant-baseline="central">request</text>
+<rect class="bg" x="227.3" y="89" width="65.4" height="16"/>
+<text class="t sm" x="260" y="97" text-anchor="middle" dominant-baseline="central">elsewhere</text>
+<rect class="bg" x="230.6" y="242" width="58.8" height="16"/>
+<text class="t sm" x="260" y="250" text-anchor="middle" dominant-baseline="central">P(new f)</text>
+<rect class="bg" x="410.6" y="155" width="72" height="16"/>
+<text class="t sm" x="446.6" y="163" text-anchor="middle" dominant-baseline="central">keep going</text>
+<rect class="bg" x="420.5" y="169" width="52.2" height="16"/>
+<text class="t sm" x="446.6" y="177" text-anchor="middle" dominant-baseline="central">or turn</text>
+<rect class="bg" x="220.7" y="162" width="78.6" height="16"/>
+<text class="t sm" x="260" y="170" text-anchor="middle" dominant-baseline="central">no requests</text>
+<rect class="bg" x="100.7" y="4" width="78.6" height="16"/>
+<text class="t sm" x="140" y="12" text-anchor="middle" dominant-baseline="central">no requests</text>
+<text class="t sm m" x="10" y="320" text-anchor="start" dominant-baseline="central">MOVE2 moves floor by one in direction dir, then decides</text>
+</svg>

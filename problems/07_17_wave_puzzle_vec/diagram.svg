@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="713.8" height="108" viewBox="0 0 713.8 108" role="img">
+<title>waveform of x and q</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<text class="t sm m" x="29.8" y="18" text-anchor="middle" dominant-baseline="central">0</text>
+<text class="t sm m" x="113.8" y="18" text-anchor="middle" dominant-baseline="central">20</text>
+<text class="t sm m" x="197.8" y="18" text-anchor="middle" dominant-baseline="central">40</text>
+<text class="t sm m" x="281.8" y="18" text-anchor="middle" dominant-baseline="central">60</text>
+<text class="t sm m" x="365.8" y="18" text-anchor="middle" dominant-baseline="central">80</text>
+<text class="t sm m" x="449.8" y="18" text-anchor="middle" dominant-baseline="central">100</text>
+<text class="t sm m" x="533.8" y="18" text-anchor="middle" dominant-baseline="central">120</text>
+<text class="t sm m" x="617.8" y="18" text-anchor="middle" dominant-baseline="central">140</text>
+<text class="t" x="17.8" y="41" text-anchor="end" dominant-baseline="central">x</text>
+<polygon class="s af" points="29.8,41 33.8,32 67.8,32 71.8,41 67.8,50 33.8,50"/>
+<text class="t" x="50.8" y="41" text-anchor="middle" dominant-baseline="central">1001</text>
+<polygon class="s af" points="71.8,41 75.8,32 109.8,32 113.8,41 109.8,50 75.8,50"/>
+<text class="t" x="92.8" y="41" text-anchor="middle" dominant-baseline="central">0010</text>
+<polygon class="s af" points="113.8,41 117.8,32 151.8,32 155.8,41 151.8,50 117.8,50"/>
+<text class="t" x="134.8" y="41" text-anchor="middle" dominant-baseline="central">1110</text>
+<polygon class="s af" points="155.8,41 159.8,32 193.8,32 197.8,41 193.8,50 159.8,50"/>
+<text class="t" x="176.8" y="41" text-anchor="middle" dominant-baseline="central">0000</text>
+<polygon class="s af" points="197.8,41 201.8,32 235.8,32 239.8,41 235.8,50 201.8,50"/>
+<text class="t" x="218.8" y="41" text-anchor="middle" dominant-baseline="central">0111</text>
+<polygon class="s af" points="239.8,41 243.8,32 277.8,32 281.8,41 277.8,50 243.8,50"/>
+<text class="t" x="260.8" y="41" text-anchor="middle" dominant-baseline="central">1011</text>
+<polygon class="s af" points="281.8,41 285.8,32 319.8,32 323.8,41 319.8,50 285.8,50"/>
+<text class="t" x="302.8" y="41" text-anchor="middle" dominant-baseline="central">0100</text>
+<polygon class="s af" points="323.8,41 327.8,32 361.8,32 365.8,41 361.8,50 327.8,50"/>
+<text class="t" x="344.8" y="41" text-anchor="middle" dominant-baseline="central">1101</text>
+<polygon class="s af" points="365.8,41 369.8,32 403.8,32 407.8,41 403.8,50 369.8,50"/>
+<text class="t" x="386.8" y="41" text-anchor="middle" dominant-baseline="central">0001</text>
+<polygon class="s af" points="407.8,41 411.8,32 445.8,32 449.8,41 445.8,50 411.8,50"/>
+<text class="t" x="428.8" y="41" text-anchor="middle" dominant-baseline="central">1000</text>
+<polygon class="s af" points="449.8,41 453.8,32 487.8,32 491.8,41 487.8,50 453.8,50"/>
+<text class="t" x="470.8" y="41" text-anchor="middle" dominant-baseline="central">1111</text>
+<polygon class="s af" points="491.8,41 495.8,32 529.8,32 533.8,41 529.8,50 495.8,50"/>
+<text class="t" x="512.8" y="41" text-anchor="middle" dominant-baseline="central">0110</text>
+<polygon class="s af" points="533.8,41 537.8,32 571.8,32 575.8,41 571.8,50 537.8,50"/>
+<text class="t" x="554.8" y="41" text-anchor="middle" dominant-baseline="central">0011</text>
+<polygon class="s af" points="575.8,41 579.8,32 613.8,32 617.8,41 613.8,50 579.8,50"/>
+<text class="t" x="596.8" y="41" text-anchor="middle" dominant-baseline="central">1010</text>
+<polygon class="s af" points="617.8,41 621.8,32 655.8,32 659.8,41 655.8,50 621.8,50"/>
+<text class="t" x="638.8" y="41" text-anchor="middle" dominant-baseline="central">1100</text>
+<polygon class="s af" points="659.8,41 663.8,32 697.8,32 701.8,41 697.8,50 663.8,50"/>
+<text class="t" x="680.8" y="41" text-anchor="middle" dominant-baseline="central">0101</text>
+<text class="t a b" x="17.8" y="71" text-anchor="end" dominant-baseline="central">q</text>
+<polygon class="s af" points="29.8,71 33.8,62 67.8,62 71.8,71 67.8,80 33.8,80"/>
+<text class="t" x="50.8" y="71" text-anchor="middle" dominant-baseline="central">1111</text>
+<polygon class="s af" points="71.8,71 75.8,62 109.8,62 113.8,71 109.8,80 75.8,80"/>
+<text class="t" x="92.8" y="71" text-anchor="middle" dominant-baseline="central">0010</text>
+<polygon class="s af" points="113.8,71 117.8,62 151.8,62 155.8,71 151.8,80 117.8,80"/>
+<text class="t" x="134.8" y="71" text-anchor="middle" dominant-baseline="central">1101</text>
+<polygon class="s af" points="155.8,71 159.8,62 193.8,62 197.8,71 193.8,80 159.8,80"/>
+<text class="t" x="176.8" y="71" text-anchor="middle" dominant-baseline="central">0111</text>
+<polygon class="s af" points="197.8,71 201.8,62 235.8,62 239.8,71 235.8,80 201.8,80"/>
+<text class="t" x="218.8" y="71" text-anchor="middle" dominant-baseline="central">1011</text>
+<polygon class="s af" points="239.8,71 243.8,62 277.8,62 281.8,71 277.8,80 243.8,80"/>
+<text class="t" x="260.8" y="71" text-anchor="middle" dominant-baseline="central">0001</text>
+<polygon class="s af" points="281.8,71 285.8,62 319.8,62 323.8,71 319.8,80 285.8,80"/>
+<text class="t" x="302.8" y="71" text-anchor="middle" dominant-baseline="central">1110</text>
+<polygon class="s af" points="323.8,71 327.8,62 361.8,62 365.8,71 361.8,80 327.8,80"/>
+<text class="t" x="344.8" y="71" text-anchor="middle" dominant-baseline="central">0110</text>
+<polygon class="s af" points="365.8,71 369.8,62 403.8,62 407.8,71 403.8,80 369.8,80"/>
+<text class="t" x="386.8" y="71" text-anchor="middle" dominant-baseline="central">1100</text>
+<polygon class="s af" points="407.8,71 411.8,62 445.8,62 449.8,71 445.8,80 411.8,80"/>
+<text class="t" x="428.8" y="71" text-anchor="middle" dominant-baseline="central">0011</text>
+<polygon class="s af" points="449.8,71 453.8,62 487.8,62 491.8,71 487.8,80 453.8,80"/>
+<text class="t" x="470.8" y="71" text-anchor="middle" dominant-baseline="central">0100</text>
+<polygon class="s af" points="491.8,71 495.8,62 529.8,62 533.8,71 529.8,80 495.8,80"/>
+<text class="t" x="512.8" y="71" text-anchor="middle" dominant-baseline="central">0101</text>
+<polygon class="s af" points="533.8,71 537.8,62 571.8,62 575.8,71 571.8,80 537.8,80"/>
+<text class="t" x="554.8" y="71" text-anchor="middle" dominant-baseline="central">1001</text>
+<polygon class="s af" points="575.8,71 579.8,62 613.8,62 617.8,71 613.8,80 579.8,80"/>
+<text class="t" x="596.8" y="71" text-anchor="middle" dominant-baseline="central">1000</text>
+<polygon class="s af" points="617.8,71 621.8,62 655.8,62 659.8,71 655.8,80 621.8,80"/>
+<text class="t" x="638.8" y="71" text-anchor="middle" dominant-baseline="central">1010</text>
+<polygon class="s af" points="659.8,71 663.8,62 697.8,62 701.8,71 697.8,80 663.8,80"/>
+<text class="t" x="680.8" y="71" text-anchor="middle" dominant-baseline="central">0000</text>
+<text class="t sm m" x="29.8" y="97" text-anchor="start" dominant-baseline="central">time in ns</text>
+</svg>

@@ -1,0 +1,9 @@
+build/
+__pycache__/
+.progress.json
+.solved/
+.wrangler/
+node_modules/
+# Homelab deployment, kept out of the public repo
+deploy.sh
+deploy/

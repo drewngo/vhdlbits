@@ -1,0 +1,88 @@
+{
+  "id": "12_07_regfile_bypass",
+  "section": 12,
+  "num": 7,
+  "name": "regfile_bypass",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "we",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "ra1",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 4,
+      "low": 0
+    },
+    {
+      "name": "ra2",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 4,
+      "low": 0
+    },
+    {
+      "name": "wa",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 4,
+      "low": 0
+    },
+    {
+      "name": "wd",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    },
+    {
+      "name": "rd1",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    },
+    {
+      "name": "rd2",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  },
+  "bias": {
+    "we": 0.5
+  },
+  "reset_prob": 0.005,
+  "cycles": 800,
+  "copy": [
+    [
+      "ra1",
+      "wa",
+      0.25
+    ],
+    [
+      "ra2",
+      "wa",
+      0.25
+    ]
+  ]
+}

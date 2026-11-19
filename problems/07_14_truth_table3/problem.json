@@ -1,0 +1,29 @@
+{
+  "id": "07_14_truth_table3",
+  "section": 7,
+  "num": 14,
+  "name": "truth_table3",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "c",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

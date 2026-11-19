@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="464.8" height="150" viewBox="0 0 464.8 150" role="img">
+<title>asynchronous reset to 00</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<text class="t" x="56.8" y="23" text-anchor="end" dominant-baseline="central">clk</text>
+<line class="s" x1="68.8" y1="32" x2="92.8" y2="32"/>
+<line class="s" x1="92.8" y1="32" x2="92.8" y2="14"/>
+<line class="s" x1="92.8" y1="14" x2="116.8" y2="14"/>
+<line class="s" x1="116.8" y1="14" x2="116.8" y2="32"/>
+<line class="s" x1="116.8" y1="32" x2="140.8" y2="32"/>
+<line class="s" x1="140.8" y1="32" x2="140.8" y2="14"/>
+<line class="s" x1="140.8" y1="14" x2="164.8" y2="14"/>
+<line class="s" x1="164.8" y1="14" x2="164.8" y2="32"/>
+<line class="s" x1="164.8" y1="32" x2="188.8" y2="32"/>
+<line class="s" x1="188.8" y1="32" x2="188.8" y2="14"/>
+<line class="s" x1="188.8" y1="14" x2="212.8" y2="14"/>
+<line class="s" x1="212.8" y1="14" x2="212.8" y2="32"/>
+<line class="s" x1="212.8" y1="32" x2="236.8" y2="32"/>
+<line class="s" x1="236.8" y1="32" x2="236.8" y2="14"/>
+<line class="s" x1="236.8" y1="14" x2="260.8" y2="14"/>
+<line class="s" x1="260.8" y1="14" x2="260.8" y2="32"/>
+<line class="s" x1="260.8" y1="32" x2="284.8" y2="32"/>
+<line class="s" x1="284.8" y1="32" x2="284.8" y2="14"/>
+<line class="s" x1="284.8" y1="14" x2="308.8" y2="14"/>
+<line class="s" x1="308.8" y1="14" x2="308.8" y2="32"/>
+<line class="s" x1="308.8" y1="32" x2="332.8" y2="32"/>
+<line class="s" x1="332.8" y1="32" x2="332.8" y2="14"/>
+<line class="s" x1="332.8" y1="14" x2="356.8" y2="14"/>
+<line class="s" x1="356.8" y1="14" x2="356.8" y2="32"/>
+<line class="s" x1="356.8" y1="32" x2="380.8" y2="32"/>
+<line class="s" x1="380.8" y1="32" x2="380.8" y2="14"/>
+<line class="s" x1="380.8" y1="14" x2="404.8" y2="14"/>
+<line class="s" x1="404.8" y1="14" x2="404.8" y2="32"/>
+<line class="s" x1="404.8" y1="32" x2="428.8" y2="32"/>
+<line class="s" x1="428.8" y1="32" x2="428.8" y2="14"/>
+<line class="s" x1="428.8" y1="14" x2="452.8" y2="14"/>
+<text class="t" x="56.8" y="53" text-anchor="end" dominant-baseline="central">areset</text>
+<line class="s" x1="68.8" y1="62" x2="224.8" y2="62"/>
+<line class="s" x1="224.8" y1="62" x2="224.8" y2="44"/>
+<line class="s" x1="224.8" y1="44" x2="296.8" y2="44"/>
+<line class="s" x1="296.8" y1="44" x2="296.8" y2="62"/>
+<line class="s" x1="296.8" y1="62" x2="452.8" y2="62"/>
+<text class="t" x="56.8" y="83" text-anchor="end" dominant-baseline="central">d</text>
+<polygon class="s af" points="68.8,83 72.8,74 112.8,74 116.8,83 112.8,92 72.8,92"/>
+<text class="t" x="92.8" y="83" text-anchor="middle" dominant-baseline="central">A1</text>
+<polygon class="s af" points="116.8,83 120.8,74 160.8,74 164.8,83 160.8,92 120.8,92"/>
+<text class="t" x="140.8" y="83" text-anchor="middle" dominant-baseline="central">B2</text>
+<polygon class="s af" points="164.8,83 168.8,74 208.8,74 212.8,83 208.8,92 168.8,92"/>
+<text class="t" x="188.8" y="83" text-anchor="middle" dominant-baseline="central">C3</text>
+<polygon class="s af" points="212.8,83 216.8,74 256.8,74 260.8,83 256.8,92 216.8,92"/>
+<text class="t" x="236.8" y="83" text-anchor="middle" dominant-baseline="central">D4</text>
+<polygon class="s af" points="260.8,83 264.8,74 304.8,74 308.8,83 304.8,92 264.8,92"/>
+<text class="t" x="284.8" y="83" text-anchor="middle" dominant-baseline="central">E5</text>
+<polygon class="s af" points="308.8,83 312.8,74 352.8,74 356.8,83 352.8,92 312.8,92"/>
+<text class="t" x="332.8" y="83" text-anchor="middle" dominant-baseline="central">F6</text>
+<polygon class="s af" points="356.8,83 360.8,74 400.8,74 404.8,83 400.8,92 360.8,92"/>
+<text class="t" x="380.8" y="83" text-anchor="middle" dominant-baseline="central">17</text>
+<polygon class="s af" points="404.8,83 408.8,74 448.8,74 452.8,83 448.8,92 408.8,92"/>
+<text class="t" x="428.8" y="83" text-anchor="middle" dominant-baseline="central">28</text>
+<text class="t a b" x="56.8" y="113" text-anchor="end" dominant-baseline="central">q</text>
+<polygon class="s xf" points="68.8,113 72.8,104 88.8,104 92.8,113 88.8,122 72.8,122"/>
+<polygon class="s af" points="92.8,113 96.8,104 136.8,104 140.8,113 136.8,122 96.8,122"/>
+<text class="t" x="116.8" y="113" text-anchor="middle" dominant-baseline="central">A1</text>
+<polygon class="s af" points="140.8,113 144.8,104 184.8,104 188.8,113 184.8,122 144.8,122"/>
+<text class="t" x="164.8" y="113" text-anchor="middle" dominant-baseline="central">B2</text>
+<polygon class="s af" points="188.8,113 192.8,104 220.8,104 224.8,113 220.8,122 192.8,122"/>
+<text class="t" x="206.8" y="113" text-anchor="middle" dominant-baseline="central">C3</text>
+<polygon class="s af" points="224.8,113 228.8,104 328.8,104 332.8,113 328.8,122 228.8,122"/>
+<text class="t" x="278.8" y="113" text-anchor="middle" dominant-baseline="central">00</text>
+<polygon class="s af" points="332.8,113 336.8,104 376.8,104 380.8,113 376.8,122 336.8,122"/>
+<text class="t" x="356.8" y="113" text-anchor="middle" dominant-baseline="central">F6</text>
+<polygon class="s af" points="380.8,113 384.8,104 424.8,104 428.8,113 424.8,122 384.8,122"/>
+<text class="t" x="404.8" y="113" text-anchor="middle" dominant-baseline="central">17</text>
+<polygon class="s af" points="428.8,113 432.8,104 448.8,104 452.8,113 448.8,122 432.8,122"/>
+<text class="t" x="440.8" y="113" text-anchor="middle" dominant-baseline="central">28</text>
+<text class="t sm m" x="68.8" y="139" text-anchor="start" dominant-baseline="central">areset clears q at once, without waiting for an edge</text>
+</svg>

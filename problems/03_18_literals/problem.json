@@ -1,0 +1,38 @@
+{
+  "id": "03_18_literals",
+  "section": 3,
+  "num": 18,
+  "name": "literals",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "din",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "is_zero",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "is_a5",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "is_max",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "masked",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    }
+  ]
+}

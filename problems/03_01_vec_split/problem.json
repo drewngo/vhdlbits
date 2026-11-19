@@ -1,0 +1,38 @@
+{
+  "id": "03_01_vec_split",
+  "section": 3,
+  "num": 1,
+  "name": "vec_split",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "v",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 2,
+      "low": 0
+    },
+    {
+      "name": "outv",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 2,
+      "low": 0
+    },
+    {
+      "name": "o2",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "o1",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "o0",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

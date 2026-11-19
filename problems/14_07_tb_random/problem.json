@@ -1,0 +1,9 @@
+{
+  "id": "14_07_tb_random",
+  "section": 14,
+  "num": 7,
+  "name": "tb_random",
+  "mode": "tb",
+  "tb_kind": "mutant",
+  "dut_file": "cmp16.vhd"
+}

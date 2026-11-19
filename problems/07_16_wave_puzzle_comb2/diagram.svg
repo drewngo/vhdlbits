@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="521.8" height="198" viewBox="0 0 521.8 198" role="img">
+<title>waveform of a, b, c, d and q</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<text class="t sm m" x="29.8" y="18" text-anchor="middle" dominant-baseline="central">0</text>
+<text class="t sm m" x="89.8" y="18" text-anchor="middle" dominant-baseline="central">20</text>
+<text class="t sm m" x="149.8" y="18" text-anchor="middle" dominant-baseline="central">40</text>
+<text class="t sm m" x="209.8" y="18" text-anchor="middle" dominant-baseline="central">60</text>
+<text class="t sm m" x="269.8" y="18" text-anchor="middle" dominant-baseline="central">80</text>
+<text class="t sm m" x="329.8" y="18" text-anchor="middle" dominant-baseline="central">100</text>
+<text class="t sm m" x="389.8" y="18" text-anchor="middle" dominant-baseline="central">120</text>
+<text class="t sm m" x="449.8" y="18" text-anchor="middle" dominant-baseline="central">140</text>
+<text class="t" x="17.8" y="41" text-anchor="end" dominant-baseline="central">a</text>
+<line class="s" x1="29.8" y1="32" x2="59.8" y2="32"/>
+<line class="s" x1="59.8" y1="32" x2="59.8" y2="50"/>
+<line class="s" x1="59.8" y1="50" x2="89.8" y2="50"/>
+<line class="s" x1="89.8" y1="50" x2="89.8" y2="32"/>
+<line class="s" x1="89.8" y1="32" x2="119.8" y2="32"/>
+<line class="s" x1="119.8" y1="32" x2="119.8" y2="50"/>
+<line class="s" x1="119.8" y1="50" x2="179.8" y2="50"/>
+<line class="s" x1="179.8" y1="50" x2="179.8" y2="32"/>
+<line class="s" x1="179.8" y1="32" x2="209.8" y2="32"/>
+<line class="s" x1="209.8" y1="32" x2="209.8" y2="50"/>
+<line class="s" x1="209.8" y1="50" x2="239.8" y2="50"/>
+<line class="s" x1="239.8" y1="50" x2="239.8" y2="32"/>
+<line class="s" x1="239.8" y1="32" x2="269.8" y2="32"/>
+<line class="s" x1="269.8" y1="32" x2="269.8" y2="50"/>
+<line class="s" x1="269.8" y1="50" x2="299.8" y2="50"/>
+<line class="s" x1="299.8" y1="50" x2="299.8" y2="32"/>
+<line class="s" x1="299.8" y1="32" x2="359.8" y2="32"/>
+<line class="s" x1="359.8" y1="32" x2="359.8" y2="50"/>
+<line class="s" x1="359.8" y1="50" x2="419.8" y2="50"/>
+<line class="s" x1="419.8" y1="50" x2="419.8" y2="32"/>
+<line class="s" x1="419.8" y1="32" x2="479.8" y2="32"/>
+<line class="s" x1="479.8" y1="32" x2="479.8" y2="50"/>
+<line class="s" x1="479.8" y1="50" x2="509.8" y2="50"/>
+<text class="t" x="17.8" y="71" text-anchor="end" dominant-baseline="central">b</text>
+<line class="s" x1="29.8" y1="80" x2="89.8" y2="80"/>
+<line class="s" x1="89.8" y1="80" x2="89.8" y2="62"/>
+<line class="s" x1="89.8" y1="62" x2="119.8" y2="62"/>
+<line class="s" x1="119.8" y1="62" x2="119.8" y2="80"/>
+<line class="s" x1="119.8" y1="80" x2="149.8" y2="80"/>
+<line class="s" x1="149.8" y1="80" x2="149.8" y2="62"/>
+<line class="s" x1="149.8" y1="62" x2="179.8" y2="62"/>
+<line class="s" x1="179.8" y1="62" x2="179.8" y2="80"/>
+<line class="s" x1="179.8" y1="80" x2="209.8" y2="80"/>
+<line class="s" x1="209.8" y1="80" x2="209.8" y2="62"/>
+<line class="s" x1="209.8" y1="62" x2="269.8" y2="62"/>
+<line class="s" x1="269.8" y1="62" x2="269.8" y2="80"/>
+<line class="s" x1="269.8" y1="80" x2="329.8" y2="80"/>
+<line class="s" x1="329.8" y1="80" x2="329.8" y2="62"/>
+<line class="s" x1="329.8" y1="62" x2="389.8" y2="62"/>
+<line class="s" x1="389.8" y1="62" x2="389.8" y2="80"/>
+<line class="s" x1="389.8" y1="80" x2="449.8" y2="80"/>
+<line class="s" x1="449.8" y1="80" x2="449.8" y2="62"/>
+<line class="s" x1="449.8" y1="62" x2="509.8" y2="62"/>
+<text class="t" x="17.8" y="101" text-anchor="end" dominant-baseline="central">c</text>
+<line class="s" x1="29.8" y1="110" x2="59.8" y2="110"/>
+<line class="s" x1="59.8" y1="110" x2="59.8" y2="92"/>
+<line class="s" x1="59.8" y1="92" x2="119.8" y2="92"/>
+<line class="s" x1="119.8" y1="92" x2="119.8" y2="110"/>
+<line class="s" x1="119.8" y1="110" x2="149.8" y2="110"/>
+<line class="s" x1="149.8" y1="110" x2="149.8" y2="92"/>
+<line class="s" x1="149.8" y1="92" x2="209.8" y2="92"/>
+<line class="s" x1="209.8" y1="92" x2="209.8" y2="110"/>
+<line class="s" x1="209.8" y1="110" x2="329.8" y2="110"/>
+<line class="s" x1="329.8" y1="110" x2="329.8" y2="92"/>
+<line class="s" x1="329.8" y1="92" x2="449.8" y2="92"/>
+<line class="s" x1="449.8" y1="92" x2="449.8" y2="110"/>
+<line class="s" x1="449.8" y1="110" x2="509.8" y2="110"/>
+<text class="t" x="17.8" y="131" text-anchor="end" dominant-baseline="central">d</text>
+<line class="s" x1="29.8" y1="122" x2="59.8" y2="122"/>
+<line class="s" x1="59.8" y1="122" x2="59.8" y2="140"/>
+<line class="s" x1="59.8" y1="140" x2="149.8" y2="140"/>
+<line class="s" x1="149.8" y1="140" x2="149.8" y2="122"/>
+<line class="s" x1="149.8" y1="122" x2="209.8" y2="122"/>
+<line class="s" x1="209.8" y1="122" x2="209.8" y2="140"/>
+<line class="s" x1="209.8" y1="140" x2="239.8" y2="140"/>
+<line class="s" x1="239.8" y1="140" x2="239.8" y2="122"/>
+<line class="s" x1="239.8" y1="122" x2="299.8" y2="122"/>
+<line class="s" x1="299.8" y1="122" x2="299.8" y2="140"/>
+<line class="s" x1="299.8" y1="140" x2="329.8" y2="140"/>
+<line class="s" x1="329.8" y1="140" x2="329.8" y2="122"/>
+<line class="s" x1="329.8" y1="122" x2="359.8" y2="122"/>
+<line class="s" x1="359.8" y1="122" x2="359.8" y2="140"/>
+<line class="s" x1="359.8" y1="140" x2="389.8" y2="140"/>
+<line class="s" x1="389.8" y1="140" x2="389.8" y2="122"/>
+<line class="s" x1="389.8" y1="122" x2="419.8" y2="122"/>
+<line class="s" x1="419.8" y1="122" x2="419.8" y2="140"/>
+<line class="s" x1="419.8" y1="140" x2="479.8" y2="140"/>
+<line class="s" x1="479.8" y1="140" x2="479.8" y2="122"/>
+<line class="s" x1="479.8" y1="122" x2="509.8" y2="122"/>
+<text class="t a b" x="17.8" y="161" text-anchor="end" dominant-baseline="central">q</text>
+<line class="s" x1="29.8" y1="152" x2="59.8" y2="152"/>
+<line class="s" x1="59.8" y1="152" x2="59.8" y2="170"/>
+<line class="s" x1="59.8" y1="170" x2="149.8" y2="170"/>
+<line class="s" x1="149.8" y1="170" x2="149.8" y2="152"/>
+<line class="s" x1="149.8" y1="152" x2="209.8" y2="152"/>
+<line class="s" x1="209.8" y1="152" x2="209.8" y2="170"/>
+<line class="s" x1="209.8" y1="170" x2="299.8" y2="170"/>
+<line class="s" x1="299.8" y1="170" x2="299.8" y2="152"/>
+<line class="s" x1="299.8" y1="152" x2="329.8" y2="152"/>
+<line class="s" x1="329.8" y1="152" x2="329.8" y2="170"/>
+<line class="s" x1="329.8" y1="170" x2="359.8" y2="170"/>
+<line class="s" x1="359.8" y1="170" x2="359.8" y2="152"/>
+<line class="s" x1="359.8" y1="152" x2="389.8" y2="152"/>
+<line class="s" x1="389.8" y1="152" x2="389.8" y2="170"/>
+<line class="s" x1="389.8" y1="170" x2="419.8" y2="170"/>
+<line class="s" x1="419.8" y1="170" x2="419.8" y2="152"/>
+<line class="s" x1="419.8" y1="152" x2="509.8" y2="152"/>
+<text class="t sm m" x="29.8" y="187" text-anchor="start" dominant-baseline="central">time in ns</text>
+</svg>

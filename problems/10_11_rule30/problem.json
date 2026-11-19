@@ -1,0 +1,42 @@
+{
+  "id": "10_11_rule30",
+  "section": 10,
+  "num": 11,
+  "name": "rule30",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "load",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "d",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 63,
+      "low": 0
+    },
+    {
+      "name": "q",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 63,
+      "low": 0
+    }
+  ],
+  "clock": "clk",
+  "bias": {
+    "load": 0.03
+  },
+  "init": {
+    "values": {
+      "load": 1
+    }
+  }
+}

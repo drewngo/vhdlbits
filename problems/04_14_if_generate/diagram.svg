@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="150" viewBox="0 0 560 150" role="img">
+<title>the generic chooses between a registered and a combinational AND</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<text class="t sm m b" x="130" y="16" text-anchor="middle" dominant-baseline="central">REGISTERED = true</text>
+<path class="s" d="M60,40 H86 A20,20 0 0 1 86,80 H60 Z"/>
+<polyline class="s" points="30,50 60,50"/>
+<text class="t" x="24" y="50" text-anchor="end" dominant-baseline="central">a</text>
+<polyline class="s" points="30,70 60,70"/>
+<text class="t" x="24" y="70" text-anchor="end" dominant-baseline="central">b</text>
+<rect class="s" x="140" y="28.5" width="50" height="70" rx="3"/>
+<text class="t sm m" x="145" y="60" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="140,78.5 149,84.5 140,90.5"/>
+<text class="t sm m" x="185" y="60" text-anchor="end" dominant-baseline="central">q</text>
+<polyline class="s" points="106,60 140,60"/>
+<polyline class="s" points="190,60 230,60"/>
+<text class="t a b" x="236" y="60" text-anchor="start" dominant-baseline="central">y</text>
+<polyline class="s" points="30,84.5 140,84.5"/>
+<text class="t" x="24" y="84.5" text-anchor="end" dominant-baseline="central">clk</text>
+<text class="t sm m b" x="410" y="16" text-anchor="middle" dominant-baseline="central">REGISTERED = false</text>
+<path class="s" d="M340,40 H366 A20,20 0 0 1 366,80 H340 Z"/>
+<polyline class="s" points="310,50 340,50"/>
+<text class="t" x="304" y="50" text-anchor="end" dominant-baseline="central">a</text>
+<polyline class="s" points="310,70 340,70"/>
+<text class="t" x="304" y="70" text-anchor="end" dominant-baseline="central">b</text>
+<polyline class="s" points="386,60 510,60"/>
+<text class="t a b" x="516" y="60" text-anchor="start" dominant-baseline="central">y</text>
+</svg>

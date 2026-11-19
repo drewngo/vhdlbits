@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="270" viewBox="0 0 580 270" role="img">
+<title>three 8-bit registers in a chain; sel picks d, q1, q2 or q3</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s thin ms dash" x="40" y="10" width="500" height="250" rx="4"/>
+<text class="t sm m" x="48" y="22" text-anchor="start" dominant-baseline="central">top_module</text>
+<rect class="s" x="110" y="30" width="60" height="70" rx="3"/>
+<text class="t sm b" x="140" y="43" text-anchor="middle" dominant-baseline="central">dff8</text>
+<text class="t sm m" x="115" y="61.5" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="110,80 119,86 110,92"/>
+<text class="t sm m" x="165" y="61.5" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s" x="230" y="30" width="60" height="70" rx="3"/>
+<text class="t sm b" x="260" y="43" text-anchor="middle" dominant-baseline="central">dff8</text>
+<text class="t sm m" x="235" y="61.5" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="230,80 239,86 230,92"/>
+<text class="t sm m" x="285" y="61.5" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s" x="350" y="30" width="60" height="70" rx="3"/>
+<text class="t sm b" x="380" y="43" text-anchor="middle" dominant-baseline="central">dff8</text>
+<text class="t sm m" x="355" y="61.5" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="350,80 359,86 350,92"/>
+<text class="t sm m" x="405" y="61.5" text-anchor="end" dominant-baseline="central">q</text>
+<polyline class="s bus" points="40,61.5 110,61.5"/>
+<text class="t" x="34" y="61.5" text-anchor="end" dominant-baseline="central">d</text>
+<polyline class="s bus" points="170,61.5 230,61.5"/>
+<polyline class="s bus" points="290,61.5 350,61.5"/>
+<polyline class="s" points="40,118 336,118"/>
+<text class="t" x="34" y="118" text-anchor="end" dominant-baseline="central">clk</text>
+<polyline class="s" points="96,118 96,86 110,86"/>
+<circle class="k" cx="96" cy="118" r="3"/>
+<polyline class="s" points="216,118 216,86 230,86"/>
+<circle class="k" cx="216" cy="118" r="3"/>
+<polyline class="s" points="336,118 336,86 350,86"/>
+<polygon class="s" points="450,147 484,159 484,231 450,243"/>
+<text class="t sm m" x="455" y="165" text-anchor="start" dominant-baseline="central">3</text>
+<text class="t sm m" x="455" y="185" text-anchor="start" dominant-baseline="central">2</text>
+<text class="t sm m" x="455" y="205" text-anchor="start" dominant-baseline="central">1</text>
+<text class="t sm m" x="455" y="225" text-anchor="start" dominant-baseline="central">0</text>
+<polyline class="s bus" points="410,61.5 420,61.5"/>
+<polyline class="s bus" points="70,61.5 70,225 450,225"/>
+<circle class="k" cx="70" cy="61.5" r="3"/>
+<text class="t sm m" x="76" y="216" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s bus" points="200,61.5 200,205 450,205"/>
+<circle class="k" cx="200" cy="61.5" r="3"/>
+<text class="t sm m" x="206" y="196" text-anchor="start" dominant-baseline="central">q1</text>
+<polyline class="s bus" points="320,61.5 320,185 450,185"/>
+<circle class="k" cx="320" cy="61.5" r="3"/>
+<text class="t sm m" x="326" y="176" text-anchor="start" dominant-baseline="central">q2</text>
+<polyline class="s bus" points="420,61.5 420,165 450,165"/>
+<text class="t sm m" x="426" y="156" text-anchor="start" dominant-baseline="central">q3</text>
+<polyline class="s" points="467,237 467,252"/>
+<text class="t" x="477" y="246" text-anchor="start" dominant-baseline="central">sel</text>
+<polyline class="s bus" points="484,195 540,195"/>
+<text class="t a b" x="546" y="195" text-anchor="start" dominant-baseline="central">q</text>
+</svg>

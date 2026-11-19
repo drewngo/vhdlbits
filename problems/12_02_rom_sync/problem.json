@@ -1,0 +1,29 @@
+{
+  "id": "12_02_rom_sync",
+  "section": 12,
+  "num": 2,
+  "name": "rom_sync",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "addr",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "data",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    }
+  ],
+  "clock": "clk"
+}

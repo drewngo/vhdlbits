@@ -1,0 +1,45 @@
+{
+  "id": "08_09_byte_enable_reg",
+  "section": 8,
+  "num": 9,
+  "name": "byte_enable_reg",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "resetn",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "be",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 1,
+      "low": 0
+    },
+    {
+      "name": "d",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 15,
+      "low": 0
+    },
+    {
+      "name": "q",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 15,
+      "low": 0
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "resetn",
+    "active": "0"
+  }
+}

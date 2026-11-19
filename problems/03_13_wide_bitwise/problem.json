@@ -1,0 +1,58 @@
+{
+  "id": "03_13_wide_bitwise",
+  "section": 3,
+  "num": 13,
+  "name": "wide_bitwise",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 63,
+      "low": 0
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 63,
+      "low": 0
+    },
+    {
+      "name": "c",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 63,
+      "low": 0
+    },
+    {
+      "name": "d",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 63,
+      "low": 0
+    },
+    {
+      "name": "all_and",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 63,
+      "low": 0
+    },
+    {
+      "name": "any_or",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 63,
+      "low": 0
+    },
+    {
+      "name": "odd",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 63,
+      "low": 0
+    }
+  ]
+}

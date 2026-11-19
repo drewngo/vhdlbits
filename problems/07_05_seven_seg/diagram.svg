@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="190" viewBox="0 0 380 190" role="img">
+<title>seven-segment display: segments a to g, and their bit positions in seg</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<polygon class="s af" points="74,16 83,7 131,7 140,16 131,25 83,25"/>
+<text class="t sm b" x="107" y="16" text-anchor="middle" dominant-baseline="central">a</text>
+<polygon class="s af" points="144,20 153,29 153,77 144,86 135,77 135,29"/>
+<text class="t sm b" x="144" y="53" text-anchor="middle" dominant-baseline="central">b</text>
+<polygon class="s af" points="144,94 153,103 153,151 144,160 135,151 135,103"/>
+<text class="t sm b" x="144" y="127" text-anchor="middle" dominant-baseline="central">c</text>
+<polygon class="s af" points="74,164 83,155 131,155 140,164 131,173 83,173"/>
+<text class="t sm b" x="107" y="164" text-anchor="middle" dominant-baseline="central">d</text>
+<polygon class="s af" points="70,94 79,103 79,151 70,160 61,151 61,103"/>
+<text class="t sm b" x="70" y="127" text-anchor="middle" dominant-baseline="central">e</text>
+<polygon class="s af" points="70,20 79,29 79,77 70,86 61,77 61,29"/>
+<text class="t sm b" x="70" y="53" text-anchor="middle" dominant-baseline="central">f</text>
+<polygon class="s af" points="74,90 83,81 131,81 140,90 131,99 83,99"/>
+<text class="t sm b" x="107" y="90" text-anchor="middle" dominant-baseline="central">g</text>
+<text class="t sm m" x="200" y="50" text-anchor="start" dominant-baseline="central">seg(6 downto 0)</text>
+<rect class="s bg" x="200" y="62" width="22" height="24"/>
+<text class="t sm" x="211" y="74" text-anchor="middle" dominant-baseline="central">g</text>
+<text class="t sm m" x="211" y="96" text-anchor="middle" dominant-baseline="central">6</text>
+<rect class="s bg" x="222" y="62" width="22" height="24"/>
+<text class="t sm" x="233" y="74" text-anchor="middle" dominant-baseline="central">f</text>
+<text class="t sm m" x="233" y="96" text-anchor="middle" dominant-baseline="central">5</text>
+<rect class="s bg" x="244" y="62" width="22" height="24"/>
+<text class="t sm" x="255" y="74" text-anchor="middle" dominant-baseline="central">e</text>
+<text class="t sm m" x="255" y="96" text-anchor="middle" dominant-baseline="central">4</text>
+<rect class="s bg" x="266" y="62" width="22" height="24"/>
+<text class="t sm" x="277" y="74" text-anchor="middle" dominant-baseline="central">d</text>
+<text class="t sm m" x="277" y="96" text-anchor="middle" dominant-baseline="central">3</text>
+<rect class="s bg" x="288" y="62" width="22" height="24"/>
+<text class="t sm" x="299" y="74" text-anchor="middle" dominant-baseline="central">c</text>
+<text class="t sm m" x="299" y="96" text-anchor="middle" dominant-baseline="central">2</text>
+<rect class="s bg" x="310" y="62" width="22" height="24"/>
+<text class="t sm" x="321" y="74" text-anchor="middle" dominant-baseline="central">b</text>
+<text class="t sm m" x="321" y="96" text-anchor="middle" dominant-baseline="central">1</text>
+<rect class="s bg" x="332" y="62" width="22" height="24"/>
+<text class="t sm" x="343" y="74" text-anchor="middle" dominant-baseline="central">a</text>
+<text class="t sm m" x="343" y="96" text-anchor="middle" dominant-baseline="central">0</text>
+<text class="t sm m" x="200" y="130" text-anchor="start" dominant-baseline="central">active-low: 0 lights</text>
+<text class="t sm m" x="200" y="146" text-anchor="start" dominant-baseline="central">a segment</text>
+</svg>

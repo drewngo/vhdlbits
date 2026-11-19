@@ -1,0 +1,46 @@
+{
+  "id": "05_06_no_latches",
+  "section": 5,
+  "num": 6,
+  "name": "no_latches",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "op",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "alu_en",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "wr_reg",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "mem_rd",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "mem_wr",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "branch",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "halt",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

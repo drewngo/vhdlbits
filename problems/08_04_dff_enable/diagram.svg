@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="160" viewBox="0 0 420 160" role="img">
+<title>clock enable: when en = 0 the register reloads its own value</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<polygon class="s" points="130,32 164,44 164,76 130,88"/>
+<text class="t sm m" x="135" y="50" text-anchor="start" dominant-baseline="central">0</text>
+<text class="t sm m" x="135" y="70" text-anchor="start" dominant-baseline="central">1</text>
+<polyline class="s bus" points="60,70 130,70"/>
+<text class="t" x="54" y="70" text-anchor="end" dominant-baseline="central">d</text>
+<polyline class="s" points="147,82 147,112"/>
+<text class="t" x="147" y="123" text-anchor="middle" dominant-baseline="central">en</text>
+<rect class="s" x="220" y="28.5" width="60" height="70" rx="3"/>
+<text class="t sm m" x="225" y="60" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="220,78.5 229,84.5 220,90.5"/>
+<text class="t sm m" x="275" y="60" text-anchor="end" dominant-baseline="central">q</text>
+<polyline class="s bus" points="164,60 220,60"/>
+<polyline class="s bus" points="280,60 360,60"/>
+<text class="t a b" x="366" y="60" text-anchor="start" dominant-baseline="central">q</text>
+<polyline class="s bus" points="320,60 320,14 100,14 100,50 130,50"/>
+<circle class="k" cx="320" cy="60" r="3"/>
+<polyline class="s" points="60,140 200,140 200,84.5 220,84.5"/>
+<text class="t" x="54" y="140" text-anchor="end" dominant-baseline="central">clk</text>
+<text class="t sm m" x="400" y="150" text-anchor="end" dominant-baseline="central">reset (not drawn) wins over en</text>
+</svg>

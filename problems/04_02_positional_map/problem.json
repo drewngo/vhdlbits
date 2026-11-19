@@ -1,0 +1,39 @@
+{
+  "id": "04_02_positional_map",
+  "section": 4,
+  "num": 2,
+  "name": "positional_map",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "c",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "d",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "out1",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "out2",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

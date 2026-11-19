@@ -1,0 +1,24 @@
+{
+  "id": "02_15_tristate",
+  "section": 2,
+  "num": 15,
+  "name": "tristate",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "en",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

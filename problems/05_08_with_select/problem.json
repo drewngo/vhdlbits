@@ -1,0 +1,51 @@
+{
+  "id": "05_08_with_select",
+  "section": 5,
+  "num": 8,
+  "name": "with_select",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "sel",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 1,
+      "low": 0
+    },
+    {
+      "name": "d0",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "d1",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "d2",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "d3",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    }
+  ]
+}

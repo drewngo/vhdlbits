@@ -1,0 +1,23 @@
+{
+  "id": "07_21_thermometer",
+  "section": 7,
+  "num": 21,
+  "name": "thermometer",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "n",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 2,
+      "low": 0
+    },
+    {
+      "name": "t",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 6,
+      "low": 0
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "06_12_mult_s",
+  "section": 6,
+  "num": 12,
+  "name": "mult_s",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "p",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 15,
+      "low": 0
+    }
+  ]
+}

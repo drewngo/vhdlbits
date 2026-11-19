@@ -1,0 +1,51 @@
+{
+  "id": "10_01_shift4",
+  "section": 10,
+  "num": 1,
+  "name": "shift4",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "areset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "load",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "en",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "d",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "q",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "areset",
+    "active": "1"
+  },
+  "bias": {
+    "load": 0.15
+  }
+}

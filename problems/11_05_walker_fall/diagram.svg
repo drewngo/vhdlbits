@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="340" viewBox="0 0 560 340" role="img">
+<title>walking and falling; a fall remembers the direction</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<path class="s" d="M201.6,87.4 Q280,56 358.4,87.4"/>
+<polygon class="k" points="358.4,87.4 350.4,87.5 352.7,81.7"/>
+<path class="s" d="M358.4,112.6 Q280,144 201.6,112.6"/>
+<polygon class="k" points="201.6,112.6 209.6,112.5 207.3,118.3"/>
+<path class="s" d="M182.6,131.6 Q204,185 182.6,238.4"/>
+<polygon class="k" points="182.6,238.4 182.5,230.4 188.3,232.7"/>
+<path class="s" d="M157.4,238.4 Q136,185 157.4,131.6"/>
+<polygon class="k" points="157.4,131.6 157.5,139.6 151.7,137.3"/>
+<path class="s" d="M377.4,131.6 Q356,185 377.4,238.4"/>
+<polygon class="k" points="377.4,238.4 371.7,232.7 377.5,230.4"/>
+<path class="s" d="M402.6,238.4 Q424,185 402.6,131.6"/>
+<polygon class="k" points="402.6,131.6 408.3,137.3 402.5,139.6"/>
+<path class="s" d="M139.4,284.8 C103.5,310.8 103.5,229.2 139.4,255.2"/>
+<polygon class="k" points="139.4,255.2 131.6,253.4 135.2,248.4"/>
+<path class="s" d="M420.6,255.2 C456.5,229.2 456.5,310.8 420.6,284.8"/>
+<polygon class="k" points="420.6,284.8 428.4,286.6 424.8,291.6"/>
+<path class="s" d="M139.4,114.8 C103.5,140.8 103.5,59.2 139.4,85.2"/>
+<polygon class="k" points="139.4,85.2 131.6,83.4 135.2,78.4"/>
+<path class="s" d="M420.6,85.2 C456.5,59.2 456.5,140.8 420.6,114.8"/>
+<polygon class="k" points="420.6,114.8 428.4,116.6 424.8,121.6"/>
+<polyline class="s as" points="170,30 170,66"/>
+<polygon class="ak" points="170,66 166.9,58.6 173.1,58.6"/>
+<text class="t sm a" x="170" y="20" text-anchor="middle" dominant-baseline="central">reset</text>
+<circle class="s bg" cx="170" cy="100" r="34"/>
+<circle class="s" cx="170" cy="100" r="34"/>
+<text class="t b" x="170" y="93" text-anchor="middle" dominant-baseline="central">LEFT</text>
+<text class="t sm a" x="170" y="109" text-anchor="middle" dominant-baseline="central">go_l</text>
+<circle class="s bg" cx="390" cy="100" r="34"/>
+<circle class="s" cx="390" cy="100" r="34"/>
+<text class="t b" x="390" y="93" text-anchor="middle" dominant-baseline="central">RIGHT</text>
+<text class="t sm a" x="390" y="109" text-anchor="middle" dominant-baseline="central">go_r</text>
+<circle class="s bg" cx="170" cy="270" r="34"/>
+<circle class="s" cx="170" cy="270" r="34"/>
+<text class="t b" x="170" y="263" text-anchor="middle" dominant-baseline="central">FALL_L</text>
+<text class="t sm a" x="170" y="279" text-anchor="middle" dominant-baseline="central">falling</text>
+<circle class="s bg" cx="390" cy="270" r="34"/>
+<circle class="s" cx="390" cy="270" r="34"/>
+<text class="t b" x="390" y="263" text-anchor="middle" dominant-baseline="central">FALL_R</text>
+<text class="t sm a" x="390" y="279" text-anchor="middle" dominant-baseline="central">falling</text>
+<rect class="bg" x="230.8" y="53.7" width="98.4" height="16"/>
+<text class="t sm" x="280" y="61.7" text-anchor="middle" dominant-baseline="central">ground, bump_l</text>
+<rect class="bg" x="230.8" y="130.3" width="98.4" height="16"/>
+<text class="t sm" x="280" y="138.3" text-anchor="middle" dominant-baseline="central">ground, bump_r</text>
+<rect class="bg" x="196.3" y="177" width="72" height="16"/>
+<text class="t sm" x="232.3" y="185" text-anchor="middle" dominant-baseline="central">not ground</text>
+<rect class="bg" x="98.1" y="177" width="45.6" height="16"/>
+<text class="t sm" x="120.9" y="185" text-anchor="middle" dominant-baseline="central">ground</text>
+<rect class="bg" x="291.7" y="177" width="72" height="16"/>
+<text class="t sm" x="327.7" y="185" text-anchor="middle" dominant-baseline="central">not ground</text>
+<rect class="bg" x="416.3" y="177" width="45.6" height="16"/>
+<text class="t sm" x="439.1" y="185" text-anchor="middle" dominant-baseline="central">ground</text>
+<rect class="bg" x="29" y="262" width="72" height="16"/>
+<text class="t sm" x="98" y="270" text-anchor="end" dominant-baseline="central">not ground</text>
+<rect class="bg" x="459" y="262" width="72" height="16"/>
+<text class="t sm" x="462" y="270" text-anchor="start" dominant-baseline="central">not ground</text>
+<rect class="bg" x="48.8" y="85" width="52.2" height="16"/>
+<text class="t sm" x="98" y="93" text-anchor="end" dominant-baseline="central">ground,</text>
+<rect class="bg" x="35.6" y="99" width="65.4" height="16"/>
+<text class="t sm" x="98" y="107" text-anchor="end" dominant-baseline="central">no bump_l</text>
+<rect class="bg" x="459" y="85" width="52.2" height="16"/>
+<text class="t sm" x="462" y="93" text-anchor="start" dominant-baseline="central">ground,</text>
+<rect class="bg" x="459" y="99" width="65.4" height="16"/>
+<text class="t sm" x="462" y="107" text-anchor="start" dominant-baseline="central">no bump_r</text>
+</svg>

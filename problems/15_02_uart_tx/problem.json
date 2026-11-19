@@ -1,0 +1,51 @@
+{
+  "id": "15_02_uart_tx",
+  "section": 15,
+  "num": 2,
+  "name": "uart_tx",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "start",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "data",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "txd",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "busy",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  },
+  "cycles": 10000,
+  "reset_prob": 0.001,
+  "bias": {
+    "start": 0.3
+  }
+}

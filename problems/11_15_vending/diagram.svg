@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="340" viewBox="0 0 560 340" role="img">
+<title>the vending machine&#x27;s states are the amount inserted so far</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<path class="s" d="M152.9,150.6 Q230,85.5 330.2,73.6"/>
+<polygon class="k" points="330.2,73.6 323.3,77.5 322.5,71.3"/>
+<path class="s" d="M337.1,89.4 Q260,154.5 159.8,166.4"/>
+<polygon class="k" points="159.8,166.4 166.7,162.5 167.5,168.7"/>
+<path class="s" d="M159.8,173.6 Q260,185.5 337.1,250.6"/>
+<polygon class="k" points="337.1,250.6 329.4,248.3 333.5,243.5"/>
+<path class="s" d="M330.2,266.4 Q230,254.5 152.9,189.4"/>
+<polygon class="k" points="152.9,189.4 160.6,191.7 156.5,196.5"/>
+<path class="s" d="M371.1,97.9 Q400,170 371.1,242.1"/>
+<polygon class="k" points="371.1,242.1 371,234.1 376.8,236.5"/>
+<path class="s" d="M103,183 C66.9,208.7 66.9,131.3 103,157"/>
+<polygon class="k" points="103,157 95.2,155.2 98.8,150.1"/>
+<path class="s" d="M387,57 C423.1,31.3 423.1,108.7 387,83"/>
+<polygon class="k" points="387,83 394.8,84.8 391.2,89.9"/>
+<path class="s" d="M387,257 C423.1,231.3 423.1,308.7 387,283"/>
+<polygon class="k" points="387,283 394.8,284.8 391.2,289.9"/>
+<polyline class="s as" points="130,236 130,200"/>
+<polygon class="ak" points="130,200 133.1,207.4 126.9,207.4"/>
+<text class="t sm a" x="130" y="246" text-anchor="middle" dominant-baseline="central">reset</text>
+<circle class="s bg" cx="130" cy="170" r="30"/>
+<circle class="s" cx="130" cy="170" r="30"/>
+<text class="t b" x="130" y="170" text-anchor="middle" dominant-baseline="central">0¢</text>
+<circle class="s bg" cx="360" cy="70" r="30"/>
+<circle class="s" cx="360" cy="70" r="30"/>
+<text class="t b" x="360" y="70" text-anchor="middle" dominant-baseline="central">5¢</text>
+<circle class="s bg" cx="360" cy="270" r="30"/>
+<circle class="s" cx="360" cy="270" r="30"/>
+<text class="t b" x="360" y="270" text-anchor="middle" dominant-baseline="central">10¢</text>
+<rect class="bg" x="205.5" y="73.5" width="45.6" height="16"/>
+<text class="t sm" x="228.3" y="81.5" text-anchor="middle" dominant-baseline="central">nickel</text>
+<rect class="bg" x="227.8" y="155.3" width="72" height="16"/>
+<text class="t sm" x="263.8" y="163.3" text-anchor="middle" dominant-baseline="central">dime: vend</text>
+<rect class="bg" x="244.5" y="175.9" width="32.4" height="16"/>
+<text class="t sm" x="260.7" y="183.9" text-anchor="middle" dominant-baseline="central">dime</text>
+<rect class="bg" x="176.8" y="263.8" width="85.2" height="16"/>
+<text class="t sm" x="219.4" y="271.8" text-anchor="middle" dominant-baseline="central">nickel: vend</text>
+<rect class="bg" x="157" y="277.8" width="124.8" height="16"/>
+<text class="t sm" x="219.4" y="285.8" text-anchor="middle" dominant-baseline="central">dime: vend, change</text>
+<rect class="bg" x="388.6" y="162" width="45.6" height="16"/>
+<text class="t sm" x="411.4" y="170" text-anchor="middle" dominant-baseline="central">nickel</text>
+<rect class="bg" x="12.8" y="162" width="52.2" height="16"/>
+<text class="t sm" x="62" y="170" text-anchor="end" dominant-baseline="central">no coin</text>
+<rect class="bg" x="425" y="62" width="52.2" height="16"/>
+<text class="t sm" x="428" y="70" text-anchor="start" dominant-baseline="central">no coin</text>
+<rect class="bg" x="425" y="262" width="52.2" height="16"/>
+<text class="t sm" x="428" y="270" text-anchor="start" dominant-baseline="central">no coin</text>
+<text class="t sm m" x="10" y="330" text-anchor="start" dominant-baseline="central">vend and change are high for the cycle after the edge</text>
+</svg>

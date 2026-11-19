@@ -1,0 +1,48 @@
+{
+  "id": "15_08_fir4",
+  "section": 15,
+  "num": 8,
+  "name": "fir4",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "valid",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "x",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 10,
+      "low": 0
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  },
+  "cycles": 10000,
+  "reset_prob": 0.002,
+  "bias": {
+    "valid": 0.7
+  }
+}

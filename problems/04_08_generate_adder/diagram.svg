@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="764.8" height="168" viewBox="0 0 764.8 168" role="img">
+<title>8 full adders generated in a ripple chain; every carry is also an output</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s" x="140.8" y="62" width="74" height="56" rx="3"/>
+<text class="t b" x="177.8" y="90" text-anchor="middle" dominant-baseline="central">FA7</text>
+<polyline class="s" points="165.5,24 165.5,62"/>
+<text class="t sm" x="165.5" y="15" text-anchor="middle" dominant-baseline="central">a(7)</text>
+<polyline class="s" points="190.1,42 190.1,62"/>
+<text class="t sm" x="190.1" y="33" text-anchor="middle" dominant-baseline="central">b(7)</text>
+<polyline class="s" points="177.8,118 177.8,140"/>
+<text class="t sm a b" x="177.8" y="150" text-anchor="middle" dominant-baseline="central">sum(7)</text>
+<polyline class="s dash" points="305.8,90 214.8,90"/>
+<polygon class="k" points="214.8,90 222.2,86.9 222.2,93.1"/>
+<polyline class="s" points="140.8,90 80.8,90"/>
+<text class="t sm a b" x="76.8" y="90" text-anchor="end" dominant-baseline="central">couts(7)</text>
+<text class="t b m" x="323.8" y="90" text-anchor="middle" dominant-baseline="central">· · ·</text>
+<rect class="s" x="432.8" y="62" width="74" height="56" rx="3"/>
+<text class="t b" x="469.8" y="90" text-anchor="middle" dominant-baseline="central">FA1</text>
+<polyline class="s" points="457.5,24 457.5,62"/>
+<text class="t sm" x="457.5" y="15" text-anchor="middle" dominant-baseline="central">a(1)</text>
+<polyline class="s" points="482.1,42 482.1,62"/>
+<text class="t sm" x="482.1" y="33" text-anchor="middle" dominant-baseline="central">b(1)</text>
+<polyline class="s" points="469.8,118 469.8,140"/>
+<text class="t sm a b" x="469.8" y="150" text-anchor="middle" dominant-baseline="central">sum(1)</text>
+<polyline class="s" points="578.8,90 506.8,90"/>
+<polygon class="k" points="506.8,90 514.2,86.9 514.2,93.1"/>
+<text class="t sm m" x="542.8" y="80" text-anchor="middle" dominant-baseline="central">couts(0)</text>
+<polyline class="s dash" points="432.8,90 341.8,90"/>
+<rect class="s" x="578.8" y="62" width="74" height="56" rx="3"/>
+<text class="t b" x="615.8" y="90" text-anchor="middle" dominant-baseline="central">FA0</text>
+<polyline class="s" points="603.5,24 603.5,62"/>
+<text class="t sm" x="603.5" y="15" text-anchor="middle" dominant-baseline="central">a(0)</text>
+<polyline class="s" points="628.1,42 628.1,62"/>
+<text class="t sm" x="628.1" y="33" text-anchor="middle" dominant-baseline="central">b(0)</text>
+<polyline class="s" points="615.8,118 615.8,140"/>
+<text class="t sm a b" x="615.8" y="150" text-anchor="middle" dominant-baseline="central">sum(0)</text>
+<polyline class="s" points="716.8,90 652.8,90"/>
+<polygon class="k" points="652.8,90 660.2,86.9 660.2,93.1"/>
+<text class="t sm" x="720.8" y="90" text-anchor="start" dominant-baseline="central">cin</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="230" viewBox="0 0 700 230" role="img">
+<title>testing the decade counter against a model inside the testbench</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s thin ms dash" x="10" y="10" width="680" height="210" rx="4"/>
+<text class="t sm m" x="18" y="22" text-anchor="start" dominant-baseline="central">tb</text>
+<rect class="s" x="30" y="50" width="170" height="64" rx="3"/>
+<text class="t sm b" x="115" y="74" text-anchor="middle" dominant-baseline="central">clk, reset</text>
+<text class="t sm m" x="115" y="92" text-anchor="middle" dominant-baseline="central">incl. mid-cycle resets</text>
+<rect class="s" x="280" y="50" width="180" height="64" rx="3"/>
+<text class="t sm b" x="370" y="74" text-anchor="middle" dominant-baseline="central">decade</text>
+<text class="t sm m" x="370" y="92" text-anchor="middle" dominant-baseline="central">DUT (provided)</text>
+<rect class="s" x="280" y="140" width="180" height="56" rx="3"/>
+<text class="t sm b" x="370" y="160" text-anchor="middle" dominant-baseline="central">reference model</text>
+<text class="t sm m" x="370" y="178" text-anchor="middle" dominant-baseline="central">a counter in the tb</text>
+<rect class="s" x="530" y="90" width="145" height="64" rx="3"/>
+<text class="t sm b" x="602" y="114" text-anchor="middle" dominant-baseline="central">assert</text>
+<text class="t sm m" x="602" y="132" text-anchor="middle" dominant-baseline="central">actual = expected</text>
+<polyline class="s bus" points="200,82 278,82"/>
+<polygon class="k" points="278,82 270.6,85.1 270.6,78.9"/>
+<text class="t sm" x="240" y="72" text-anchor="middle" dominant-baseline="central">reset</text>
+<polyline class="s bus" points="240,82 240,168 278,168"/>
+<polygon class="k" points="278,168 270.6,171.1 270.6,164.9"/>
+<circle class="k" cx="240" cy="82" r="3"/>
+<polyline class="s bus" points="460,82 500,82 500,110 528,110"/>
+<polygon class="k" points="528,110 520.6,113.1 520.6,106.9"/>
+<text class="t sm a" x="468" y="72" text-anchor="start" dominant-baseline="central">q</text>
+<polyline class="s bus" points="460,168 500,168 500,134 528,134"/>
+<polygon class="k" points="528,134 520.6,137.1 520.6,130.9"/>
+<text class="t sm m" x="468" y="184" text-anchor="start" dominant-baseline="central">expected</text>
+</svg>

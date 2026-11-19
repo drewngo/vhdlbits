@@ -1,0 +1,40 @@
+{
+  "id": "05_07_variables_vs_signals",
+  "section": 5,
+  "num": 7,
+  "name": "variables_vs_signals",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "c",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "y_var",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "y_sig",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk"
+}

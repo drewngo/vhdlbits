@@ -1,0 +1,38 @@
+{
+  "id": "07_07_magnitude_cmp",
+  "section": 7,
+  "num": 7,
+  "name": "magnitude_cmp",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "gt",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "eq",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "lt",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

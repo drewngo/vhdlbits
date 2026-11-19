@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="150" viewBox="0 0 420 150" role="img">
+<title>a three-input sorting network made of three compare-and-swap steps</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<polyline class="s" points="60,30 340,30"/>
+<text class="t" x="54" y="30" text-anchor="end" dominant-baseline="central">x</text>
+<text class="t a b" x="346" y="30" text-anchor="start" dominant-baseline="central">s0</text>
+<polyline class="s" points="60,75 340,75"/>
+<text class="t" x="54" y="75" text-anchor="end" dominant-baseline="central">y</text>
+<text class="t a b" x="346" y="75" text-anchor="start" dominant-baseline="central">s1</text>
+<polyline class="s" points="60,120 340,120"/>
+<text class="t" x="54" y="120" text-anchor="end" dominant-baseline="central">z</text>
+<text class="t a b" x="346" y="120" text-anchor="start" dominant-baseline="central">s2</text>
+<line class="s" x1="130" y1="30" x2="130" y2="75"/>
+<circle class="k" cx="130" cy="30" r="3"/>
+<circle class="k" cx="130" cy="75" r="3"/>
+<text class="t sm m" x="130" y="142" text-anchor="middle" dominant-baseline="central">step 1</text>
+<line class="s" x1="210" y1="75" x2="210" y2="120"/>
+<circle class="k" cx="210" cy="75" r="3"/>
+<circle class="k" cx="210" cy="120" r="3"/>
+<text class="t sm m" x="210" y="142" text-anchor="middle" dominant-baseline="central">step 2</text>
+<line class="s" x1="290" y1="30" x2="290" y2="75"/>
+<circle class="k" cx="290" cy="30" r="3"/>
+<circle class="k" cx="290" cy="75" r="3"/>
+<text class="t sm m" x="290" y="142" text-anchor="middle" dominant-baseline="central">step 3</text>
+<text class="t sm m" x="200" y="10" text-anchor="middle" dominant-baseline="central">each | is compare_swap: the smaller value goes up</text>
+</svg>

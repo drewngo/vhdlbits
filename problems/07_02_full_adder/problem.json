@@ -1,0 +1,34 @@
+{
+  "id": "07_02_full_adder",
+  "section": 7,
+  "num": 2,
+  "name": "full_adder",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "cin",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "s",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "cout",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

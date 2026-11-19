@@ -1,0 +1,28 @@
+{
+  "id": "07_04_decoder3to8",
+  "section": 7,
+  "num": 4,
+  "name": "decoder3to8",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 2,
+      "low": 0
+    },
+    {
+      "name": "en",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    }
+  ]
+}

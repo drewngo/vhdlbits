@@ -1,0 +1,44 @@
+{
+  "id": "16_03_bug_signal_vs_var",
+  "section": 16,
+  "num": 3,
+  "name": "bug_signal_vs_var",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "x",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "total",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 11,
+      "low": 0
+    },
+    {
+      "name": "over",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  },
+  "reset_prob": 0.02
+}

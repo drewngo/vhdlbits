@@ -1,0 +1,39 @@
+{
+  "id": "02_07_internal_signals",
+  "section": 2,
+  "num": 7,
+  "name": "internal_signals",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "c",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "d",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "y_n",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

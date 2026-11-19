@@ -1,0 +1,29 @@
+{
+  "id": "07_01_half_adder",
+  "section": 7,
+  "num": 1,
+  "name": "half_adder",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "s",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "c",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="317.4" height="180" viewBox="0 0 317.4 180" role="img">
+<title>23:59:59 rolls over to 00:00:00</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<line class="s thin ms dash" x1="71.4" y1="8" x2="71.4" y2="158"/>
+<line class="s thin ms dash" x1="123.4" y1="8" x2="123.4" y2="158"/>
+<line class="s thin ms dash" x1="175.4" y1="8" x2="175.4" y2="158"/>
+<line class="s thin ms dash" x1="227.4" y1="8" x2="227.4" y2="158"/>
+<line class="s thin ms dash" x1="279.4" y1="8" x2="279.4" y2="158"/>
+<text class="t" x="33.4" y="23" text-anchor="end" dominant-baseline="central">clk</text>
+<line class="s" x1="45.4" y1="32" x2="71.4" y2="32"/>
+<line class="s" x1="71.4" y1="32" x2="71.4" y2="14"/>
+<line class="s" x1="71.4" y1="14" x2="97.4" y2="14"/>
+<line class="s" x1="97.4" y1="14" x2="97.4" y2="32"/>
+<line class="s" x1="97.4" y1="32" x2="123.4" y2="32"/>
+<line class="s" x1="123.4" y1="32" x2="123.4" y2="14"/>
+<line class="s" x1="123.4" y1="14" x2="149.4" y2="14"/>
+<line class="s" x1="149.4" y1="14" x2="149.4" y2="32"/>
+<line class="s" x1="149.4" y1="32" x2="175.4" y2="32"/>
+<line class="s" x1="175.4" y1="32" x2="175.4" y2="14"/>
+<line class="s" x1="175.4" y1="14" x2="201.4" y2="14"/>
+<line class="s" x1="201.4" y1="14" x2="201.4" y2="32"/>
+<line class="s" x1="201.4" y1="32" x2="227.4" y2="32"/>
+<line class="s" x1="227.4" y1="32" x2="227.4" y2="14"/>
+<line class="s" x1="227.4" y1="14" x2="253.4" y2="14"/>
+<line class="s" x1="253.4" y1="14" x2="253.4" y2="32"/>
+<line class="s" x1="253.4" y1="32" x2="279.4" y2="32"/>
+<line class="s" x1="279.4" y1="32" x2="279.4" y2="14"/>
+<line class="s" x1="279.4" y1="14" x2="305.4" y2="14"/>
+<text class="t" x="33.4" y="53" text-anchor="end" dominant-baseline="central">en</text>
+<line class="s" x1="45.4" y1="44" x2="201.4" y2="44"/>
+<line class="s" x1="201.4" y1="44" x2="201.4" y2="62"/>
+<line class="s" x1="201.4" y1="62" x2="253.4" y2="62"/>
+<line class="s" x1="253.4" y1="62" x2="253.4" y2="44"/>
+<line class="s" x1="253.4" y1="44" x2="305.4" y2="44"/>
+<text class="t a b" x="33.4" y="83" text-anchor="end" dominant-baseline="central">hh</text>
+<polygon class="s af" points="45.4,83 49.4,74 171.4,74 175.4,83 171.4,92 49.4,92"/>
+<text class="t" x="110.4" y="83" text-anchor="middle" dominant-baseline="central">23</text>
+<polygon class="s af" points="175.4,83 179.4,74 301.4,74 305.4,83 301.4,92 179.4,92"/>
+<text class="t" x="240.4" y="83" text-anchor="middle" dominant-baseline="central">00</text>
+<text class="t a b" x="33.4" y="113" text-anchor="end" dominant-baseline="central">mm</text>
+<polygon class="s af" points="45.4,113 49.4,104 171.4,104 175.4,113 171.4,122 49.4,122"/>
+<text class="t" x="110.4" y="113" text-anchor="middle" dominant-baseline="central">59</text>
+<polygon class="s af" points="175.4,113 179.4,104 301.4,104 305.4,113 301.4,122 179.4,122"/>
+<text class="t" x="240.4" y="113" text-anchor="middle" dominant-baseline="central">00</text>
+<text class="t a b" x="33.4" y="143" text-anchor="end" dominant-baseline="central">ss</text>
+<polygon class="s af" points="45.4,143 49.4,134 67.4,134 71.4,143 67.4,152 49.4,152"/>
+<text class="t" x="58.4" y="143" text-anchor="middle" dominant-baseline="central">57</text>
+<polygon class="s af" points="71.4,143 75.4,134 119.4,134 123.4,143 119.4,152 75.4,152"/>
+<text class="t" x="97.4" y="143" text-anchor="middle" dominant-baseline="central">58</text>
+<polygon class="s af" points="123.4,143 127.4,134 171.4,134 175.4,143 171.4,152 127.4,152"/>
+<text class="t" x="149.4" y="143" text-anchor="middle" dominant-baseline="central">59</text>
+<polygon class="s af" points="175.4,143 179.4,134 275.4,134 279.4,143 275.4,152 179.4,152"/>
+<text class="t" x="227.4" y="143" text-anchor="middle" dominant-baseline="central">00</text>
+<polygon class="s af" points="279.4,143 283.4,134 301.4,134 305.4,143 301.4,152 283.4,152"/>
+<text class="t" x="292.4" y="143" text-anchor="middle" dominant-baseline="central">01</text>
+<text class="t sm m" x="45.4" y="169" text-anchor="start" dominant-baseline="central">values shown as decimal digits (BCD)</text>
+</svg>

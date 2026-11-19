@@ -1,0 +1,25 @@
+{
+  "id": "08_01_dff",
+  "section": 8,
+  "num": 1,
+  "name": "dff",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "d",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "q",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "05_03_if_mux",
+  "section": 5,
+  "num": 3,
+  "name": "if_mux",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "sel1",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "sel2",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "y_when",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "y_if",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

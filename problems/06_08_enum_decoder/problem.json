@@ -1,0 +1,26 @@
+{
+  "id": "06_08_enum_decoder",
+  "section": 6,
+  "num": 8,
+  "name": "enum_decoder",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "sel",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 1,
+      "low": 0
+    },
+    {
+      "name": "busy",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "fin",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

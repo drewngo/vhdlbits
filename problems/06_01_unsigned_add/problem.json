@@ -1,0 +1,30 @@
+{
+  "id": "06_01_unsigned_add",
+  "section": 6,
+  "num": 1,
+  "name": "unsigned_add",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "sum",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 8,
+      "low": 0
+    }
+  ]
+}

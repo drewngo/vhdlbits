@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="190" viewBox="0 0 1140 190" role="img">
+<title>32-bit Galois LFSR with taps at 32, 22, 2 and 1</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s" x="120" y="70" width="50" height="64" rx="3"/>
+<text class="t sm b" x="145" y="83" text-anchor="middle" dominant-baseline="central">q(31)</text>
+<text class="t sm m" x="125" y="98.8" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="120,115.2 129,121.2 120,127.2"/>
+<text class="t sm m" x="165" y="98.8" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s" x="240" y="70" width="50" height="64" rx="3"/>
+<text class="t sm b" x="265" y="83" text-anchor="middle" dominant-baseline="central">q(30)</text>
+<text class="t sm m" x="245" y="98.8" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="240,115.2 249,121.2 240,127.2"/>
+<text class="t sm m" x="285" y="98.8" text-anchor="end" dominant-baseline="central">q</text>
+<text class="t b m" x="325" y="100" text-anchor="middle" dominant-baseline="central">· · ·</text>
+<rect class="s" x="410" y="70" width="50" height="64" rx="3"/>
+<text class="t sm b" x="435" y="83" text-anchor="middle" dominant-baseline="central">q(22)</text>
+<text class="t sm m" x="415" y="98.8" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="410,115.2 419,121.2 410,127.2"/>
+<text class="t sm m" x="455" y="98.8" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s" x="530" y="70" width="50" height="64" rx="3"/>
+<text class="t sm b" x="555" y="83" text-anchor="middle" dominant-baseline="central">q(21)</text>
+<text class="t sm m" x="535" y="98.8" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="530,115.2 539,121.2 530,127.2"/>
+<text class="t sm m" x="575" y="98.8" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s" x="650" y="70" width="50" height="64" rx="3"/>
+<text class="t sm b" x="675" y="83" text-anchor="middle" dominant-baseline="central">q(20)</text>
+<text class="t sm m" x="655" y="98.8" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="650,115.2 659,121.2 650,127.2"/>
+<text class="t sm m" x="695" y="98.8" text-anchor="end" dominant-baseline="central">q</text>
+<text class="t b m" x="735" y="100" text-anchor="middle" dominant-baseline="central">· · ·</text>
+<rect class="s" x="820" y="70" width="50" height="64" rx="3"/>
+<text class="t sm b" x="845" y="83" text-anchor="middle" dominant-baseline="central">q(2)</text>
+<text class="t sm m" x="825" y="98.8" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="820,115.2 829,121.2 820,127.2"/>
+<text class="t sm m" x="865" y="98.8" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s" x="940" y="70" width="50" height="64" rx="3"/>
+<text class="t sm b" x="965" y="83" text-anchor="middle" dominant-baseline="central">q(1)</text>
+<text class="t sm m" x="945" y="98.8" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="940,115.2 949,121.2 940,127.2"/>
+<text class="t sm m" x="985" y="98.8" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s" x="1060" y="70" width="50" height="64" rx="3"/>
+<text class="t sm b" x="1085" y="83" text-anchor="middle" dominant-baseline="central">q(0)</text>
+<text class="t sm m" x="1065" y="98.8" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="1060,115.2 1069,121.2 1060,127.2"/>
+<text class="t sm m" x="1105" y="98.8" text-anchor="end" dominant-baseline="central">q</text>
+<polyline class="s" points="1110,98.8 1126,98.8 1126,30 40,30 40,98.8 120,98.8"/>
+<polyline class="s" points="170,98.8 240,98.8"/>
+<polyline class="s dash" points="290,98.8 306,98.8"/>
+<polyline class="s dash" points="334,98.8 346,98.8"/>
+<polyline class="s" points="346,98.8 410,98.8"/>
+<path class="s" d="M493,78.8 Q508.6,78.8 519,98.8 Q508.6,118.8 493,118.8 Q499.5,98.8 493,78.8 Z"/>
+<path class="s" d="M486,78.8 Q492.5,98.8 486,118.8"/>
+<polyline class="s" points="460,98.8 474,98.8 474,108.8 488.4,108.8"/>
+<polyline class="s" points="483,30 483,88.8 488.4,88.8"/>
+<circle class="k" cx="483" cy="30" r="3"/>
+<polyline class="s" points="519,98.8 530,98.8"/>
+<polyline class="s" points="580,98.8 650,98.8"/>
+<polyline class="s dash" points="700,98.8 716,98.8"/>
+<polyline class="s dash" points="744,98.8 756,98.8"/>
+<polyline class="s" points="756,98.8 820,98.8"/>
+<path class="s" d="M903,78.8 Q918.6,78.8 929,98.8 Q918.6,118.8 903,118.8 Q909.5,98.8 903,78.8 Z"/>
+<path class="s" d="M896,78.8 Q902.5,98.8 896,118.8"/>
+<polyline class="s" points="870,98.8 884,98.8 884,108.8 898.4,108.8"/>
+<polyline class="s" points="893,30 893,88.8 898.4,88.8"/>
+<circle class="k" cx="893" cy="30" r="3"/>
+<polyline class="s" points="929,98.8 940,98.8"/>
+<path class="s" d="M1023,78.8 Q1038.6,78.8 1049,98.8 Q1038.6,118.8 1023,118.8 Q1029.5,98.8 1023,78.8 Z"/>
+<path class="s" d="M1016,78.8 Q1022.5,98.8 1016,118.8"/>
+<polyline class="s" points="990,98.8 1004,98.8 1004,108.8 1018.4,108.8"/>
+<polyline class="s" points="1013,30 1013,88.8 1018.4,88.8"/>
+<circle class="k" cx="1013" cy="30" r="3"/>
+<polyline class="s" points="1049,98.8 1060,98.8"/>
+<text class="t sm m" x="570" y="182" text-anchor="middle" dominant-baseline="central">shifts right; q(0) feeds the MSB and every XOR tap</text>
+</svg>

@@ -1,0 +1,36 @@
+{
+  "id": "09_10_decade_slowena",
+  "section": 9,
+  "num": 10,
+  "name": "decade_slowena",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "slowena",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "q",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  }
+}

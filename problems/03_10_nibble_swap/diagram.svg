@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="271.2" height="136" viewBox="0 0 271.2 136" role="img">
+<title>nibble swap: the two 4-bit halves trade places</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<text class="t" x="39.2" y="33" text-anchor="end" dominant-baseline="central">din</text>
+<rect class="s bg" x="49.2" y="18" width="104" height="30"/>
+<text class="t" x="101.2" y="33" text-anchor="middle" dominant-baseline="central">H</text>
+<text class="t sm m" x="51.2" y="11" text-anchor="start" dominant-baseline="central">7</text>
+<text class="t sm m" x="151.2" y="11" text-anchor="end" dominant-baseline="central">4</text>
+<rect class="s bg" x="153.2" y="18" width="104" height="30"/>
+<text class="t" x="205.2" y="33" text-anchor="middle" dominant-baseline="central">L</text>
+<text class="t sm m" x="155.2" y="11" text-anchor="start" dominant-baseline="central">3</text>
+<text class="t sm m" x="255.2" y="11" text-anchor="end" dominant-baseline="central">0</text>
+<text class="t" x="39.2" y="113" text-anchor="end" dominant-baseline="central">dout</text>
+<rect class="s af" x="49.2" y="98" width="104" height="30"/>
+<text class="t" x="101.2" y="113" text-anchor="middle" dominant-baseline="central">L</text>
+<text class="t sm m" x="51.2" y="91" text-anchor="start" dominant-baseline="central">7</text>
+<text class="t sm m" x="151.2" y="91" text-anchor="end" dominant-baseline="central">4</text>
+<rect class="s af" x="153.2" y="98" width="104" height="30"/>
+<text class="t" x="205.2" y="113" text-anchor="middle" dominant-baseline="central">H</text>
+<text class="t sm m" x="155.2" y="91" text-anchor="start" dominant-baseline="central">3</text>
+<text class="t sm m" x="255.2" y="91" text-anchor="end" dominant-baseline="central">0</text>
+<polyline class="s thin ms" points="101.2,48 205.2,84"/>
+<polygon class="k" points="205.2,84 197.2,84.5 199.3,78.6"/>
+<polyline class="s thin ms" points="205.2,48 101.2,84"/>
+<polygon class="k" points="101.2,84 107.1,78.6 109.2,84.5"/>
+</svg>

@@ -1,0 +1,23 @@
+{
+  "id": "05_05_priority_encoder",
+  "section": 5,
+  "num": 5,
+  "name": "priority_encoder",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "din",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "pos",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 2,
+      "low": 0
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="464.2" height="224" viewBox="0 0 464.2 224" role="img">
+<title>a one-entry buffer: data moves on each edge where valid and ready are both 1</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<line class="s thin ms dash" x1="112.2" y1="8" x2="112.2" y2="218"/>
+<line class="s thin ms dash" x1="152.2" y1="8" x2="152.2" y2="218"/>
+<line class="s thin ms dash" x1="192.2" y1="8" x2="192.2" y2="218"/>
+<line class="s thin ms dash" x1="232.2" y1="8" x2="232.2" y2="218"/>
+<line class="s thin ms dash" x1="272.2" y1="8" x2="272.2" y2="218"/>
+<line class="s thin ms dash" x1="312.2" y1="8" x2="312.2" y2="218"/>
+<line class="s thin ms dash" x1="352.2" y1="8" x2="352.2" y2="218"/>
+<line class="s thin ms dash" x1="392.2" y1="8" x2="392.2" y2="218"/>
+<line class="s thin ms dash" x1="432.2" y1="8" x2="432.2" y2="218"/>
+<text class="t" x="80.2" y="23" text-anchor="end" dominant-baseline="central">clk</text>
+<line class="s" x1="92.2" y1="32" x2="112.2" y2="32"/>
+<line class="s" x1="112.2" y1="32" x2="112.2" y2="14"/>
+<line class="s" x1="112.2" y1="14" x2="132.2" y2="14"/>
+<line class="s" x1="132.2" y1="14" x2="132.2" y2="32"/>
+<line class="s" x1="132.2" y1="32" x2="152.2" y2="32"/>
+<line class="s" x1="152.2" y1="32" x2="152.2" y2="14"/>
+<line class="s" x1="152.2" y1="14" x2="172.2" y2="14"/>
+<line class="s" x1="172.2" y1="14" x2="172.2" y2="32"/>
+<line class="s" x1="172.2" y1="32" x2="192.2" y2="32"/>
+<line class="s" x1="192.2" y1="32" x2="192.2" y2="14"/>
+<line class="s" x1="192.2" y1="14" x2="212.2" y2="14"/>
+<line class="s" x1="212.2" y1="14" x2="212.2" y2="32"/>
+<line class="s" x1="212.2" y1="32" x2="232.2" y2="32"/>
+<line class="s" x1="232.2" y1="32" x2="232.2" y2="14"/>
+<line class="s" x1="232.2" y1="14" x2="252.2" y2="14"/>
+<line class="s" x1="252.2" y1="14" x2="252.2" y2="32"/>
+<line class="s" x1="252.2" y1="32" x2="272.2" y2="32"/>
+<line class="s" x1="272.2" y1="32" x2="272.2" y2="14"/>
+<line class="s" x1="272.2" y1="14" x2="292.2" y2="14"/>
+<line class="s" x1="292.2" y1="14" x2="292.2" y2="32"/>
+<line class="s" x1="292.2" y1="32" x2="312.2" y2="32"/>
+<line class="s" x1="312.2" y1="32" x2="312.2" y2="14"/>
+<line class="s" x1="312.2" y1="14" x2="332.2" y2="14"/>
+<line class="s" x1="332.2" y1="14" x2="332.2" y2="32"/>
+<line class="s" x1="332.2" y1="32" x2="352.2" y2="32"/>
+<line class="s" x1="352.2" y1="32" x2="352.2" y2="14"/>
+<line class="s" x1="352.2" y1="14" x2="372.2" y2="14"/>
+<line class="s" x1="372.2" y1="14" x2="372.2" y2="32"/>
+<line class="s" x1="372.2" y1="32" x2="392.2" y2="32"/>
+<line class="s" x1="392.2" y1="32" x2="392.2" y2="14"/>
+<line class="s" x1="392.2" y1="14" x2="412.2" y2="14"/>
+<line class="s" x1="412.2" y1="14" x2="412.2" y2="32"/>
+<line class="s" x1="412.2" y1="32" x2="432.2" y2="32"/>
+<line class="s" x1="432.2" y1="32" x2="432.2" y2="14"/>
+<line class="s" x1="432.2" y1="14" x2="452.2" y2="14"/>
+<text class="t" x="80.2" y="53" text-anchor="end" dominant-baseline="central">in_valid</text>
+<line class="s" x1="92.2" y1="62" x2="132.2" y2="62"/>
+<line class="s" x1="132.2" y1="62" x2="132.2" y2="44"/>
+<line class="s" x1="132.2" y1="44" x2="252.2" y2="44"/>
+<line class="s" x1="252.2" y1="44" x2="252.2" y2="62"/>
+<line class="s" x1="252.2" y1="62" x2="292.2" y2="62"/>
+<line class="s" x1="292.2" y1="62" x2="292.2" y2="44"/>
+<line class="s" x1="292.2" y1="44" x2="372.2" y2="44"/>
+<line class="s" x1="372.2" y1="44" x2="372.2" y2="62"/>
+<line class="s" x1="372.2" y1="62" x2="452.2" y2="62"/>
+<text class="t" x="80.2" y="83" text-anchor="end" dominant-baseline="central">in_data</text>
+<polygon class="s xf" points="92.2,83 96.2,74 128.2,74 132.2,83 128.2,92 96.2,92"/>
+<polygon class="s af" points="132.2,83 136.2,74 168.2,74 172.2,83 168.2,92 136.2,92"/>
+<text class="t" x="152.2" y="83" text-anchor="middle" dominant-baseline="central">11</text>
+<polygon class="s af" points="172.2,83 176.2,74 208.2,74 212.2,83 208.2,92 176.2,92"/>
+<text class="t" x="192.2" y="83" text-anchor="middle" dominant-baseline="central">22</text>
+<polygon class="s af" points="212.2,83 216.2,74 248.2,74 252.2,83 248.2,92 216.2,92"/>
+<text class="t" x="232.2" y="83" text-anchor="middle" dominant-baseline="central">33</text>
+<polygon class="s xf" points="252.2,83 256.2,74 288.2,74 292.2,83 288.2,92 256.2,92"/>
+<polygon class="s af" points="292.2,83 296.2,74 328.2,74 332.2,83 328.2,92 296.2,92"/>
+<text class="t" x="312.2" y="83" text-anchor="middle" dominant-baseline="central">44</text>
+<polygon class="s af" points="332.2,83 336.2,74 368.2,74 372.2,83 368.2,92 336.2,92"/>
+<text class="t" x="352.2" y="83" text-anchor="middle" dominant-baseline="central">55</text>
+<polygon class="s xf" points="372.2,83 376.2,74 448.2,74 452.2,83 448.2,92 376.2,92"/>
+<text class="t" x="80.2" y="113" text-anchor="end" dominant-baseline="central">out_ready</text>
+<line class="s" x1="92.2" y1="104" x2="172.2" y2="104"/>
+<line class="s" x1="172.2" y1="104" x2="172.2" y2="122"/>
+<line class="s" x1="172.2" y1="122" x2="252.2" y2="122"/>
+<line class="s" x1="252.2" y1="122" x2="252.2" y2="104"/>
+<line class="s" x1="252.2" y1="104" x2="452.2" y2="104"/>
+<text class="t a b" x="80.2" y="143" text-anchor="end" dominant-baseline="central">in_ready</text>
+<line class="s" x1="92.2" y1="134" x2="172.2" y2="134"/>
+<line class="s" x1="172.2" y1="134" x2="172.2" y2="152"/>
+<line class="s" x1="172.2" y1="152" x2="252.2" y2="152"/>
+<line class="s" x1="252.2" y1="152" x2="252.2" y2="134"/>
+<line class="s" x1="252.2" y1="134" x2="452.2" y2="134"/>
+<text class="t a b" x="80.2" y="173" text-anchor="end" dominant-baseline="central">out_valid</text>
+<line class="s" x1="92.2" y1="182" x2="152.2" y2="182"/>
+<line class="s" x1="152.2" y1="182" x2="152.2" y2="164"/>
+<line class="s" x1="152.2" y1="164" x2="272.2" y2="164"/>
+<line class="s" x1="272.2" y1="164" x2="272.2" y2="182"/>
+<line class="s" x1="272.2" y1="182" x2="312.2" y2="182"/>
+<line class="s" x1="312.2" y1="182" x2="312.2" y2="164"/>
+<line class="s" x1="312.2" y1="164" x2="392.2" y2="164"/>
+<line class="s" x1="392.2" y1="164" x2="392.2" y2="182"/>
+<line class="s" x1="392.2" y1="182" x2="452.2" y2="182"/>
+<text class="t a b" x="80.2" y="203" text-anchor="end" dominant-baseline="central">out_data</text>
+<polygon class="s af" points="92.2,203 96.2,194 148.2,194 152.2,203 148.2,212 96.2,212"/>
+<text class="t" x="122.2" y="203" text-anchor="middle" dominant-baseline="central">00</text>
+<polygon class="s af" points="152.2,203 156.2,194 308.2,194 312.2,203 308.2,212 156.2,212"/>
+<text class="t" x="232.2" y="203" text-anchor="middle" dominant-baseline="central">11</text>
+<polygon class="s af" points="312.2,203 316.2,194 348.2,194 352.2,203 348.2,212 316.2,212"/>
+<text class="t" x="332.2" y="203" text-anchor="middle" dominant-baseline="central">44</text>
+<polygon class="s af" points="352.2,203 356.2,194 448.2,194 452.2,203 448.2,212 356.2,212"/>
+<text class="t" x="402.2" y="203" text-anchor="middle" dominant-baseline="central">55</text>
+</svg>

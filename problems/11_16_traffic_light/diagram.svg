@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="570" height="380" viewBox="0 0 570 380" role="img">
+<title>the four traffic-light phases</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<path class="s" d="M182,110 Q280,110 378,110"/>
+<polygon class="k" points="378,110 370.6,113.1 370.6,106.9"/>
+<path class="s" d="M430,162 Q430,200 430,238"/>
+<polygon class="k" points="430,238 426.9,230.6 433.1,230.6"/>
+<path class="s" d="M378,290 Q280,290 182,290"/>
+<polygon class="k" points="182,290 189.4,286.9 189.4,293.1"/>
+<path class="s" d="M130,238 Q130,200 130,162"/>
+<polygon class="k" points="130,162 133.1,169.4 126.9,169.4"/>
+<polyline class="s as" points="130,22 130,58"/>
+<polygon class="ak" points="130,58 126.9,50.6 133.1,50.6"/>
+<text class="t sm a" x="130" y="12" text-anchor="middle" dominant-baseline="central">reset</text>
+<circle class="s bg" cx="130" cy="110" r="52"/>
+<circle class="s" cx="130" cy="110" r="52"/>
+<text class="t b" x="130" y="103" text-anchor="middle" dominant-baseline="central">MAIN_GREEN</text>
+<text class="t sm a" x="130" y="119" text-anchor="middle" dominant-baseline="central">main_g side_r</text>
+<circle class="s bg" cx="430" cy="110" r="52"/>
+<circle class="s" cx="430" cy="110" r="52"/>
+<text class="t b" x="430" y="103" text-anchor="middle" dominant-baseline="central">MAIN_YELLOW</text>
+<text class="t sm a" x="430" y="119" text-anchor="middle" dominant-baseline="central">main_y side_r</text>
+<circle class="s bg" cx="430" cy="290" r="52"/>
+<circle class="s" cx="430" cy="290" r="52"/>
+<text class="t b" x="430" y="283" text-anchor="middle" dominant-baseline="central">SIDE_GREEN</text>
+<text class="t sm a" x="430" y="299" text-anchor="middle" dominant-baseline="central">main_r side_g</text>
+<circle class="s bg" cx="130" cy="290" r="52"/>
+<circle class="s" cx="130" cy="290" r="52"/>
+<text class="t b" x="130" y="283" text-anchor="middle" dominant-baseline="central">SIDE_YELLOW</text>
+<text class="t sm a" x="130" y="299" text-anchor="middle" dominant-baseline="central">main_r side_y</text>
+<rect class="bg" x="217.6" y="102" width="124.8" height="16"/>
+<text class="t sm" x="280" y="110" text-anchor="middle" dominant-baseline="central">car_side and t ≥ 4</text>
+<rect class="bg" x="410.5" y="192" width="39" height="16"/>
+<text class="t sm" x="430" y="200" text-anchor="middle" dominant-baseline="central">t = 1</text>
+<rect class="bg" x="260.5" y="282" width="39" height="16"/>
+<text class="t sm" x="280" y="290" text-anchor="middle" dominant-baseline="central">t = 3</text>
+<rect class="bg" x="110.5" y="192" width="39" height="16"/>
+<text class="t sm" x="130" y="200" text-anchor="middle" dominant-baseline="central">t = 1</text>
+<text class="t sm m" x="10" y="370" text-anchor="start" dominant-baseline="central">t restarts at 0 on entering each phase</text>
+</svg>

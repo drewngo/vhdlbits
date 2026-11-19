@@ -1,0 +1,44 @@
+{
+  "id": "12_04_ram_write_first",
+  "section": 12,
+  "num": 4,
+  "name": "ram_write_first",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "we",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "addr",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 4,
+      "low": 0
+    },
+    {
+      "name": "din",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "dout",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    }
+  ],
+  "clock": "clk",
+  "bias": {
+    "we": 0.4
+  }
+}

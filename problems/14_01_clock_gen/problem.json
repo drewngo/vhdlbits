@@ -1,0 +1,8 @@
+{
+  "id": "14_01_clock_gen",
+  "section": 14,
+  "num": 1,
+  "name": "clock_gen",
+  "mode": "tb",
+  "tb_kind": "trace"
+}

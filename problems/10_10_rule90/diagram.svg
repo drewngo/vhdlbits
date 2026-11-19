@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="170" viewBox="0 0 520 170" role="img">
+<title>rule 90: each cell becomes the XOR of its two neighbours</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s xf" x="80" y="30" width="30" height="30"/>
+<text class="t sm m" x="95" y="45" text-anchor="middle" dominant-baseline="central">0</text>
+<rect class="s bg" x="110" y="30" width="30" height="30"/>
+<text class="t sm" x="125" y="45" text-anchor="middle" dominant-baseline="central">63</text>
+<rect class="s bg" x="140" y="30" width="30" height="30"/>
+<text class="t sm" x="155" y="45" text-anchor="middle" dominant-baseline="central">62</text>
+<rect class="s bg" x="170" y="30" width="30" height="30"/>
+<text class="t sm" x="185" y="45" text-anchor="middle" dominant-baseline="central">61</text>
+<text class="t m" x="215" y="45" text-anchor="middle" dominant-baseline="central">…</text>
+<rect class="s af" x="230" y="30" width="30" height="30"/>
+<text class="t sm" x="245" y="45" text-anchor="middle" dominant-baseline="central">32</text>
+<rect class="s bg" x="260" y="30" width="30" height="30"/>
+<text class="t sm" x="275" y="45" text-anchor="middle" dominant-baseline="central">31</text>
+<rect class="s af" x="290" y="30" width="30" height="30"/>
+<text class="t sm" x="305" y="45" text-anchor="middle" dominant-baseline="central">30</text>
+<text class="t m" x="335" y="45" text-anchor="middle" dominant-baseline="central">…</text>
+<rect class="s bg" x="350" y="30" width="30" height="30"/>
+<text class="t sm" x="365" y="45" text-anchor="middle" dominant-baseline="central">2</text>
+<rect class="s bg" x="380" y="30" width="30" height="30"/>
+<text class="t sm" x="395" y="45" text-anchor="middle" dominant-baseline="central">1</text>
+<rect class="s bg" x="410" y="30" width="30" height="30"/>
+<text class="t sm" x="425" y="45" text-anchor="middle" dominant-baseline="central">0</text>
+<rect class="s xf" x="440" y="30" width="30" height="30"/>
+<text class="t sm m" x="455" y="45" text-anchor="middle" dominant-baseline="central">0</text>
+<text class="t" x="70" y="45" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s af" x="260" y="110" width="30" height="30"/>
+<text class="t sm b" x="275" y="125" text-anchor="middle" dominant-baseline="central">31</text>
+<text class="t" x="70" y="125" text-anchor="end" dominant-baseline="central">next q</text>
+<polyline class="s thin" points="245,60 271,108"/>
+<polygon class="k" points="271,108 264.8,103 270.2,100"/>
+<polyline class="s thin" points="305,60 279,108"/>
+<polygon class="k" points="279,108 279.8,100 285.2,103"/>
+<text class="t sm a" x="305" y="92" text-anchor="start" dominant-baseline="central">next q(31) = q(32) xor q(30)</text>
+<text class="t sm m" x="80" y="160" text-anchor="start" dominant-baseline="central">grey cells outside the ends always count as 0</text>
+</svg>

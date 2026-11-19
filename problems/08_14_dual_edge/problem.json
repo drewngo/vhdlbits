@@ -1,0 +1,26 @@
+{
+  "id": "08_14_dual_edge",
+  "section": 8,
+  "num": 14,
+  "name": "dual_edge",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "d",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "q",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk",
+  "input_offset": 2.5
+}

@@ -1,0 +1,36 @@
+{
+  "id": "16_01_bug_sensitivity",
+  "section": 16,
+  "num": 1,
+  "name": "bug_sensitivity",
+  "mode": "stateful_comb",
+  "ports": [
+    {
+      "name": "sel",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 1,
+      "low": 0
+    },
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "c",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

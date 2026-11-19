@@ -1,0 +1,23 @@
+{
+  "id": "13_05_enum_attributes",
+  "section": 13,
+  "num": 5,
+  "name": "enum_attributes",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "idx",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 2,
+      "low": 0
+    },
+    {
+      "name": "nxt",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 2,
+      "low": 0
+    }
+  ]
+}

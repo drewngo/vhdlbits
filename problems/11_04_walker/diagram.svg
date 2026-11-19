@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="170" viewBox="0 0 520 170" role="img">
+<title>the walker: a bump on one side turns it around</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<path class="s" d="M186.8,81.6 Q260,45 333.2,81.6"/>
+<polygon class="k" points="333.2,81.6 325.2,81.1 328,75.5"/>
+<path class="s" d="M333.2,108.4 Q260,145 186.8,108.4"/>
+<polygon class="k" points="186.8,108.4 194.8,108.9 192,114.5"/>
+<path class="s" d="M133,108 C96.9,133.7 96.9,56.3 133,82"/>
+<polygon class="k" points="133,82 125.2,80.2 128.8,75.1"/>
+<path class="s" d="M387,82 C423.1,56.3 423.1,133.7 387,108"/>
+<polygon class="k" points="387,108 394.8,109.8 391.2,114.9"/>
+<polyline class="s as" points="160,29 160,65"/>
+<polygon class="ak" points="160,65 156.9,57.6 163.1,57.6"/>
+<text class="t sm a" x="160" y="19" text-anchor="middle" dominant-baseline="central">reset</text>
+<circle class="s bg" cx="160" cy="95" r="30"/>
+<circle class="s" cx="160" cy="95" r="30"/>
+<text class="t b" x="160" y="88" text-anchor="middle" dominant-baseline="central">LEFT</text>
+<text class="t sm a" x="160" y="104" text-anchor="middle" dominant-baseline="central">go_l</text>
+<circle class="s bg" cx="360" cy="95" r="30"/>
+<circle class="s" cx="360" cy="95" r="30"/>
+<text class="t b" x="360" y="88" text-anchor="middle" dominant-baseline="central">RIGHT</text>
+<text class="t sm a" x="360" y="104" text-anchor="middle" dominant-baseline="central">go_r</text>
+<rect class="bg" x="237.2" y="45.3" width="45.6" height="16"/>
+<text class="t sm" x="260" y="53.3" text-anchor="middle" dominant-baseline="central">bump_l</text>
+<rect class="bg" x="237.2" y="128.7" width="45.6" height="16"/>
+<text class="t sm" x="260" y="136.7" text-anchor="middle" dominant-baseline="central">bump_r</text>
+<rect class="bg" x="23" y="87" width="72" height="16"/>
+<text class="t sm" x="92" y="95" text-anchor="end" dominant-baseline="central">not bump_l</text>
+<rect class="bg" x="425" y="87" width="72" height="16"/>
+<text class="t sm" x="428" y="95" text-anchor="start" dominant-baseline="central">not bump_r</text>
+</svg>

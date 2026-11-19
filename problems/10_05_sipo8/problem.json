@@ -1,0 +1,50 @@
+{
+  "id": "10_05_sipo8",
+  "section": 10,
+  "num": 5,
+  "name": "sipo8",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "en",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "sin",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "dout",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "valid",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  },
+  "bias": {
+    "en": 0.8
+  },
+  "reset_prob": 0.01
+}

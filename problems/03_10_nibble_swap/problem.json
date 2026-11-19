@@ -1,0 +1,23 @@
+{
+  "id": "03_10_nibble_swap",
+  "section": 3,
+  "num": 10,
+  "name": "nibble_swap",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "din",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "dout",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    }
+  ]
+}

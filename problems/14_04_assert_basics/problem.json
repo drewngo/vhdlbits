@@ -1,0 +1,9 @@
+{
+  "id": "14_04_assert_basics",
+  "section": 14,
+  "num": 4,
+  "name": "assert_basics",
+  "mode": "tb",
+  "tb_kind": "mutant",
+  "dut_file": "mux2.vhd"
+}

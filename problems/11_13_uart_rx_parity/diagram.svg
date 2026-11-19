@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="545.2" height="168" viewBox="0 0 545.2 168" role="img">
+<title>a UART frame with an odd parity bit between the data and the stop bit</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<text class="t sm m" x="133.2" y="18" text-anchor="middle" dominant-baseline="central">start</text>
+<text class="t sm m" x="165.2" y="18" text-anchor="middle" dominant-baseline="central">d0</text>
+<text class="t sm m" x="197.2" y="18" text-anchor="middle" dominant-baseline="central">d1</text>
+<text class="t sm m" x="229.2" y="18" text-anchor="middle" dominant-baseline="central">d2</text>
+<text class="t sm m" x="261.2" y="18" text-anchor="middle" dominant-baseline="central">d3</text>
+<text class="t sm m" x="293.2" y="18" text-anchor="middle" dominant-baseline="central">d4</text>
+<text class="t sm m" x="325.2" y="18" text-anchor="middle" dominant-baseline="central">d5</text>
+<text class="t sm m" x="357.2" y="18" text-anchor="middle" dominant-baseline="central">d6</text>
+<text class="t sm m" x="389.2" y="18" text-anchor="middle" dominant-baseline="central">d7</text>
+<text class="t sm m" x="421.2" y="18" text-anchor="middle" dominant-baseline="central">p</text>
+<text class="t sm m" x="453.2" y="18" text-anchor="middle" dominant-baseline="central">stop</text>
+<line class="s thin ms dash" x1="69.2" y1="26" x2="69.2" y2="146"/>
+<line class="s thin ms dash" x1="101.2" y1="26" x2="101.2" y2="146"/>
+<line class="s thin ms dash" x1="133.2" y1="26" x2="133.2" y2="146"/>
+<line class="s thin ms dash" x1="165.2" y1="26" x2="165.2" y2="146"/>
+<line class="s thin ms dash" x1="197.2" y1="26" x2="197.2" y2="146"/>
+<line class="s thin ms dash" x1="229.2" y1="26" x2="229.2" y2="146"/>
+<line class="s thin ms dash" x1="261.2" y1="26" x2="261.2" y2="146"/>
+<line class="s thin ms dash" x1="293.2" y1="26" x2="293.2" y2="146"/>
+<line class="s thin ms dash" x1="325.2" y1="26" x2="325.2" y2="146"/>
+<line class="s thin ms dash" x1="357.2" y1="26" x2="357.2" y2="146"/>
+<line class="s thin ms dash" x1="389.2" y1="26" x2="389.2" y2="146"/>
+<line class="s thin ms dash" x1="421.2" y1="26" x2="421.2" y2="146"/>
+<line class="s thin ms dash" x1="453.2" y1="26" x2="453.2" y2="146"/>
+<line class="s thin ms dash" x1="485.2" y1="26" x2="485.2" y2="146"/>
+<line class="s thin ms dash" x1="517.2" y1="26" x2="517.2" y2="146"/>
+<text class="t" x="41.2" y="41" text-anchor="end" dominant-baseline="central">clk</text>
+<line class="s" x1="53.2" y1="50" x2="69.2" y2="50"/>
+<line class="s" x1="69.2" y1="50" x2="69.2" y2="32"/>
+<line class="s" x1="69.2" y1="32" x2="85.2" y2="32"/>
+<line class="s" x1="85.2" y1="32" x2="85.2" y2="50"/>
+<line class="s" x1="85.2" y1="50" x2="101.2" y2="50"/>
+<line class="s" x1="101.2" y1="50" x2="101.2" y2="32"/>
+<line class="s" x1="101.2" y1="32" x2="117.2" y2="32"/>
+<line class="s" x1="117.2" y1="32" x2="117.2" y2="50"/>
+<line class="s" x1="117.2" y1="50" x2="133.2" y2="50"/>
+<line class="s" x1="133.2" y1="50" x2="133.2" y2="32"/>
+<line class="s" x1="133.2" y1="32" x2="149.2" y2="32"/>
+<line class="s" x1="149.2" y1="32" x2="149.2" y2="50"/>
+<line class="s" x1="149.2" y1="50" x2="165.2" y2="50"/>
+<line class="s" x1="165.2" y1="50" x2="165.2" y2="32"/>
+<line class="s" x1="165.2" y1="32" x2="181.2" y2="32"/>
+<line class="s" x1="181.2" y1="32" x2="181.2" y2="50"/>
+<line class="s" x1="181.2" y1="50" x2="197.2" y2="50"/>
+<line class="s" x1="197.2" y1="50" x2="197.2" y2="32"/>
+<line class="s" x1="197.2" y1="32" x2="213.2" y2="32"/>
+<line class="s" x1="213.2" y1="32" x2="213.2" y2="50"/>
+<line class="s" x1="213.2" y1="50" x2="229.2" y2="50"/>
+<line class="s" x1="229.2" y1="50" x2="229.2" y2="32"/>
+<line class="s" x1="229.2" y1="32" x2="245.2" y2="32"/>
+<line class="s" x1="245.2" y1="32" x2="245.2" y2="50"/>
+<line class="s" x1="245.2" y1="50" x2="261.2" y2="50"/>
+<line class="s" x1="261.2" y1="50" x2="261.2" y2="32"/>
+<line class="s" x1="261.2" y1="32" x2="277.2" y2="32"/>
+<line class="s" x1="277.2" y1="32" x2="277.2" y2="50"/>
+<line class="s" x1="277.2" y1="50" x2="293.2" y2="50"/>
+<line class="s" x1="293.2" y1="50" x2="293.2" y2="32"/>
+<line class="s" x1="293.2" y1="32" x2="309.2" y2="32"/>
+<line class="s" x1="309.2" y1="32" x2="309.2" y2="50"/>
+<line class="s" x1="309.2" y1="50" x2="325.2" y2="50"/>
+<line class="s" x1="325.2" y1="50" x2="325.2" y2="32"/>
+<line class="s" x1="325.2" y1="32" x2="341.2" y2="32"/>
+<line class="s" x1="341.2" y1="32" x2="341.2" y2="50"/>
+<line class="s" x1="341.2" y1="50" x2="357.2" y2="50"/>
+<line class="s" x1="357.2" y1="50" x2="357.2" y2="32"/>
+<line class="s" x1="357.2" y1="32" x2="373.2" y2="32"/>
+<line class="s" x1="373.2" y1="32" x2="373.2" y2="50"/>
+<line class="s" x1="373.2" y1="50" x2="389.2" y2="50"/>
+<line class="s" x1="389.2" y1="50" x2="389.2" y2="32"/>
+<line class="s" x1="389.2" y1="32" x2="405.2" y2="32"/>
+<line class="s" x1="405.2" y1="32" x2="405.2" y2="50"/>
+<line class="s" x1="405.2" y1="50" x2="421.2" y2="50"/>
+<line class="s" x1="421.2" y1="50" x2="421.2" y2="32"/>
+<line class="s" x1="421.2" y1="32" x2="437.2" y2="32"/>
+<line class="s" x1="437.2" y1="32" x2="437.2" y2="50"/>
+<line class="s" x1="437.2" y1="50" x2="453.2" y2="50"/>
+<line class="s" x1="453.2" y1="50" x2="453.2" y2="32"/>
+<line class="s" x1="453.2" y1="32" x2="469.2" y2="32"/>
+<line class="s" x1="469.2" y1="32" x2="469.2" y2="50"/>
+<line class="s" x1="469.2" y1="50" x2="485.2" y2="50"/>
+<line class="s" x1="485.2" y1="50" x2="485.2" y2="32"/>
+<line class="s" x1="485.2" y1="32" x2="501.2" y2="32"/>
+<line class="s" x1="501.2" y1="32" x2="501.2" y2="50"/>
+<line class="s" x1="501.2" y1="50" x2="517.2" y2="50"/>
+<line class="s" x1="517.2" y1="50" x2="517.2" y2="32"/>
+<line class="s" x1="517.2" y1="32" x2="533.2" y2="32"/>
+<text class="t" x="41.2" y="71" text-anchor="end" dominant-baseline="central">rxd</text>
+<line class="s" x1="53.2" y1="62" x2="117.2" y2="62"/>
+<line class="s" x1="117.2" y1="62" x2="117.2" y2="80"/>
+<line class="s" x1="117.2" y1="80" x2="149.2" y2="80"/>
+<line class="s" x1="149.2" y1="80" x2="149.2" y2="62"/>
+<line class="s" x1="149.2" y1="62" x2="213.2" y2="62"/>
+<line class="s" x1="213.2" y1="62" x2="213.2" y2="80"/>
+<line class="s" x1="213.2" y1="80" x2="245.2" y2="80"/>
+<line class="s" x1="245.2" y1="80" x2="245.2" y2="62"/>
+<line class="s" x1="245.2" y1="62" x2="277.2" y2="62"/>
+<line class="s" x1="277.2" y1="62" x2="277.2" y2="80"/>
+<line class="s" x1="277.2" y1="80" x2="341.2" y2="80"/>
+<line class="s" x1="341.2" y1="80" x2="341.2" y2="62"/>
+<line class="s" x1="341.2" y1="62" x2="373.2" y2="62"/>
+<line class="s" x1="373.2" y1="62" x2="373.2" y2="80"/>
+<line class="s" x1="373.2" y1="80" x2="405.2" y2="80"/>
+<line class="s" x1="405.2" y1="80" x2="405.2" y2="62"/>
+<line class="s" x1="405.2" y1="62" x2="533.2" y2="62"/>
+<text class="t a b" x="41.2" y="101" text-anchor="end" dominant-baseline="central">done</text>
+<line class="s" x1="53.2" y1="110" x2="453.2" y2="110"/>
+<line class="s" x1="453.2" y1="110" x2="453.2" y2="92"/>
+<line class="s" x1="453.2" y1="92" x2="485.2" y2="92"/>
+<line class="s" x1="485.2" y1="92" x2="485.2" y2="110"/>
+<line class="s" x1="485.2" y1="110" x2="533.2" y2="110"/>
+<text class="t a b" x="41.2" y="131" text-anchor="end" dominant-baseline="central">data</text>
+<polygon class="s af" points="53.2,131 57.2,122 449.2,122 453.2,131 449.2,140 57.2,140"/>
+<text class="t" x="253.2" y="131" text-anchor="middle" dominant-baseline="central">00</text>
+<polygon class="s af" points="453.2,131 457.2,122 529.2,122 533.2,131 529.2,140 457.2,140"/>
+<text class="t" x="493.2" y="131" text-anchor="middle" dominant-baseline="central">4B</text>
+<text class="t sm m" x="53.2" y="157" text-anchor="start" dominant-baseline="central">x&quot;4B&quot; sent LSB first; labels mark the edge that samples each bit</text>
+</svg>

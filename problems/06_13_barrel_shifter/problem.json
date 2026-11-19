@@ -1,0 +1,40 @@
+{
+  "id": "06_13_barrel_shifter",
+  "section": 6,
+  "num": 13,
+  "name": "barrel_shifter",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "din",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    },
+    {
+      "name": "amt",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 4,
+      "low": 0
+    },
+    {
+      "name": "dir",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "arith",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "dout",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    }
+  ]
+}

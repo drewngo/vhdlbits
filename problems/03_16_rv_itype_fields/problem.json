@@ -1,0 +1,51 @@
+{
+  "id": "03_16_rv_itype_fields",
+  "section": 3,
+  "num": 16,
+  "name": "rv_itype_fields",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "instr",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    },
+    {
+      "name": "opcode",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 6,
+      "low": 0
+    },
+    {
+      "name": "rd",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 4,
+      "low": 0
+    },
+    {
+      "name": "rs1",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 4,
+      "low": 0
+    },
+    {
+      "name": "funct3",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 2,
+      "low": 0
+    },
+    {
+      "name": "imm",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    }
+  ]
+}

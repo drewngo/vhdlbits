@@ -1,0 +1,54 @@
+{
+  "id": "15_03_uart_tx_baud",
+  "section": 15,
+  "num": 3,
+  "name": "uart_tx_baud",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "start",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "data",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "txd",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "busy",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  },
+  "generics": {
+    "CLKS_PER_BIT": 4
+  },
+  "cycles": 10000,
+  "reset_prob": 0.0005,
+  "bias": {
+    "start": 0.3
+  }
+}

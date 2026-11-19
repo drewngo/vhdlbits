@@ -1,0 +1,43 @@
+{
+  "id": "10_12_life16",
+  "section": 10,
+  "num": 12,
+  "name": "life16",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "load",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "d",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 255,
+      "low": 0
+    },
+    {
+      "name": "q",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 255,
+      "low": 0
+    }
+  ],
+  "clock": "clk",
+  "bias": {
+    "load": 0.02,
+    "d": 0.3
+  },
+  "init": {
+    "values": {
+      "load": 1
+    }
+  }
+}

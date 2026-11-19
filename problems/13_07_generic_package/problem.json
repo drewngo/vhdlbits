@@ -1,0 +1,54 @@
+{
+  "id": "13_07_generic_package",
+  "section": 13,
+  "num": 7,
+  "name": "generic_package",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a8",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "b8",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "s8",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "a12",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 11,
+      "low": 0
+    },
+    {
+      "name": "b12",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 11,
+      "low": 0
+    },
+    {
+      "name": "s12",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 11,
+      "low": 0
+    }
+  ],
+  "extra_files": [
+    "sat_pkg.vhd"
+  ]
+}

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="170" viewBox="0 0 560 170" role="img">
+<title>8-bit one-hot ring: q(7) wraps around to q(0)</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s" x="60" y="60" width="52" height="64" rx="3"/>
+<text class="t sm b" x="86" y="73" text-anchor="middle" dominant-baseline="central">q(0)</text>
+<text class="t sm m" x="65" y="88.8" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="60,105.2 69,111.2 60,117.2"/>
+<text class="t sm m" x="107" y="88.8" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s" x="155" y="60" width="52" height="64" rx="3"/>
+<text class="t sm b" x="181" y="73" text-anchor="middle" dominant-baseline="central">q(1)</text>
+<text class="t sm m" x="160" y="88.8" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="155,105.2 164,111.2 155,117.2"/>
+<text class="t sm m" x="202" y="88.8" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s" x="250" y="60" width="52" height="64" rx="3"/>
+<text class="t sm b" x="276" y="73" text-anchor="middle" dominant-baseline="central">q(2)</text>
+<text class="t sm m" x="255" y="88.8" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="250,105.2 259,111.2 250,117.2"/>
+<text class="t sm m" x="297" y="88.8" text-anchor="end" dominant-baseline="central">q</text>
+<text class="t b m" x="371" y="87" text-anchor="middle" dominant-baseline="central">· · ·</text>
+<rect class="s" x="440" y="60" width="52" height="64" rx="3"/>
+<text class="t sm b" x="466" y="73" text-anchor="middle" dominant-baseline="central">q(7)</text>
+<text class="t sm m" x="445" y="88.8" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="440,105.2 449,111.2 440,117.2"/>
+<text class="t sm m" x="487" y="88.8" text-anchor="end" dominant-baseline="central">q</text>
+<polyline class="s" points="112,88.8 155,88.8"/>
+<polyline class="s" points="207,88.8 250,88.8"/>
+<polyline class="s dash" points="302,88.8 332,88.8"/>
+<polyline class="s dash" points="410,88.8 440,88.8"/>
+<polyline class="s" points="492,88.8 514,88.8 514,24 38,24 38,88.8 60,88.8"/>
+<text class="t sm m" x="280" y="160" text-anchor="middle" dominant-baseline="central">rotate left when en = 1; reset loads 00000001</text>
+</svg>

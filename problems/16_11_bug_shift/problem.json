@@ -1,0 +1,23 @@
+{
+  "id": "16_11_bug_shift",
+  "section": 16,
+  "num": 11,
+  "name": "bug_shift",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "x",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    }
+  ]
+}

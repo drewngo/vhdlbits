@@ -1,0 +1,34 @@
+{
+  "id": "02_14_garage_light",
+  "section": 2,
+  "num": 14,
+  "name": "garage_light",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "door_open",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "motion",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "dark",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "force_off",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "light",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

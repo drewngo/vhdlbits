@@ -1,0 +1,40 @@
+{
+  "id": "13_02_package_function",
+  "section": 13,
+  "num": 2,
+  "name": "package_function",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 15,
+      "low": 0
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "ca",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 4,
+      "low": 0
+    },
+    {
+      "name": "cb",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    }
+  ],
+  "extra_files": [
+    "my_pkg.vhd"
+  ]
+}

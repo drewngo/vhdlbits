@@ -1,0 +1,26 @@
+{
+  "id": "04_13_own_generic",
+  "section": 4,
+  "num": 13,
+  "name": "own_generic",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "din",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": "W-1",
+      "low": 0
+    },
+    {
+      "name": "dout",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": "W-1",
+      "low": 0
+    }
+  ],
+  "generics": {
+    "W": 6
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "16_09_bug_multiple_drivers",
+  "section": 16,
+  "num": 9,
+  "name": "bug_multiple_drivers",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "clear",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "load",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "d",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "q",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    }
+  ],
+  "clock": "clk",
+  "bias": {
+    "clear": 0.1,
+    "load": 0.4
+  },
+  "init": {
+    "values": {
+      "clear": 1
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "13_01_package_constants",
+  "section": 13,
+  "num": 1,
+  "name": "package_constants",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "din",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 11,
+      "low": 0
+    },
+    {
+      "name": "dout",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 11,
+      "low": 0
+    }
+  ],
+  "extra_files": [
+    "my_pkg.vhd"
+  ]
+}

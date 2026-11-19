@@ -1,0 +1,9 @@
+{
+  "id": "14_05_tb_counter",
+  "section": 14,
+  "num": 5,
+  "name": "tb_counter",
+  "mode": "tb",
+  "tb_kind": "mutant",
+  "dut_file": "decade.vhd"
+}

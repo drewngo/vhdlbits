@@ -1,0 +1,23 @@
+{
+  "id": "06_04_popcount",
+  "section": 6,
+  "num": 4,
+  "name": "popcount",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "din",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "count",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    }
+  ]
+}

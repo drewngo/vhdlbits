@@ -1,0 +1,10 @@
+# Cloud Build uploads only what the grader image needs (grader/deploy.sh).
+*
+!check.py
+!grader/
+!grader/**
+!problems/
+!problems/**
+!solutions/
+!solutions/**
+__pycache__/

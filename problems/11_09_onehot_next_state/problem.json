@@ -1,0 +1,34 @@
+{
+  "id": "11_09_onehot_next_state",
+  "section": 11,
+  "num": 9,
+  "name": "onehot_next_state",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "state",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "x",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "nxt",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "valid_inputs": "onehot(state)"
+}

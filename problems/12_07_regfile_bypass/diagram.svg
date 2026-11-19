@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="250" viewBox="0 0 580 250" role="img">
+<title>write-through bypass: a read of the register being written returns wd</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s" x="140" y="30" width="160" height="200" rx="3"/>
+<text class="t b" x="220" y="82" text-anchor="middle" dominant-baseline="central">registers</text>
+<text class="t b" x="220" y="98" text-anchor="middle" dominant-baseline="central">x0 .. x31</text>
+<text class="t sm m" x="145" y="60" text-anchor="start" dominant-baseline="central">we</text>
+<text class="t sm m" x="145" y="90" text-anchor="start" dominant-baseline="central">wa</text>
+<text class="t sm m" x="145" y="120" text-anchor="start" dominant-baseline="central">wd</text>
+<text class="t sm m" x="145" y="160" text-anchor="start" dominant-baseline="central">ra1</text>
+<text class="t sm m" x="145" y="190" text-anchor="start" dominant-baseline="central">ra2</text>
+<polyline class="s" points="140,210 149,216 140,222"/>
+<text class="t sm m" x="295" y="90" text-anchor="end" dominant-baseline="central">rd1</text>
+<text class="t sm m" x="295" y="180" text-anchor="end" dominant-baseline="central">rd2</text>
+<polyline class="s" points="70,60 140,60"/>
+<text class="t" x="64" y="60" text-anchor="end" dominant-baseline="central">we</text>
+<polyline class="s bus" points="70,90 140,90"/>
+<text class="t" x="64" y="90" text-anchor="end" dominant-baseline="central">wa</text>
+<polyline class="s bus" points="70,120 140,120"/>
+<text class="t" x="64" y="120" text-anchor="end" dominant-baseline="central">wd</text>
+<polyline class="s bus" points="70,160 140,160"/>
+<text class="t" x="64" y="160" text-anchor="end" dominant-baseline="central">ra1</text>
+<polyline class="s bus" points="70,190 140,190"/>
+<text class="t" x="64" y="190" text-anchor="end" dominant-baseline="central">ra2</text>
+<polyline class="s" points="70,216 140,216"/>
+<text class="t" x="64" y="216" text-anchor="end" dominant-baseline="central">clk</text>
+<text class="t sm m" x="220" y="140" text-anchor="middle" dominant-baseline="central">x0 reads 0</text>
+<polyline class="s bus" points="110,120 110,14 350,14"/>
+<circle class="k" cx="110" cy="120" r="3"/>
+<polygon class="s" points="390,72 424,84 424,116 390,128"/>
+<text class="t sm m" x="395" y="90" text-anchor="start" dominant-baseline="central">0</text>
+<text class="t sm m" x="395" y="110" text-anchor="start" dominant-baseline="central">1</text>
+<polyline class="s bus" points="300,90 390,90"/>
+<polyline class="s bus" points="350,14 350,110 390,110"/>
+<polyline class="s bus" points="424,100 480,100"/>
+<text class="t a b" x="486" y="100" text-anchor="start" dominant-baseline="central">rd1</text>
+<polyline class="s" points="407,122 407,136"/>
+<text class="t sm m" x="413" y="138" text-anchor="start" dominant-baseline="central">hit1</text>
+<polygon class="s" points="390,162 424,174 424,206 390,218"/>
+<text class="t sm m" x="395" y="180" text-anchor="start" dominant-baseline="central">0</text>
+<text class="t sm m" x="395" y="200" text-anchor="start" dominant-baseline="central">1</text>
+<polyline class="s bus" points="300,180 390,180"/>
+<polyline class="s bus" points="350,14 350,200 390,200"/>
+<polyline class="s bus" points="424,190 480,190"/>
+<text class="t a b" x="486" y="190" text-anchor="start" dominant-baseline="central">rd2</text>
+<polyline class="s" points="407,212 407,226"/>
+<text class="t sm m" x="413" y="228" text-anchor="start" dominant-baseline="central">hit2</text>
+<circle class="k" cx="350" cy="110" r="3"/>
+<text class="t sm m" x="300" y="270" text-anchor="middle" dominant-baseline="central">hitN = we and wa /= 0 and raN = wa</text>
+</svg>

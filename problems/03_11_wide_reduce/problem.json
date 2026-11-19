@@ -1,0 +1,46 @@
+{
+  "id": "03_11_wide_reduce",
+  "section": 3,
+  "num": 11,
+  "name": "wide_reduce",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "din",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 99,
+      "low": 0
+    },
+    {
+      "name": "r_and",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "r_or",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "r_xor",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "bias": {
+    "din": 0.97
+  },
+  "value_bias": {
+    "din": [
+      [
+        0,
+        0.05
+      ],
+      [
+        "FFFFFFFFFFFFFFFFFFFFFFFFF",
+        0.1
+      ]
+    ]
+  }
+}

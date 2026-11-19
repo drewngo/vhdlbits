@@ -1,0 +1,69 @@
+{
+  "id": "02_08_two_gate_chip",
+  "section": 2,
+  "num": 8,
+  "name": "two_gate_chip",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "p1a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "p1b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "p1c",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "p1d",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "p1e",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "p1f",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "p2a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "p2b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "p2c",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "p2d",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "p1y",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "p2y",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

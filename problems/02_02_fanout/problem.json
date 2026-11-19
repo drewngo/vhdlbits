@@ -1,0 +1,44 @@
+{
+  "id": "02_02_fanout",
+  "section": 2,
+  "num": 2,
+  "name": "fanout",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "c",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "p",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "q",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "r",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "s",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

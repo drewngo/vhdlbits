@@ -1,0 +1,23 @@
+{
+  "id": "12_01_rom_const",
+  "section": 12,
+  "num": 1,
+  "name": "rom_const",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "addr",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "data",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    }
+  ]
+}

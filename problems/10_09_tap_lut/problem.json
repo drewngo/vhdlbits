@@ -1,0 +1,37 @@
+{
+  "id": "10_09_tap_lut",
+  "section": 10,
+  "num": 9,
+  "name": "tap_lut",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "en",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "sin",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "addr",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 2,
+      "low": 0
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk"
+}

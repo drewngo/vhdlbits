@@ -1,0 +1,29 @@
+{
+  "id": "05_01_comb_process",
+  "section": 5,
+  "num": 1,
+  "name": "comb_process",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "y_conc",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "y_proc",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

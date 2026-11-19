@@ -1,0 +1,42 @@
+{
+  "id": "04_11_adder100_generate",
+  "section": 4,
+  "num": 11,
+  "name": "adder100_generate",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 99,
+      "low": 0
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 99,
+      "low": 0
+    },
+    {
+      "name": "cin",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "sum",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 99,
+      "low": 0
+    },
+    {
+      "name": "couts",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 99,
+      "low": 0
+    }
+  ]
+}

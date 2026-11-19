@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="120" viewBox="0 0 620 120" role="img">
+<title>color_t in declaration order, with each value&#x27;s position</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s" x="20" y="30" width="80" height="36" rx="3"/>
+<text class="t sm b" x="60" y="48" text-anchor="middle" dominant-baseline="central">RED</text>
+<text class="t sm m" x="60" y="20" text-anchor="middle" dominant-baseline="central">&#x27;pos = 0</text>
+<polyline class="s" points="100,48 118,48"/>
+<polygon class="k" points="118,48 110.6,51.1 110.6,44.9"/>
+<rect class="s" x="118" y="30" width="80" height="36" rx="3"/>
+<text class="t sm b" x="158" y="48" text-anchor="middle" dominant-baseline="central">ORANGE</text>
+<text class="t sm m" x="158" y="20" text-anchor="middle" dominant-baseline="central">&#x27;pos = 1</text>
+<polyline class="s" points="198,48 216,48"/>
+<polygon class="k" points="216,48 208.6,51.1 208.6,44.9"/>
+<rect class="s" x="216" y="30" width="80" height="36" rx="3"/>
+<text class="t sm b" x="256" y="48" text-anchor="middle" dominant-baseline="central">YELLOW</text>
+<text class="t sm m" x="256" y="20" text-anchor="middle" dominant-baseline="central">&#x27;pos = 2</text>
+<polyline class="s" points="296,48 314,48"/>
+<polygon class="k" points="314,48 306.6,51.1 306.6,44.9"/>
+<rect class="s" x="314" y="30" width="80" height="36" rx="3"/>
+<text class="t sm b" x="354" y="48" text-anchor="middle" dominant-baseline="central">GREEN</text>
+<text class="t sm m" x="354" y="20" text-anchor="middle" dominant-baseline="central">&#x27;pos = 3</text>
+<polyline class="s" points="394,48 412,48"/>
+<polygon class="k" points="412,48 404.6,51.1 404.6,44.9"/>
+<rect class="s" x="412" y="30" width="80" height="36" rx="3"/>
+<text class="t sm b" x="452" y="48" text-anchor="middle" dominant-baseline="central">BLUE</text>
+<text class="t sm m" x="452" y="20" text-anchor="middle" dominant-baseline="central">&#x27;pos = 4</text>
+<polyline class="s" points="492,48 510,48"/>
+<polygon class="k" points="510,48 502.6,51.1 502.6,44.9"/>
+<rect class="s" x="510" y="30" width="80" height="36" rx="3"/>
+<text class="t sm b" x="550" y="48" text-anchor="middle" dominant-baseline="central">VIOLET</text>
+<text class="t sm m" x="550" y="20" text-anchor="middle" dominant-baseline="central">&#x27;pos = 5</text>
+<polyline class="s" points="550,66 550,92 60,92 60,68"/>
+<polygon class="k" points="60,68 63.1,75.4 56.9,75.4"/>
+<text class="t sm m" x="310" y="104" text-anchor="middle" dominant-baseline="central">next of color_t&#x27;high wraps to color_t&#x27;low</text>
+</svg>

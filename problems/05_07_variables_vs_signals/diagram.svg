@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="554.2" height="228" viewBox="0 0 554.2 228" role="img">
+<title>y_var vs y_sig over four clock edges</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<text class="t sm m" x="156" y="18" text-anchor="middle" dominant-baseline="central">edge 1</text>
+<text class="t sm m" x="212" y="18" text-anchor="middle" dominant-baseline="central">edge 2</text>
+<text class="t sm m" x="268" y="18" text-anchor="middle" dominant-baseline="central">edge 3</text>
+<text class="t sm m" x="324" y="18" text-anchor="middle" dominant-baseline="central">edge 4</text>
+<line class="s thin ms dash" x1="156" y1="26" x2="156" y2="206"/>
+<line class="s thin ms dash" x1="212" y1="26" x2="212" y2="206"/>
+<line class="s thin ms dash" x1="268" y1="26" x2="268" y2="206"/>
+<line class="s thin ms dash" x1="324" y1="26" x2="324" y2="206"/>
+<text class="t" x="88" y="41" text-anchor="end" dominant-baseline="central">clk</text>
+<line class="s" x1="100" y1="50" x2="156" y2="50"/>
+<line class="s" x1="156" y1="50" x2="156" y2="32"/>
+<line class="s" x1="156" y1="32" x2="184" y2="32"/>
+<line class="s" x1="184" y1="32" x2="184" y2="50"/>
+<line class="s" x1="184" y1="50" x2="212" y2="50"/>
+<line class="s" x1="212" y1="50" x2="212" y2="32"/>
+<line class="s" x1="212" y1="32" x2="240" y2="32"/>
+<line class="s" x1="240" y1="32" x2="240" y2="50"/>
+<line class="s" x1="240" y1="50" x2="268" y2="50"/>
+<line class="s" x1="268" y1="50" x2="268" y2="32"/>
+<line class="s" x1="268" y1="32" x2="296" y2="32"/>
+<line class="s" x1="296" y1="32" x2="296" y2="50"/>
+<line class="s" x1="296" y1="50" x2="324" y2="50"/>
+<line class="s" x1="324" y1="50" x2="324" y2="32"/>
+<line class="s" x1="324" y1="32" x2="352" y2="32"/>
+<line class="s" x1="352" y1="32" x2="352" y2="50"/>
+<line class="s" x1="352" y1="50" x2="380" y2="50"/>
+<text class="t" x="88" y="71" text-anchor="end" dominant-baseline="central">a xor b</text>
+<line class="s" x1="100" y1="62" x2="156" y2="62"/>
+<line class="s" x1="156" y1="62" x2="156" y2="80"/>
+<line class="s" x1="156" y1="80" x2="212" y2="80"/>
+<line class="s" x1="212" y1="80" x2="212" y2="62"/>
+<line class="s" x1="212" y1="62" x2="380" y2="62"/>
+<text class="t" x="88" y="101" text-anchor="end" dominant-baseline="central">c</text>
+<line class="s" x1="100" y1="92" x2="268" y2="92"/>
+<line class="s" x1="268" y1="92" x2="268" y2="110"/>
+<line class="s" x1="268" y1="110" x2="380" y2="110"/>
+<text class="t" x="88" y="131" text-anchor="end" dominant-baseline="central">t (signal)</text>
+<polygon class="s xf" points="100,131 104,122 152,122 156,131 152,140 104,140"/>
+<line class="s" x1="156" y1="122" x2="212" y2="122"/>
+<line class="s" x1="212" y1="122" x2="212" y2="140"/>
+<line class="s" x1="212" y1="140" x2="268" y2="140"/>
+<line class="s" x1="268" y1="140" x2="268" y2="122"/>
+<line class="s" x1="268" y1="122" x2="380" y2="122"/>
+<text class="t a b" x="88" y="161" text-anchor="end" dominant-baseline="central">y_var</text>
+<polygon class="s xf" points="100,161 104,152 152,152 156,161 152,170 104,170"/>
+<line class="s" x1="156" y1="152" x2="212" y2="152"/>
+<line class="s" x1="212" y1="152" x2="212" y2="170"/>
+<line class="s" x1="212" y1="170" x2="268" y2="170"/>
+<line class="s" x1="268" y1="170" x2="268" y2="152"/>
+<line class="s" x1="268" y1="152" x2="324" y2="152"/>
+<line class="s" x1="324" y1="152" x2="324" y2="170"/>
+<line class="s" x1="324" y1="170" x2="380" y2="170"/>
+<text class="t a b" x="88" y="191" text-anchor="end" dominant-baseline="central">y_sig</text>
+<polygon class="s xf" points="100,191 104,182 208,182 212,191 208,200 104,200"/>
+<line class="s" x1="212" y1="182" x2="268" y2="182"/>
+<line class="s" x1="268" y1="182" x2="268" y2="200"/>
+<line class="s" x1="268" y1="200" x2="380" y2="200"/>
+<text class="t sm m" x="100" y="217" text-anchor="start" dominant-baseline="central">y_sig uses t from the previous edge; y_var uses this edge&#x27;s a xor b</text>
+</svg>

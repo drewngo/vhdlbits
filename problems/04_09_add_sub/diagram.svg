@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="335" viewBox="0 0 560 335" role="img">
+<title>add/subtract: b is XORed with sub, and sub is the carry-in</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s" x="300" y="60" width="120" height="70" rx="3"/>
+<text class="t b" x="360" y="95" text-anchor="middle" dominant-baseline="central">add16</text>
+<text class="t sm m" x="305" y="83.3" text-anchor="start" dominant-baseline="central">a</text>
+<text class="t sm m" x="305" y="106.7" text-anchor="start" dominant-baseline="central">b</text>
+<text class="t sm m" x="415" y="95" text-anchor="end" dominant-baseline="central">sum</text>
+<text class="t sm m" x="360" y="70" text-anchor="middle" dominant-baseline="central">cout</text>
+<text class="t sm m" x="360" y="120" text-anchor="middle" dominant-baseline="central">cin</text>
+<rect class="s" x="300" y="180" width="120" height="70" rx="3"/>
+<text class="t b" x="360" y="215" text-anchor="middle" dominant-baseline="central">add16</text>
+<text class="t sm m" x="305" y="203.3" text-anchor="start" dominant-baseline="central">a</text>
+<text class="t sm m" x="305" y="226.7" text-anchor="start" dominant-baseline="central">b</text>
+<text class="t sm m" x="415" y="215" text-anchor="end" dominant-baseline="central">sum</text>
+<text class="t sm m" x="360" y="190" text-anchor="middle" dominant-baseline="central">cout</text>
+<text class="t sm m" x="360" y="240" text-anchor="middle" dominant-baseline="central">cin</text>
+<polyline class="s" points="360,180 360,130"/>
+<text class="t sm m" x="366" y="155" text-anchor="start" dominant-baseline="central">carry</text>
+<polyline class="s bus" points="230,83.3 300,83.3"/>
+<text class="t sm" x="226" y="83.3" text-anchor="end" dominant-baseline="central">a(31:16)</text>
+<polyline class="s bus" points="230,106.7 300,106.7"/>
+<text class="t sm" x="226" y="106.7" text-anchor="end" dominant-baseline="central">b&#x27;(31:16)</text>
+<polyline class="s bus" points="420,95 470,95"/>
+<text class="t sm a b" x="474" y="95" text-anchor="start" dominant-baseline="central">sum(31:16)</text>
+<polyline class="s bus" points="230,203.3 300,203.3"/>
+<text class="t sm" x="226" y="203.3" text-anchor="end" dominant-baseline="central">a(15:0)</text>
+<polyline class="s bus" points="230,226.7 300,226.7"/>
+<text class="t sm" x="226" y="226.7" text-anchor="end" dominant-baseline="central">b&#x27;(15:0)</text>
+<polyline class="s bus" points="420,215 470,215"/>
+<text class="t sm a b" x="474" y="215" text-anchor="start" dominant-baseline="central">sum(15:0)</text>
+<polyline class="s" points="360,60 360,44"/>
+<text class="t sm m" x="360" y="38" text-anchor="middle" dominant-baseline="central">(unused)</text>
+<polyline class="s" points="360,250 360,266"/>
+<text class="t sm" x="360" y="276" text-anchor="middle" dominant-baseline="central">sub</text>
+<path class="s" d="M57,270 Q84.6,270 103,290 Q84.6,310 57,310 Q68.5,290 57,270 Z"/>
+<path class="s" d="M50,270 Q61.5,290 50,310"/>
+<polyline class="s bus" points="14,280 54.3,280"/>
+<text class="t sm" x="14" y="270" text-anchor="start" dominant-baseline="central">b</text>
+<polyline class="s" points="14,300 54.3,300"/>
+<text class="t sm" x="14" y="311" text-anchor="start" dominant-baseline="central">sub</text>
+<text class="t sm m" x="14" y="322" text-anchor="start" dominant-baseline="central">b&#x27; = b xor (sub, sub, ..., sub)</text>
+<polyline class="s bus" points="103,290 230,290 230,106.7"/>
+<circle class="k" cx="230" cy="226.7" r="3"/>
+</svg>

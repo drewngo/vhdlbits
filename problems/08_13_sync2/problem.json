@@ -1,0 +1,25 @@
+{
+  "id": "08_13_sync2",
+  "section": 8,
+  "num": 13,
+  "name": "sync2",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "async_in",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "sync_out",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk"
+}

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="192" viewBox="0 0 520 192" role="img">
+<title>the package declaration is what users see; the package body implements it</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s" x="20" y="20" width="220" height="60" rx="3"/>
+<text class="t sm b" x="30" y="38" text-anchor="start" dominant-baseline="central">package my_pkg is</text>
+<text class="t sm" x="30" y="58" text-anchor="start" dominant-baseline="central">  function popcount(...)</text>
+<rect class="s" x="20" y="100" width="220" height="60" rx="3"/>
+<text class="t sm b" x="30" y="118" text-anchor="start" dominant-baseline="central">package body my_pkg is</text>
+<text class="t sm" x="30" y="138" text-anchor="start" dominant-baseline="central">  the function&#x27;s body</text>
+<text class="t sm m" x="130" y="176" text-anchor="middle" dominant-baseline="central">both in my_pkg.vhd</text>
+<rect class="s" x="320" y="50" width="180" height="70" rx="3"/>
+<text class="t sm" x="330" y="68" text-anchor="start" dominant-baseline="central">use work.my_pkg.all;</text>
+<text class="t sm b" x="330" y="88" text-anchor="start" dominant-baseline="central">top_module</text>
+<text class="t sm m" x="330" y="106" text-anchor="start" dominant-baseline="central">ca &lt;= popcount(a)</text>
+<polyline class="s" points="240,50 318,70"/>
+<polygon class="k" points="318,70 310.1,71.2 311.6,65.2"/>
+<text class="t sm m" x="280" y="44" text-anchor="middle" dominant-baseline="central">declares</text>
+<line class="s thin dash" x1="130" y1="80" x2="130" y2="100"/>
+</svg>

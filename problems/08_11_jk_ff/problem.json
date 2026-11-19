@@ -1,0 +1,30 @@
+{
+  "id": "08_11_jk_ff",
+  "section": 8,
+  "num": 11,
+  "name": "jk_ff",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "j",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "k",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "q",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "02_13_doorbell",
+  "section": 2,
+  "num": 13,
+  "name": "doorbell",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "press",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "mute",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "chime",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "light",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

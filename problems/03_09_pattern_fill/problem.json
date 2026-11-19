@@ -1,0 +1,23 @@
+{
+  "id": "03_09_pattern_fill",
+  "section": 3,
+  "num": 9,
+  "name": "pattern_fill",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "pat",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "dout",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 15,
+      "low": 0
+    }
+  ]
+}

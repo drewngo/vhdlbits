@@ -1,0 +1,19 @@
+{
+  "id": "02_03_notgate",
+  "section": 2,
+  "num": 3,
+  "name": "notgate",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

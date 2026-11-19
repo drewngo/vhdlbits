@@ -1,0 +1,43 @@
+{
+  "id": "04_07_generic_map",
+  "section": 4,
+  "num": 7,
+  "name": "generic_map",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "d4",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "q4",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "d12",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 11,
+      "low": 0
+    },
+    {
+      "name": "q12",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 11,
+      "low": 0
+    }
+  ],
+  "clock": "clk"
+}

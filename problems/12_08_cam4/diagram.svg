@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="252" viewBox="0 0 560 252" role="img">
+<title>a 4-entry CAM: every valid entry is compared with key at once</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s" x="120" y="12" width="90" height="36" rx="3"/>
+<text class="t sm" x="165" y="30" text-anchor="middle" dominant-baseline="central">entry 0</text>
+<rect class="s xf" x="212" y="12" width="22" height="36"/>
+<text class="t sm m" x="223" y="30" text-anchor="middle" dominant-baseline="central">v</text>
+<circle class="s" cx="290" cy="30" r="16"/>
+<text class="t b" x="290" y="30" text-anchor="middle" dominant-baseline="central">=</text>
+<polyline class="s bus" points="234,30 274,30"/>
+<polyline class="s" points="306,30 380,30"/>
+<text class="t sm m" x="340" y="21" text-anchor="middle" dominant-baseline="central">m0</text>
+<rect class="s" x="120" y="57" width="90" height="36" rx="3"/>
+<text class="t sm" x="165" y="75" text-anchor="middle" dominant-baseline="central">entry 1</text>
+<rect class="s xf" x="212" y="57" width="22" height="36"/>
+<text class="t sm m" x="223" y="75" text-anchor="middle" dominant-baseline="central">v</text>
+<circle class="s" cx="290" cy="75" r="16"/>
+<text class="t b" x="290" y="75" text-anchor="middle" dominant-baseline="central">=</text>
+<polyline class="s bus" points="234,75 274,75"/>
+<polyline class="s" points="306,75 380,75"/>
+<text class="t sm m" x="340" y="66" text-anchor="middle" dominant-baseline="central">m1</text>
+<rect class="s" x="120" y="102" width="90" height="36" rx="3"/>
+<text class="t sm" x="165" y="120" text-anchor="middle" dominant-baseline="central">entry 2</text>
+<rect class="s xf" x="212" y="102" width="22" height="36"/>
+<text class="t sm m" x="223" y="120" text-anchor="middle" dominant-baseline="central">v</text>
+<circle class="s" cx="290" cy="120" r="16"/>
+<text class="t b" x="290" y="120" text-anchor="middle" dominant-baseline="central">=</text>
+<polyline class="s bus" points="234,120 274,120"/>
+<polyline class="s" points="306,120 380,120"/>
+<text class="t sm m" x="340" y="111" text-anchor="middle" dominant-baseline="central">m2</text>
+<rect class="s" x="120" y="147" width="90" height="36" rx="3"/>
+<text class="t sm" x="165" y="165" text-anchor="middle" dominant-baseline="central">entry 3</text>
+<rect class="s xf" x="212" y="147" width="22" height="36"/>
+<text class="t sm m" x="223" y="165" text-anchor="middle" dominant-baseline="central">v</text>
+<circle class="s" cx="290" cy="165" r="16"/>
+<text class="t b" x="290" y="165" text-anchor="middle" dominant-baseline="central">=</text>
+<polyline class="s bus" points="234,165 274,165"/>
+<polyline class="s" points="306,165 380,165"/>
+<text class="t sm m" x="340" y="156" text-anchor="middle" dominant-baseline="central">m3</text>
+<polyline class="s" points="256,222 256,56"/>
+<polyline class="s" points="256,56 290,56 290,46"/>
+<polyline class="s" points="256,101 290,101 290,91"/>
+<circle class="k" cx="256" cy="101" r="3"/>
+<polyline class="s" points="256,146 290,146 290,136"/>
+<circle class="k" cx="256" cy="146" r="3"/>
+<polyline class="s" points="256,191 290,191 290,181"/>
+<circle class="k" cx="256" cy="191" r="3"/>
+<text class="t sm" x="262" y="222" text-anchor="start" dominant-baseline="central">key</text>
+<rect class="s" x="380" y="30" width="100" height="160" rx="3"/>
+<text class="t b" x="430" y="102" text-anchor="middle" dominant-baseline="central">lowest</text>
+<text class="t b" x="430" y="118" text-anchor="middle" dominant-baseline="central">match</text>
+<text class="t sm m" x="475" y="86" text-anchor="end" dominant-baseline="central">hit</text>
+<text class="t sm m" x="475" y="134" text-anchor="end" dominant-baseline="central">hit_idx</text>
+<polyline class="s" points="480,86 540,86"/>
+<text class="t sm a b" x="536" y="76" text-anchor="end" dominant-baseline="central">hit</text>
+<polyline class="s bus" points="480,134 540,134"/>
+<text class="t sm a b" x="536" y="124" text-anchor="end" dominant-baseline="central">hit_idx</text>
+<text class="t sm m" x="20" y="40" text-anchor="start" dominant-baseline="central">we, widx,</text>
+<text class="t sm m" x="20" y="54" text-anchor="start" dominant-baseline="central">din write</text>
+<text class="t sm m" x="20" y="68" text-anchor="start" dominant-baseline="central">one entry</text>
+<text class="t sm m" x="20" y="240" text-anchor="start" dominant-baseline="central">m(k): entry k is valid and equals key</text>
+</svg>

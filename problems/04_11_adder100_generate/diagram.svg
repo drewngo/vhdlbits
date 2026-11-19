@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="917.4" height="168" viewBox="0 0 917.4 168" role="img">
+<title>a 100-stage ripple-carry adder</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s" x="147.4" y="62" width="74" height="56" rx="3"/>
+<text class="t b" x="184.4" y="90" text-anchor="middle" dominant-baseline="central">FA99</text>
+<polyline class="s" points="172.1,24 172.1,62"/>
+<text class="t sm" x="172.1" y="15" text-anchor="middle" dominant-baseline="central">a(99)</text>
+<polyline class="s" points="196.7,42 196.7,62"/>
+<text class="t sm" x="196.7" y="33" text-anchor="middle" dominant-baseline="central">b(99)</text>
+<polyline class="s" points="184.4,118 184.4,140"/>
+<text class="t sm a b" x="184.4" y="150" text-anchor="middle" dominant-baseline="central">sum(99)</text>
+<polyline class="s" points="293.4,90 221.4,90"/>
+<polygon class="k" points="221.4,90 228.8,86.9 228.8,93.1"/>
+<text class="t sm m" x="257.4" y="80" text-anchor="middle" dominant-baseline="central">couts(98)</text>
+<polyline class="s" points="147.4,90 87.4,90"/>
+<text class="t sm a b" x="83.4" y="90" text-anchor="end" dominant-baseline="central">couts(99)</text>
+<rect class="s" x="293.4" y="62" width="74" height="56" rx="3"/>
+<text class="t b" x="330.4" y="90" text-anchor="middle" dominant-baseline="central">FA98</text>
+<polyline class="s" points="318.1,24 318.1,62"/>
+<text class="t sm" x="318.1" y="15" text-anchor="middle" dominant-baseline="central">a(98)</text>
+<polyline class="s" points="342.7,42 342.7,62"/>
+<text class="t sm" x="342.7" y="33" text-anchor="middle" dominant-baseline="central">b(98)</text>
+<polyline class="s" points="330.4,118 330.4,140"/>
+<text class="t sm a b" x="330.4" y="150" text-anchor="middle" dominant-baseline="central">sum(98)</text>
+<polyline class="s dash" points="458.4,90 367.4,90"/>
+<polygon class="k" points="367.4,90 374.8,86.9 374.8,93.1"/>
+<text class="t b m" x="476.4" y="90" text-anchor="middle" dominant-baseline="central">· · ·</text>
+<rect class="s" x="585.4" y="62" width="74" height="56" rx="3"/>
+<text class="t b" x="622.4" y="90" text-anchor="middle" dominant-baseline="central">FA1</text>
+<polyline class="s" points="610.1,24 610.1,62"/>
+<text class="t sm" x="610.1" y="15" text-anchor="middle" dominant-baseline="central">a(1)</text>
+<polyline class="s" points="634.7,42 634.7,62"/>
+<text class="t sm" x="634.7" y="33" text-anchor="middle" dominant-baseline="central">b(1)</text>
+<polyline class="s" points="622.4,118 622.4,140"/>
+<text class="t sm a b" x="622.4" y="150" text-anchor="middle" dominant-baseline="central">sum(1)</text>
+<polyline class="s" points="731.4,90 659.4,90"/>
+<polygon class="k" points="659.4,90 666.8,86.9 666.8,93.1"/>
+<text class="t sm m" x="695.4" y="80" text-anchor="middle" dominant-baseline="central">couts(0)</text>
+<polyline class="s dash" points="585.4,90 494.4,90"/>
+<rect class="s" x="731.4" y="62" width="74" height="56" rx="3"/>
+<text class="t b" x="768.4" y="90" text-anchor="middle" dominant-baseline="central">FA0</text>
+<polyline class="s" points="756.1,24 756.1,62"/>
+<text class="t sm" x="756.1" y="15" text-anchor="middle" dominant-baseline="central">a(0)</text>
+<polyline class="s" points="780.7,42 780.7,62"/>
+<text class="t sm" x="780.7" y="33" text-anchor="middle" dominant-baseline="central">b(0)</text>
+<polyline class="s" points="768.4,118 768.4,140"/>
+<text class="t sm a b" x="768.4" y="150" text-anchor="middle" dominant-baseline="central">sum(0)</text>
+<polyline class="s" points="869.4,90 805.4,90"/>
+<polygon class="k" points="805.4,90 812.8,86.9 812.8,93.1"/>
+<text class="t sm" x="873.4" y="90" text-anchor="start" dominant-baseline="central">cin</text>
+</svg>

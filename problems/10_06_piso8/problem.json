@@ -1,0 +1,50 @@
+{
+  "id": "10_06_piso8",
+  "section": 10,
+  "num": 6,
+  "name": "piso8",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "load",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "d",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "sout",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "busy",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  },
+  "bias": {
+    "load": 0.3
+  },
+  "reset_prob": 0.01
+}

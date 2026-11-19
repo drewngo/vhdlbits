@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="536" height="120" viewBox="0 0 536 120" role="img">
+<title>&quot;01&quot; &amp; a &amp; b &amp; c &amp; d &amp; e &amp; f, split into bytes w x y z</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<text class="t" x="0" y="33" text-anchor="end" dominant-baseline="central"></text>
+<rect class="s xf" x="10" y="18" width="32" height="30"/>
+<text class="t sm" x="26" y="33" text-anchor="middle" dominant-baseline="central">&quot;01&quot;</text>
+<text class="t sm m" x="12" y="11" text-anchor="start" dominant-baseline="central">31</text>
+<text class="t sm m" x="40" y="11" text-anchor="end" dominant-baseline="central">30</text>
+<rect class="s bg" x="42" y="18" width="80" height="30"/>
+<text class="t" x="82" y="33" text-anchor="middle" dominant-baseline="central">a</text>
+<text class="t sm m" x="44" y="11" text-anchor="start" dominant-baseline="central">29</text>
+<text class="t sm m" x="120" y="11" text-anchor="end" dominant-baseline="central">25</text>
+<rect class="s bg" x="122" y="18" width="80" height="30"/>
+<text class="t" x="162" y="33" text-anchor="middle" dominant-baseline="central">b</text>
+<text class="t sm m" x="124" y="11" text-anchor="start" dominant-baseline="central">24</text>
+<text class="t sm m" x="200" y="11" text-anchor="end" dominant-baseline="central">20</text>
+<rect class="s bg" x="202" y="18" width="80" height="30"/>
+<text class="t" x="242" y="33" text-anchor="middle" dominant-baseline="central">c</text>
+<text class="t sm m" x="204" y="11" text-anchor="start" dominant-baseline="central">19</text>
+<text class="t sm m" x="280" y="11" text-anchor="end" dominant-baseline="central">15</text>
+<rect class="s bg" x="282" y="18" width="80" height="30"/>
+<text class="t" x="322" y="33" text-anchor="middle" dominant-baseline="central">d</text>
+<text class="t sm m" x="284" y="11" text-anchor="start" dominant-baseline="central">14</text>
+<text class="t sm m" x="360" y="11" text-anchor="end" dominant-baseline="central">10</text>
+<rect class="s bg" x="362" y="18" width="80" height="30"/>
+<text class="t" x="402" y="33" text-anchor="middle" dominant-baseline="central">e</text>
+<text class="t sm m" x="364" y="11" text-anchor="start" dominant-baseline="central">9</text>
+<text class="t sm m" x="440" y="11" text-anchor="end" dominant-baseline="central">5</text>
+<rect class="s bg" x="442" y="18" width="80" height="30"/>
+<text class="t" x="482" y="33" text-anchor="middle" dominant-baseline="central">f</text>
+<text class="t sm m" x="444" y="11" text-anchor="start" dominant-baseline="central">4</text>
+<text class="t sm m" x="520" y="11" text-anchor="end" dominant-baseline="central">0</text>
+<text class="t" x="0" y="97" text-anchor="end" dominant-baseline="central"></text>
+<rect class="s af" x="10" y="82" width="128" height="30"/>
+<text class="t" x="74" y="97" text-anchor="middle" dominant-baseline="central">w</text>
+<text class="t sm m" x="12" y="75" text-anchor="start" dominant-baseline="central">31</text>
+<text class="t sm m" x="136" y="75" text-anchor="end" dominant-baseline="central">24</text>
+<rect class="s af" x="138" y="82" width="128" height="30"/>
+<text class="t" x="202" y="97" text-anchor="middle" dominant-baseline="central">x</text>
+<text class="t sm m" x="140" y="75" text-anchor="start" dominant-baseline="central">23</text>
+<text class="t sm m" x="264" y="75" text-anchor="end" dominant-baseline="central">16</text>
+<rect class="s af" x="266" y="82" width="128" height="30"/>
+<text class="t" x="330" y="97" text-anchor="middle" dominant-baseline="central">y</text>
+<text class="t sm m" x="268" y="75" text-anchor="start" dominant-baseline="central">15</text>
+<text class="t sm m" x="392" y="75" text-anchor="end" dominant-baseline="central">8</text>
+<rect class="s af" x="394" y="82" width="128" height="30"/>
+<text class="t" x="458" y="97" text-anchor="middle" dominant-baseline="central">z</text>
+<text class="t sm m" x="396" y="75" text-anchor="start" dominant-baseline="central">7</text>
+<text class="t sm m" x="520" y="75" text-anchor="end" dominant-baseline="central">0</text>
+</svg>

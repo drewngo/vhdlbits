@@ -1,0 +1,85 @@
+{
+  "id": "15_11_div_seq",
+  "section": 15,
+  "num": 11,
+  "name": "div_seq",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "start",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "n",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 15,
+      "low": 0
+    },
+    {
+      "name": "d",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "q",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 15,
+      "low": 0
+    },
+    {
+      "name": "r",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "busy",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "done",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "dz",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  },
+  "cycles": 10000,
+  "reset_prob": 0.0005,
+  "bias": {
+    "start": 0.3
+  },
+  "value_bias": {
+    "d": [
+      [
+        0,
+        0.1
+      ]
+    ]
+  }
+}

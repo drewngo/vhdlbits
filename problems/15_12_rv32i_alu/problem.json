@@ -1,0 +1,50 @@
+{
+  "id": "15_12_rv32i_alu",
+  "section": 15,
+  "num": 12,
+  "name": "rv32i_alu",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    },
+    {
+      "name": "funct3",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 2,
+      "low": 0
+    },
+    {
+      "name": "funct7_5",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    }
+  ],
+  "vectors": 3000,
+  "copy": [
+    [
+      "b",
+      "a",
+      0.05
+    ]
+  ]
+}

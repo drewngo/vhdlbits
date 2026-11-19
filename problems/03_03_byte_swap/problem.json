@@ -1,0 +1,23 @@
+{
+  "id": "03_03_byte_swap",
+  "section": 3,
+  "num": 3,
+  "name": "byte_swap",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "din",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    },
+    {
+      "name": "dout",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    }
+  ]
+}

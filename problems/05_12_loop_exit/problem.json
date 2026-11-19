@@ -1,0 +1,39 @@
+{
+  "id": "05_12_loop_exit",
+  "section": 5,
+  "num": 12,
+  "name": "loop_exit",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "din",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 15,
+      "low": 0
+    },
+    {
+      "name": "idx",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "valid",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "bias": {
+    "din": 0.12
+  },
+  "value_bias": {
+    "din": [
+      [
+        0,
+        0.05
+      ]
+    ]
+  }
+}

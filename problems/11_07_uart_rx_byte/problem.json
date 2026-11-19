@@ -1,0 +1,47 @@
+{
+  "id": "11_07_uart_rx_byte",
+  "section": 11,
+  "num": 7,
+  "name": "uart_rx_byte",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "rxd",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "data",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "done",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  },
+  "stimulus": "uart_frames",
+  "stimulus_opts": {
+    "port": "rxd"
+  },
+  "cycles": 2000,
+  "reset_prob": 0.002
+}

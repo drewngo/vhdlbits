@@ -1,0 +1,73 @@
+{
+  "id": "15_04_spi_master",
+  "section": 15,
+  "num": 4,
+  "name": "spi_master",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "start",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "miso",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "tx",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "sclk",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "mosi",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "cs_n",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "done",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "rx",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  },
+  "cycles": 10000,
+  "reset_prob": 0.0005,
+  "bias": {
+    "start": 0.3
+  }
+}

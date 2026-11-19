@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="744" height="168" viewBox="0 0 744 168" role="img">
+<title>four BCD digit adders in a ripple chain</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s" x="120" y="62" width="96" height="56" rx="3"/>
+<text class="t b" x="168" y="90" text-anchor="middle" dominant-baseline="central">bcd_fadd 3</text>
+<polyline class="s bus" points="152,24 152,62"/>
+<text class="t sm" x="152" y="15" text-anchor="middle" dominant-baseline="central">a(15:12)</text>
+<polyline class="s bus" points="184,42 184,62"/>
+<text class="t sm" x="184" y="33" text-anchor="middle" dominant-baseline="central">b(15:12)</text>
+<polyline class="s bus" points="168,118 168,140"/>
+<text class="t sm a b" x="168" y="150" text-anchor="middle" dominant-baseline="central">sum(15:12)</text>
+<polyline class="s" points="266,90 216,90"/>
+<polygon class="k" points="216,90 223.4,86.9 223.4,93.1"/>
+<polyline class="s" points="120,90 82,90"/>
+<text class="t sm a b" x="78" y="90" text-anchor="end" dominant-baseline="central">cout</text>
+<rect class="s" x="266" y="62" width="96" height="56" rx="3"/>
+<text class="t b" x="314" y="90" text-anchor="middle" dominant-baseline="central">bcd_fadd 2</text>
+<polyline class="s bus" points="298,24 298,62"/>
+<text class="t sm" x="298" y="15" text-anchor="middle" dominant-baseline="central">a(11:8)</text>
+<polyline class="s bus" points="330,42 330,62"/>
+<text class="t sm" x="330" y="33" text-anchor="middle" dominant-baseline="central">b(11:8)</text>
+<polyline class="s bus" points="314,118 314,140"/>
+<text class="t sm a b" x="314" y="150" text-anchor="middle" dominant-baseline="central">sum(11:8)</text>
+<polyline class="s" points="412,90 362,90"/>
+<polygon class="k" points="362,90 369.4,86.9 369.4,93.1"/>
+<rect class="s" x="412" y="62" width="96" height="56" rx="3"/>
+<text class="t b" x="460" y="90" text-anchor="middle" dominant-baseline="central">bcd_fadd 1</text>
+<polyline class="s bus" points="444,24 444,62"/>
+<text class="t sm" x="444" y="15" text-anchor="middle" dominant-baseline="central">a(7:4)</text>
+<polyline class="s bus" points="476,42 476,62"/>
+<text class="t sm" x="476" y="33" text-anchor="middle" dominant-baseline="central">b(7:4)</text>
+<polyline class="s bus" points="460,118 460,140"/>
+<text class="t sm a b" x="460" y="150" text-anchor="middle" dominant-baseline="central">sum(7:4)</text>
+<polyline class="s" points="558,90 508,90"/>
+<polygon class="k" points="508,90 515.4,86.9 515.4,93.1"/>
+<rect class="s" x="558" y="62" width="96" height="56" rx="3"/>
+<text class="t b" x="606" y="90" text-anchor="middle" dominant-baseline="central">bcd_fadd 0</text>
+<polyline class="s bus" points="590,24 590,62"/>
+<text class="t sm" x="590" y="15" text-anchor="middle" dominant-baseline="central">a(3:0)</text>
+<polyline class="s bus" points="622,42 622,62"/>
+<text class="t sm" x="622" y="33" text-anchor="middle" dominant-baseline="central">b(3:0)</text>
+<polyline class="s bus" points="606,118 606,140"/>
+<text class="t sm a b" x="606" y="150" text-anchor="middle" dominant-baseline="central">sum(3:0)</text>
+<polyline class="s" points="696,90 654,90"/>
+<polygon class="k" points="654,90 661.4,86.9 661.4,93.1"/>
+<text class="t sm" x="700" y="90" text-anchor="start" dominant-baseline="central">cin</text>
+</svg>

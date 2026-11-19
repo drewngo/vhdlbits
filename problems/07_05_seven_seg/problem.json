@@ -1,0 +1,23 @@
+{
+  "id": "07_05_seven_seg",
+  "section": 7,
+  "num": 5,
+  "name": "seven_seg",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "hex",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "seg",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 6,
+      "low": 0
+    }
+  ]
+}

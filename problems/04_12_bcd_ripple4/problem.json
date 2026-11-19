@@ -1,0 +1,50 @@
+{
+  "id": "04_12_bcd_ripple4",
+  "section": 4,
+  "num": 12,
+  "name": "bcd_ripple4",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 15,
+      "low": 0
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 15,
+      "low": 0
+    },
+    {
+      "name": "cin",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "sum",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 15,
+      "low": 0
+    },
+    {
+      "name": "cout",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "nibble_range": {
+    "a": [
+      0,
+      9
+    ],
+    "b": [
+      0,
+      9
+    ]
+  }
+}

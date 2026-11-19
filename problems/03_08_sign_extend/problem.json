@@ -1,0 +1,23 @@
+{
+  "id": "03_08_sign_extend",
+  "section": 3,
+  "num": 8,
+  "name": "sign_extend",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "din",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "dout",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    }
+  ]
+}

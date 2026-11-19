@@ -1,0 +1,47 @@
+{
+  "id": "15_06_seven_seg_mux",
+  "section": 15,
+  "num": 6,
+  "name": "seven_seg_mux",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "value",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 15,
+      "low": 0
+    },
+    {
+      "name": "an",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "seg",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 6,
+      "low": 0
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  },
+  "cycles": 10000,
+  "reset_prob": 0.002
+}

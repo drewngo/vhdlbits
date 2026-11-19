@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="383.2" height="130" viewBox="0 0 383.2 130" role="img">
+<title>dout is pat repeated four times</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<text class="t" x="39.2" y="33" text-anchor="end" dominant-baseline="central">pat</text>
+<rect class="s bg" x="49.2" y="18" width="80" height="30"/>
+<text class="t" x="89.2" y="33" text-anchor="middle" dominant-baseline="central">pat</text>
+<text class="t sm m" x="51.2" y="11" text-anchor="start" dominant-baseline="central">3</text>
+<text class="t sm m" x="127.2" y="11" text-anchor="end" dominant-baseline="central">0</text>
+<text class="t" x="39.2" y="107" text-anchor="end" dominant-baseline="central">dout</text>
+<rect class="s af" x="49.2" y="92" width="80" height="30"/>
+<text class="t" x="89.2" y="107" text-anchor="middle" dominant-baseline="central">pat</text>
+<text class="t sm m" x="51.2" y="85" text-anchor="start" dominant-baseline="central">15</text>
+<text class="t sm m" x="127.2" y="85" text-anchor="end" dominant-baseline="central">12</text>
+<rect class="s af" x="129.2" y="92" width="80" height="30"/>
+<text class="t" x="169.2" y="107" text-anchor="middle" dominant-baseline="central">pat</text>
+<text class="t sm m" x="131.2" y="85" text-anchor="start" dominant-baseline="central">11</text>
+<text class="t sm m" x="207.2" y="85" text-anchor="end" dominant-baseline="central">8</text>
+<rect class="s af" x="209.2" y="92" width="80" height="30"/>
+<text class="t" x="249.2" y="107" text-anchor="middle" dominant-baseline="central">pat</text>
+<text class="t sm m" x="211.2" y="85" text-anchor="start" dominant-baseline="central">7</text>
+<text class="t sm m" x="287.2" y="85" text-anchor="end" dominant-baseline="central">4</text>
+<rect class="s af" x="289.2" y="92" width="80" height="30"/>
+<text class="t" x="329.2" y="107" text-anchor="middle" dominant-baseline="central">pat</text>
+<text class="t sm m" x="291.2" y="85" text-anchor="start" dominant-baseline="central">3</text>
+<text class="t sm m" x="367.2" y="85" text-anchor="end" dominant-baseline="central">0</text>
+<polyline class="s thin ms" points="89.2,48 89.2,78"/>
+<polygon class="k" points="89.2,78 86.1,70.6 92.3,70.6"/>
+<polyline class="s thin ms" points="89.2,48 169.2,78"/>
+<polygon class="k" points="169.2,78 161.2,78.3 163.4,72.5"/>
+<polyline class="s thin ms" points="89.2,48 249.2,78"/>
+<polygon class="k" points="249.2,78 241.4,79.7 242.5,73.6"/>
+<polyline class="s thin ms" points="89.2,48 329.2,78"/>
+<polygon class="k" points="329.2,78 321.5,80.2 322.3,74"/>
+</svg>

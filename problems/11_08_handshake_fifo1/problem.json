@@ -1,0 +1,63 @@
+{
+  "id": "11_08_handshake_fifo1",
+  "section": 11,
+  "num": 8,
+  "name": "handshake_fifo1",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "in_valid",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "out_ready",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "in_data",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "in_ready",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "out_valid",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "out_data",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  },
+  "bias": {
+    "in_valid": 0.6,
+    "out_ready": 0.5
+  },
+  "reset_prob": 0.01
+}

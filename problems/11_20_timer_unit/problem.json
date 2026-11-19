@@ -1,0 +1,56 @@
+{
+  "id": "11_20_timer_unit",
+  "section": 11,
+  "num": 20,
+  "name": "timer_unit",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "din",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "ack",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "counting",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "done",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "remaining",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  },
+  "bias": {
+    "ack": 0.2
+  },
+  "cycles": 20000,
+  "reset_prob": 0.0005
+}

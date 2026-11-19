@@ -1,0 +1,42 @@
+{
+  "id": "15_05_debounce_edge",
+  "section": 15,
+  "num": 5,
+  "name": "debounce_edge",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "btn",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "press",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  },
+  "cycles": 10000,
+  "reset_prob": 0.0005,
+  "stimulus": "runs",
+  "stimulus_opts": {
+    "port": "btn",
+    "min": 1,
+    "max": 20
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "04_14_if_generate",
+  "section": 4,
+  "num": 14,
+  "name": "if_generate",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk",
+  "generics": {
+    "REGISTERED": true
+  }
+}

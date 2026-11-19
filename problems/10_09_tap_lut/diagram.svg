@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="330" viewBox="0 0 650 330" role="img">
+<title>an 8-bit shift register whose taps feed an 8-to-1 mux</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s" x="70" y="30" width="44" height="60" rx="3"/>
+<text class="t sm b" x="92" y="43" text-anchor="middle" dominant-baseline="central">sr0</text>
+<text class="t sm m" x="75" y="57" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="70,72 79,78 70,84"/>
+<text class="t sm m" x="109" y="57" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s" x="132" y="30" width="44" height="60" rx="3"/>
+<text class="t sm b" x="154" y="43" text-anchor="middle" dominant-baseline="central">sr1</text>
+<text class="t sm m" x="137" y="57" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="132,72 141,78 132,84"/>
+<text class="t sm m" x="171" y="57" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s" x="194" y="30" width="44" height="60" rx="3"/>
+<text class="t sm b" x="216" y="43" text-anchor="middle" dominant-baseline="central">sr2</text>
+<text class="t sm m" x="199" y="57" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="194,72 203,78 194,84"/>
+<text class="t sm m" x="233" y="57" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s" x="256" y="30" width="44" height="60" rx="3"/>
+<text class="t sm b" x="278" y="43" text-anchor="middle" dominant-baseline="central">sr3</text>
+<text class="t sm m" x="261" y="57" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="256,72 265,78 256,84"/>
+<text class="t sm m" x="295" y="57" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s" x="318" y="30" width="44" height="60" rx="3"/>
+<text class="t sm b" x="340" y="43" text-anchor="middle" dominant-baseline="central">sr4</text>
+<text class="t sm m" x="323" y="57" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="318,72 327,78 318,84"/>
+<text class="t sm m" x="357" y="57" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s" x="380" y="30" width="44" height="60" rx="3"/>
+<text class="t sm b" x="402" y="43" text-anchor="middle" dominant-baseline="central">sr5</text>
+<text class="t sm m" x="385" y="57" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="380,72 389,78 380,84"/>
+<text class="t sm m" x="419" y="57" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s" x="442" y="30" width="44" height="60" rx="3"/>
+<text class="t sm b" x="464" y="43" text-anchor="middle" dominant-baseline="central">sr6</text>
+<text class="t sm m" x="447" y="57" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="442,72 451,78 442,84"/>
+<text class="t sm m" x="481" y="57" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s" x="504" y="30" width="44" height="60" rx="3"/>
+<text class="t sm b" x="526" y="43" text-anchor="middle" dominant-baseline="central">sr7</text>
+<text class="t sm m" x="509" y="57" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="504,72 513,78 504,84"/>
+<text class="t sm m" x="543" y="57" text-anchor="end" dominant-baseline="central">q</text>
+<polyline class="s" points="30,57 70,57"/>
+<text class="t" x="24" y="57" text-anchor="end" dominant-baseline="central">sin</text>
+<polyline class="s" points="114,57 132,57"/>
+<polyline class="s" points="176,57 194,57"/>
+<polyline class="s" points="238,57 256,57"/>
+<polyline class="s" points="300,57 318,57"/>
+<polyline class="s" points="362,57 380,57"/>
+<polyline class="s" points="424,57 442,57"/>
+<polyline class="s" points="486,57 504,57"/>
+<polygon class="s" points="560,122 594,134 594,286 560,298"/>
+<text class="t sm m" x="565" y="140" text-anchor="start" dominant-baseline="central">7</text>
+<text class="t sm m" x="565" y="160" text-anchor="start" dominant-baseline="central">6</text>
+<text class="t sm m" x="565" y="180" text-anchor="start" dominant-baseline="central">5</text>
+<text class="t sm m" x="565" y="200" text-anchor="start" dominant-baseline="central">4</text>
+<text class="t sm m" x="565" y="220" text-anchor="start" dominant-baseline="central">3</text>
+<text class="t sm m" x="565" y="240" text-anchor="start" dominant-baseline="central">2</text>
+<text class="t sm m" x="565" y="260" text-anchor="start" dominant-baseline="central">1</text>
+<text class="t sm m" x="565" y="280" text-anchor="start" dominant-baseline="central">0</text>
+<polyline class="s" points="120,57 120,280 560,280"/>
+<circle class="k" cx="120" cy="57" r="3"/>
+<polyline class="s" points="182,57 182,260 560,260"/>
+<circle class="k" cx="182" cy="57" r="3"/>
+<polyline class="s" points="244,57 244,240 560,240"/>
+<circle class="k" cx="244" cy="57" r="3"/>
+<polyline class="s" points="306,57 306,220 560,220"/>
+<circle class="k" cx="306" cy="57" r="3"/>
+<polyline class="s" points="368,57 368,200 560,200"/>
+<circle class="k" cx="368" cy="57" r="3"/>
+<polyline class="s" points="430,57 430,180 560,180"/>
+<circle class="k" cx="430" cy="57" r="3"/>
+<polyline class="s" points="492,57 492,160 560,160"/>
+<circle class="k" cx="492" cy="57" r="3"/>
+<polyline class="s" points="548,57 556,57"/>
+<polyline class="s" points="556,57 556,140 560,140"/>
+<polyline class="s" points="577,292 577,318"/>
+<text class="t" x="587" y="312" text-anchor="start" dominant-baseline="central">addr</text>
+<polyline class="s" points="594,210 620,210"/>
+<text class="t a b" x="626" y="210" text-anchor="start" dominant-baseline="central">y</text>
+<text class="t sm m" x="30" y="318" text-anchor="start" dominant-baseline="central">shifts left when en = 1</text>
+</svg>

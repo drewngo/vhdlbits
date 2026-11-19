@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="210" viewBox="0 0 460 210" role="img">
+<title>register file: two combinational read ports and one clocked write port</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s" x="140" y="30" width="160" height="160" rx="3"/>
+<text class="t b" x="220" y="70" text-anchor="middle" dominant-baseline="central">registers</text>
+<text class="t b" x="220" y="86" text-anchor="middle" dominant-baseline="central">x0 .. x31</text>
+<text class="t sm m" x="145" y="54" text-anchor="start" dominant-baseline="central">we</text>
+<text class="t sm m" x="145" y="78" text-anchor="start" dominant-baseline="central">wa</text>
+<text class="t sm m" x="145" y="102" text-anchor="start" dominant-baseline="central">wd</text>
+<text class="t sm m" x="145" y="134" text-anchor="start" dominant-baseline="central">ra1</text>
+<text class="t sm m" x="145" y="158" text-anchor="start" dominant-baseline="central">ra2</text>
+<polyline class="s" points="140,172.8 149,178.8 140,184.8"/>
+<text class="t sm m" x="295" y="78" text-anchor="end" dominant-baseline="central">rd1</text>
+<text class="t sm m" x="295" y="150" text-anchor="end" dominant-baseline="central">rd2</text>
+<polyline class="s" points="70,54 140,54"/>
+<text class="t" x="64" y="54" text-anchor="end" dominant-baseline="central">we</text>
+<polyline class="s bus" points="70,78 140,78"/>
+<text class="t" x="64" y="78" text-anchor="end" dominant-baseline="central">wa</text>
+<polyline class="s bus" points="70,102 140,102"/>
+<text class="t" x="64" y="102" text-anchor="end" dominant-baseline="central">wd</text>
+<polyline class="s bus" points="70,134 140,134"/>
+<text class="t" x="64" y="134" text-anchor="end" dominant-baseline="central">ra1</text>
+<polyline class="s bus" points="70,158 140,158"/>
+<text class="t" x="64" y="158" text-anchor="end" dominant-baseline="central">ra2</text>
+<polyline class="s" points="70,178.8 140,178.8"/>
+<text class="t" x="64" y="178.8" text-anchor="end" dominant-baseline="central">clk</text>
+<text class="t sm m" x="220" y="118" text-anchor="middle" dominant-baseline="central">x0 reads 0</text>
+<polyline class="s bus" points="300,78 390,78"/>
+<text class="t a b" x="396" y="78" text-anchor="start" dominant-baseline="central">rd1</text>
+<polyline class="s bus" points="300,150 390,150"/>
+<text class="t a b" x="396" y="150" text-anchor="start" dominant-baseline="central">rd2</text>
+</svg>

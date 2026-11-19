@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="230" viewBox="0 0 300 230" role="img">
+<title>a 6-to-1 mux; sel = 6 or 7 gives 0000</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<polygon class="s" points="140,10 180,22 180,174 140,186"/>
+<text class="t sm m" x="145" y="28" text-anchor="start" dominant-baseline="central">0</text>
+<text class="t sm m" x="145" y="48" text-anchor="start" dominant-baseline="central">1</text>
+<text class="t sm m" x="145" y="68" text-anchor="start" dominant-baseline="central">2</text>
+<text class="t sm m" x="145" y="88" text-anchor="start" dominant-baseline="central">3</text>
+<text class="t sm m" x="145" y="108" text-anchor="start" dominant-baseline="central">4</text>
+<text class="t sm m" x="145" y="128" text-anchor="start" dominant-baseline="central">5</text>
+<text class="t sm m" x="145" y="148" text-anchor="start" dominant-baseline="central">6</text>
+<text class="t sm m" x="145" y="168" text-anchor="start" dominant-baseline="central">7</text>
+<polyline class="s bus" points="90,28 140,28"/>
+<text class="t" x="84" y="28" text-anchor="end" dominant-baseline="central">d0</text>
+<polyline class="s bus" points="90,48 140,48"/>
+<text class="t" x="84" y="48" text-anchor="end" dominant-baseline="central">d1</text>
+<polyline class="s bus" points="90,68 140,68"/>
+<text class="t" x="84" y="68" text-anchor="end" dominant-baseline="central">d2</text>
+<polyline class="s bus" points="90,88 140,88"/>
+<text class="t" x="84" y="88" text-anchor="end" dominant-baseline="central">d3</text>
+<polyline class="s bus" points="90,108 140,108"/>
+<text class="t" x="84" y="108" text-anchor="end" dominant-baseline="central">d4</text>
+<polyline class="s bus" points="90,128 140,128"/>
+<text class="t" x="84" y="128" text-anchor="end" dominant-baseline="central">d5</text>
+<polyline class="s bus" points="90,148 140,148"/>
+<text class="t" x="84" y="148" text-anchor="end" dominant-baseline="central">&quot;0000&quot;</text>
+<polyline class="s bus" points="90,168 140,168"/>
+<text class="t" x="84" y="168" text-anchor="end" dominant-baseline="central">&quot;0000&quot;</text>
+<polyline class="s bus" points="160,180 160,208"/>
+<text class="t" x="160" y="219" text-anchor="middle" dominant-baseline="central">sel</text>
+<polyline class="s bus" points="180,98 230,98"/>
+<text class="t a b" x="236" y="98" text-anchor="start" dominant-baseline="central">y</text>
+</svg>

@@ -1,0 +1,34 @@
+{
+  "id": "16_08_bug_fsm_default",
+  "section": 16,
+  "num": 8,
+  "name": "bug_fsm_default",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "din",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "found",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  }
+}

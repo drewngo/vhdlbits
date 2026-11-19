@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="487" height="150" viewBox="0 0 487 150" role="img">
+<title>a registered ROM read: data is the word at the addr sampled at the last edge</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<line class="s thin ms dash" x1="114.2" y1="8" x2="114.2" y2="128"/>
+<line class="s thin ms dash" x1="158.2" y1="8" x2="158.2" y2="128"/>
+<line class="s thin ms dash" x1="202.2" y1="8" x2="202.2" y2="128"/>
+<line class="s thin ms dash" x1="246.2" y1="8" x2="246.2" y2="128"/>
+<line class="s thin ms dash" x1="290.2" y1="8" x2="290.2" y2="128"/>
+<line class="s thin ms dash" x1="334.2" y1="8" x2="334.2" y2="128"/>
+<line class="s thin ms dash" x1="378.2" y1="8" x2="378.2" y2="128"/>
+<text class="t" x="80.2" y="23" text-anchor="end" dominant-baseline="central">clk</text>
+<line class="s" x1="92.2" y1="32" x2="114.2" y2="32"/>
+<line class="s" x1="114.2" y1="32" x2="114.2" y2="14"/>
+<line class="s" x1="114.2" y1="14" x2="136.2" y2="14"/>
+<line class="s" x1="136.2" y1="14" x2="136.2" y2="32"/>
+<line class="s" x1="136.2" y1="32" x2="158.2" y2="32"/>
+<line class="s" x1="158.2" y1="32" x2="158.2" y2="14"/>
+<line class="s" x1="158.2" y1="14" x2="180.2" y2="14"/>
+<line class="s" x1="180.2" y1="14" x2="180.2" y2="32"/>
+<line class="s" x1="180.2" y1="32" x2="202.2" y2="32"/>
+<line class="s" x1="202.2" y1="32" x2="202.2" y2="14"/>
+<line class="s" x1="202.2" y1="14" x2="224.2" y2="14"/>
+<line class="s" x1="224.2" y1="14" x2="224.2" y2="32"/>
+<line class="s" x1="224.2" y1="32" x2="246.2" y2="32"/>
+<line class="s" x1="246.2" y1="32" x2="246.2" y2="14"/>
+<line class="s" x1="246.2" y1="14" x2="268.2" y2="14"/>
+<line class="s" x1="268.2" y1="14" x2="268.2" y2="32"/>
+<line class="s" x1="268.2" y1="32" x2="290.2" y2="32"/>
+<line class="s" x1="290.2" y1="32" x2="290.2" y2="14"/>
+<line class="s" x1="290.2" y1="14" x2="312.2" y2="14"/>
+<line class="s" x1="312.2" y1="14" x2="312.2" y2="32"/>
+<line class="s" x1="312.2" y1="32" x2="334.2" y2="32"/>
+<line class="s" x1="334.2" y1="32" x2="334.2" y2="14"/>
+<line class="s" x1="334.2" y1="14" x2="356.2" y2="14"/>
+<line class="s" x1="356.2" y1="14" x2="356.2" y2="32"/>
+<line class="s" x1="356.2" y1="32" x2="378.2" y2="32"/>
+<line class="s" x1="378.2" y1="32" x2="378.2" y2="14"/>
+<line class="s" x1="378.2" y1="14" x2="400.2" y2="14"/>
+<text class="t" x="80.2" y="53" text-anchor="end" dominant-baseline="central">addr</text>
+<polygon class="s af" points="92.2,53 96.2,44 132.2,44 136.2,53 132.2,62 96.2,62"/>
+<text class="t" x="114.2" y="53" text-anchor="middle" dominant-baseline="central">3</text>
+<polygon class="s af" points="136.2,53 140.2,44 220.2,44 224.2,53 220.2,62 140.2,62"/>
+<text class="t" x="180.2" y="53" text-anchor="middle" dominant-baseline="central">7</text>
+<polygon class="s af" points="224.2,53 228.2,44 264.2,44 268.2,53 264.2,62 228.2,62"/>
+<text class="t" x="246.2" y="53" text-anchor="middle" dominant-baseline="central">10</text>
+<polygon class="s af" points="268.2,53 272.2,44 308.2,44 312.2,53 308.2,62 272.2,62"/>
+<text class="t" x="290.2" y="53" text-anchor="middle" dominant-baseline="central">2</text>
+<polygon class="s af" points="312.2,53 316.2,44 352.2,44 356.2,53 352.2,62 316.2,62"/>
+<text class="t" x="334.2" y="53" text-anchor="middle" dominant-baseline="central">15</text>
+<polygon class="s af" points="356.2,53 360.2,44 396.2,44 400.2,53 396.2,62 360.2,62"/>
+<text class="t" x="378.2" y="53" text-anchor="middle" dominant-baseline="central">0</text>
+<text class="t" x="80.2" y="83" text-anchor="end" dominant-baseline="central">12.1 data</text>
+<polygon class="s af" points="92.2,83 96.2,74 132.2,74 136.2,83 132.2,92 96.2,92"/>
+<text class="t" x="114.2" y="83" text-anchor="middle" dominant-baseline="central">09</text>
+<polygon class="s af" points="136.2,83 140.2,74 220.2,74 224.2,83 220.2,92 140.2,92"/>
+<text class="t" x="180.2" y="83" text-anchor="middle" dominant-baseline="central">31</text>
+<polygon class="s af" points="224.2,83 228.2,74 264.2,74 268.2,83 264.2,92 228.2,92"/>
+<text class="t" x="246.2" y="83" text-anchor="middle" dominant-baseline="central">64</text>
+<polygon class="s af" points="268.2,83 272.2,74 308.2,74 312.2,83 308.2,92 272.2,92"/>
+<text class="t" x="290.2" y="83" text-anchor="middle" dominant-baseline="central">04</text>
+<polygon class="s af" points="312.2,83 316.2,74 352.2,74 356.2,83 352.2,92 316.2,92"/>
+<text class="t" x="334.2" y="83" text-anchor="middle" dominant-baseline="central">E1</text>
+<polygon class="s af" points="356.2,83 360.2,74 396.2,74 400.2,83 396.2,92 360.2,92"/>
+<text class="t" x="378.2" y="83" text-anchor="middle" dominant-baseline="central">00</text>
+<text class="t a b" x="80.2" y="113" text-anchor="end" dominant-baseline="central">data</text>
+<polygon class="s xf" points="92.2,113 96.2,104 110.2,104 114.2,113 110.2,122 96.2,122"/>
+<polygon class="s af" points="114.2,113 118.2,104 154.2,104 158.2,113 154.2,122 118.2,122"/>
+<text class="t" x="136.2" y="113" text-anchor="middle" dominant-baseline="central">09</text>
+<polygon class="s af" points="158.2,113 162.2,104 242.2,104 246.2,113 242.2,122 162.2,122"/>
+<text class="t" x="202.2" y="113" text-anchor="middle" dominant-baseline="central">31</text>
+<polygon class="s af" points="246.2,113 250.2,104 286.2,104 290.2,113 286.2,122 250.2,122"/>
+<text class="t" x="268.2" y="113" text-anchor="middle" dominant-baseline="central">64</text>
+<polygon class="s af" points="290.2,113 294.2,104 330.2,104 334.2,113 330.2,122 294.2,122"/>
+<text class="t" x="312.2" y="113" text-anchor="middle" dominant-baseline="central">04</text>
+<polygon class="s af" points="334.2,113 338.2,104 374.2,104 378.2,113 374.2,122 338.2,122"/>
+<text class="t" x="356.2" y="113" text-anchor="middle" dominant-baseline="central">E1</text>
+<polygon class="s af" points="378.2,113 382.2,104 396.2,104 400.2,113 396.2,122 382.2,122"/>
+<text class="t" x="389.2" y="113" text-anchor="middle" dominant-baseline="central">00</text>
+<text class="t sm m" x="92.2" y="139" text-anchor="start" dominant-baseline="central">12.1 reads combinationally; here data lags addr by a clock</text>
+</svg>

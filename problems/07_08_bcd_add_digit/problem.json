@@ -1,0 +1,50 @@
+{
+  "id": "07_08_bcd_add_digit",
+  "section": 7,
+  "num": 8,
+  "name": "bcd_add_digit",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "cin",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "s",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "cout",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "range": {
+    "a": [
+      0,
+      9
+    ],
+    "b": [
+      0,
+      9
+    ]
+  }
+}

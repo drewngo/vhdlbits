@@ -1,0 +1,33 @@
+{
+  "id": "07_18_odd_parity9",
+  "section": 7,
+  "num": 18,
+  "name": "odd_parity9",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "data",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "word",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 8,
+      "low": 0
+    },
+    {
+      "name": "pbit",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "err",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

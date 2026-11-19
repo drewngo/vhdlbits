@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="150" viewBox="0 0 640 150" role="img">
+<title>the timer&#x27;s four phases</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s" x="20" y="30" width="120" height="56" rx="3"/>
+<text class="t b" x="80" y="50" text-anchor="middle" dominant-baseline="central">search</text>
+<text class="t sm m" x="80" y="70" text-anchor="middle" dominant-baseline="central">for 1101</text>
+<rect class="s" x="180" y="30" width="120" height="56" rx="3"/>
+<text class="t b" x="240" y="50" text-anchor="middle" dominant-baseline="central">shift in</text>
+<text class="t sm m" x="240" y="70" text-anchor="middle" dominant-baseline="central">4 bits: delay</text>
+<rect class="s" x="340" y="30" width="120" height="56" rx="3"/>
+<text class="t b" x="400" y="50" text-anchor="middle" dominant-baseline="central">count</text>
+<text class="t sm m" x="400" y="70" text-anchor="middle" dominant-baseline="central">(delay+1)×10</text>
+<rect class="s" x="500" y="30" width="120" height="56" rx="3"/>
+<text class="t b" x="560" y="50" text-anchor="middle" dominant-baseline="central">done</text>
+<text class="t sm m" x="560" y="70" text-anchor="middle" dominant-baseline="central">until ack</text>
+<polyline class="s" points="140,58 180,58"/>
+<polygon class="k" points="180,58 172.6,61.1 172.6,54.9"/>
+<polyline class="s" points="300,58 340,58"/>
+<polygon class="k" points="340,58 332.6,61.1 332.6,54.9"/>
+<polyline class="s" points="460,58 500,58"/>
+<polygon class="k" points="500,58 492.6,61.1 492.6,54.9"/>
+<text class="t sm a" x="400" y="100" text-anchor="middle" dominant-baseline="central">counting = 1</text>
+<text class="t sm a" x="560" y="100" text-anchor="middle" dominant-baseline="central">done = 1</text>
+<polyline class="s" points="560,86 560,130 80,130 80,88"/>
+<polygon class="k" points="80,88 83.1,95.4 76.9,95.4"/>
+<text class="t sm" x="330" y="122" text-anchor="middle" dominant-baseline="central">ack = 1</text>
+</svg>

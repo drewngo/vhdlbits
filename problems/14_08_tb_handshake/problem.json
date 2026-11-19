@@ -1,0 +1,10 @@
+{
+  "id": "14_08_tb_handshake",
+  "section": 14,
+  "num": 8,
+  "name": "tb_handshake",
+  "mode": "tb",
+  "tb_kind": "mutant",
+  "dut_file": "skid1.vhd",
+  "stop_time": "100us"
+}

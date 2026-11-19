@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="170" viewBox="0 0 520 170" role="img">
+<title>an 8-entry FIFO as a circular buffer with head and tail pointers</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s bg" x="50" y="60" width="50" height="40"/>
+<text class="t b" x="75" y="80" text-anchor="middle" dominant-baseline="central"></text>
+<text class="t sm m" x="75" y="112" text-anchor="middle" dominant-baseline="central">0</text>
+<rect class="s bg" x="100" y="60" width="50" height="40"/>
+<text class="t b" x="125" y="80" text-anchor="middle" dominant-baseline="central"></text>
+<text class="t sm m" x="125" y="112" text-anchor="middle" dominant-baseline="central">1</text>
+<rect class="s af" x="150" y="60" width="50" height="40"/>
+<text class="t b" x="175" y="80" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="t sm m" x="175" y="112" text-anchor="middle" dominant-baseline="central">2</text>
+<rect class="s af" x="200" y="60" width="50" height="40"/>
+<text class="t b" x="225" y="80" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="t sm m" x="225" y="112" text-anchor="middle" dominant-baseline="central">3</text>
+<rect class="s af" x="250" y="60" width="50" height="40"/>
+<text class="t b" x="275" y="80" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="t sm m" x="275" y="112" text-anchor="middle" dominant-baseline="central">4</text>
+<rect class="s bg" x="300" y="60" width="50" height="40"/>
+<text class="t b" x="325" y="80" text-anchor="middle" dominant-baseline="central"></text>
+<text class="t sm m" x="325" y="112" text-anchor="middle" dominant-baseline="central">5</text>
+<rect class="s bg" x="350" y="60" width="50" height="40"/>
+<text class="t b" x="375" y="80" text-anchor="middle" dominant-baseline="central"></text>
+<text class="t sm m" x="375" y="112" text-anchor="middle" dominant-baseline="central">6</text>
+<rect class="s bg" x="400" y="60" width="50" height="40"/>
+<text class="t b" x="425" y="80" text-anchor="middle" dominant-baseline="central"></text>
+<text class="t sm m" x="425" y="112" text-anchor="middle" dominant-baseline="central">7</text>
+<polyline class="s as" points="175,24 175,58"/>
+<polygon class="ak" points="175,58 171.9,50.6 178.1,50.6"/>
+<text class="t sm a" x="175" y="16" text-anchor="middle" dominant-baseline="central">head: dout = A</text>
+<polyline class="s" points="325,24 325,58"/>
+<polygon class="k" points="325,58 321.9,50.6 328.1,50.6"/>
+<text class="t sm" x="325" y="16" text-anchor="middle" dominant-baseline="central">tail: the next push</text>
+<polyline class="s thin dash" points="450,92 466,92 466,140 34,140 34,92 50,92"/>
+<polygon class="k" points="50,92 42.6,95.1 42.6,88.9"/>
+<text class="t sm m" x="250" y="152" text-anchor="middle" dominant-baseline="central">pointers wrap from 7 to 0; count = 3</text>
+</svg>

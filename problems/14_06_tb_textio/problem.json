@@ -1,0 +1,12 @@
+{
+  "id": "14_06_tb_textio",
+  "section": 14,
+  "num": 6,
+  "name": "tb_textio",
+  "mode": "tb",
+  "tb_kind": "mutant",
+  "dut_file": "adder8.vhd",
+  "data_files": [
+    "vectors.txt"
+  ]
+}

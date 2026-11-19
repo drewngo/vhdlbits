@@ -1,0 +1,63 @@
+{
+  "id": "15_14_rv32i_decoder",
+  "section": 15,
+  "num": 14,
+  "name": "rv32i_decoder",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "instr",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    },
+    {
+      "name": "reg_write",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "alu_src",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "mem_read",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "mem_write",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "mem_to_reg",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "branch",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "jump",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "alu_ctrl",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    }
+  ],
+  "stimulus": "rv32i",
+  "stimulus_opts": {
+    "port": "instr"
+  },
+  "vectors": 3000
+}

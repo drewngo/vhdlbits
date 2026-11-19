@@ -1,0 +1,40 @@
+{
+  "id": "10_07_shift_n_generic",
+  "section": 10,
+  "num": 7,
+  "name": "shift_n_generic",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "en",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "sin",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "sout",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "q",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": "N-1",
+      "low": 0
+    }
+  ],
+  "clock": "clk",
+  "generics": {
+    "N": 12
+  }
+}

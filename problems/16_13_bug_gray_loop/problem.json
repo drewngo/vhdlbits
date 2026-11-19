@@ -1,0 +1,23 @@
+{
+  "id": "16_13_bug_gray_loop",
+  "section": 16,
+  "num": 13,
+  "name": "bug_gray_loop",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "g",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "b",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="250" viewBox="0 0 680 250" role="img">
+<title>a 4-sample moving average: the last four accepted samples, summed, divided by 4</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<text class="t" x="40" y="60" text-anchor="end" dominant-baseline="central">x</text>
+<rect class="s" x="110" y="31.2" width="56" height="64" rx="3"/>
+<text class="t sm b" x="138" y="44.2" text-anchor="middle" dominant-baseline="central">h0</text>
+<text class="t sm m" x="115" y="60" text-anchor="start" dominant-baseline="central">d</text>
+<text class="t sm m" x="115" y="72.8" text-anchor="start" dominant-baseline="central">en</text>
+<polyline class="s" points="110,76.4 119,82.4 110,88.4"/>
+<text class="t sm m" x="161" y="60" text-anchor="end" dominant-baseline="central">q</text>
+<polyline class="s bus" points="44,60 110,60"/>
+<rect class="s" x="220" y="31.2" width="56" height="64" rx="3"/>
+<text class="t sm b" x="248" y="44.2" text-anchor="middle" dominant-baseline="central">h1</text>
+<text class="t sm m" x="225" y="60" text-anchor="start" dominant-baseline="central">d</text>
+<text class="t sm m" x="225" y="72.8" text-anchor="start" dominant-baseline="central">en</text>
+<polyline class="s" points="220,76.4 229,82.4 220,88.4"/>
+<text class="t sm m" x="271" y="60" text-anchor="end" dominant-baseline="central">q</text>
+<polyline class="s bus" points="166,60 220,60"/>
+<rect class="s" x="330" y="31.2" width="56" height="64" rx="3"/>
+<text class="t sm b" x="358" y="44.2" text-anchor="middle" dominant-baseline="central">h2</text>
+<text class="t sm m" x="335" y="60" text-anchor="start" dominant-baseline="central">d</text>
+<text class="t sm m" x="335" y="72.8" text-anchor="start" dominant-baseline="central">en</text>
+<polyline class="s" points="330,76.4 339,82.4 330,88.4"/>
+<text class="t sm m" x="381" y="60" text-anchor="end" dominant-baseline="central">q</text>
+<polyline class="s bus" points="276,60 330,60"/>
+<rect class="s" x="440" y="31.2" width="56" height="64" rx="3"/>
+<text class="t sm b" x="468" y="44.2" text-anchor="middle" dominant-baseline="central">h3</text>
+<text class="t sm m" x="445" y="60" text-anchor="start" dominant-baseline="central">d</text>
+<text class="t sm m" x="445" y="72.8" text-anchor="start" dominant-baseline="central">en</text>
+<polyline class="s" points="440,76.4 449,82.4 440,88.4"/>
+<text class="t sm m" x="491" y="60" text-anchor="end" dominant-baseline="central">q</text>
+<polyline class="s bus" points="386,60 440,60"/>
+<polyline class="s bus" points="496,60 514,60"/>
+<rect class="s bg" x="160" y="168" width="378" height="30" rx="3"/>
+<text class="t b" x="349" y="183" text-anchor="middle" dominant-baseline="central">+</text>
+<circle class="k" cx="184" cy="60" r="3"/>
+<polyline class="s bus" points="184,60 184,168"/>
+<polygon class="k" points="184,168 180.9,160.6 187.1,160.6"/>
+<circle class="k" cx="294" cy="60" r="3"/>
+<polyline class="s bus" points="294,60 294,168"/>
+<polygon class="k" points="294,168 290.9,160.6 297.1,160.6"/>
+<circle class="k" cx="404" cy="60" r="3"/>
+<polyline class="s bus" points="404,60 404,168"/>
+<polygon class="k" points="404,168 400.9,160.6 407.1,160.6"/>
+<circle class="k" cx="514" cy="60" r="3"/>
+<polyline class="s bus" points="514,60 514,168"/>
+<polygon class="k" points="514,168 510.9,160.6 517.1,160.6"/>
+<polyline class="s bus" points="538,183 562,183"/>
+<text class="t b" x="580" y="183" text-anchor="middle" dominant-baseline="central">/ 4</text>
+<polyline class="s bus" points="598,183 628,183"/>
+<text class="t a b" x="634" y="183" text-anchor="start" dominant-baseline="central">y</text>
+<text class="t sm m" x="320" y="238" text-anchor="middle" dominant-baseline="central">en = valid; every register shifts together</text>
+</svg>

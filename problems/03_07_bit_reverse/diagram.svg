@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="335.2" height="146" viewBox="0 0 335.2 146" role="img">
+<title>bit reverse: dout(i) = din(7 - i)</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<text class="t" x="39.2" y="33" text-anchor="end" dominant-baseline="central">din</text>
+<rect class="s bg" x="49.2" y="18" width="34" height="30"/>
+<text class="t" x="66.2" y="33" text-anchor="middle" dominant-baseline="central">7</text>
+<text class="t sm m" x="66.2" y="11" text-anchor="middle" dominant-baseline="central">7</text>
+<rect class="s bg" x="83.2" y="18" width="34" height="30"/>
+<text class="t" x="100.2" y="33" text-anchor="middle" dominant-baseline="central">6</text>
+<text class="t sm m" x="100.2" y="11" text-anchor="middle" dominant-baseline="central">6</text>
+<rect class="s bg" x="117.2" y="18" width="34" height="30"/>
+<text class="t" x="134.2" y="33" text-anchor="middle" dominant-baseline="central">5</text>
+<text class="t sm m" x="134.2" y="11" text-anchor="middle" dominant-baseline="central">5</text>
+<rect class="s bg" x="151.2" y="18" width="34" height="30"/>
+<text class="t" x="168.2" y="33" text-anchor="middle" dominant-baseline="central">4</text>
+<text class="t sm m" x="168.2" y="11" text-anchor="middle" dominant-baseline="central">4</text>
+<rect class="s bg" x="185.2" y="18" width="34" height="30"/>
+<text class="t" x="202.2" y="33" text-anchor="middle" dominant-baseline="central">3</text>
+<text class="t sm m" x="202.2" y="11" text-anchor="middle" dominant-baseline="central">3</text>
+<rect class="s bg" x="219.2" y="18" width="34" height="30"/>
+<text class="t" x="236.2" y="33" text-anchor="middle" dominant-baseline="central">2</text>
+<text class="t sm m" x="236.2" y="11" text-anchor="middle" dominant-baseline="central">2</text>
+<rect class="s bg" x="253.2" y="18" width="34" height="30"/>
+<text class="t" x="270.2" y="33" text-anchor="middle" dominant-baseline="central">1</text>
+<text class="t sm m" x="270.2" y="11" text-anchor="middle" dominant-baseline="central">1</text>
+<rect class="s bg" x="287.2" y="18" width="34" height="30"/>
+<text class="t" x="304.2" y="33" text-anchor="middle" dominant-baseline="central">0</text>
+<text class="t sm m" x="304.2" y="11" text-anchor="middle" dominant-baseline="central">0</text>
+<text class="t" x="39.2" y="123" text-anchor="end" dominant-baseline="central">dout</text>
+<rect class="s af" x="49.2" y="108" width="34" height="30"/>
+<text class="t" x="66.2" y="123" text-anchor="middle" dominant-baseline="central">0</text>
+<text class="t sm m" x="66.2" y="101" text-anchor="middle" dominant-baseline="central">7</text>
+<rect class="s af" x="83.2" y="108" width="34" height="30"/>
+<text class="t" x="100.2" y="123" text-anchor="middle" dominant-baseline="central">1</text>
+<text class="t sm m" x="100.2" y="101" text-anchor="middle" dominant-baseline="central">6</text>
+<rect class="s af" x="117.2" y="108" width="34" height="30"/>
+<text class="t" x="134.2" y="123" text-anchor="middle" dominant-baseline="central">2</text>
+<text class="t sm m" x="134.2" y="101" text-anchor="middle" dominant-baseline="central">5</text>
+<rect class="s af" x="151.2" y="108" width="34" height="30"/>
+<text class="t" x="168.2" y="123" text-anchor="middle" dominant-baseline="central">3</text>
+<text class="t sm m" x="168.2" y="101" text-anchor="middle" dominant-baseline="central">4</text>
+<rect class="s af" x="185.2" y="108" width="34" height="30"/>
+<text class="t" x="202.2" y="123" text-anchor="middle" dominant-baseline="central">4</text>
+<text class="t sm m" x="202.2" y="101" text-anchor="middle" dominant-baseline="central">3</text>
+<rect class="s af" x="219.2" y="108" width="34" height="30"/>
+<text class="t" x="236.2" y="123" text-anchor="middle" dominant-baseline="central">5</text>
+<text class="t sm m" x="236.2" y="101" text-anchor="middle" dominant-baseline="central">2</text>
+<rect class="s af" x="253.2" y="108" width="34" height="30"/>
+<text class="t" x="270.2" y="123" text-anchor="middle" dominant-baseline="central">6</text>
+<text class="t sm m" x="270.2" y="101" text-anchor="middle" dominant-baseline="central">1</text>
+<rect class="s af" x="287.2" y="108" width="34" height="30"/>
+<text class="t" x="304.2" y="123" text-anchor="middle" dominant-baseline="central">7</text>
+<text class="t sm m" x="304.2" y="101" text-anchor="middle" dominant-baseline="central">0</text>
+<polyline class="s thin ms" points="66.2,48 304.2,94"/>
+<polygon class="k" points="304.2,94 296.4,95.7 297.6,89.5"/>
+<polyline class="s thin ms" points="100.2,48 270.2,94"/>
+<polygon class="k" points="270.2,94 262.3,95.1 263.9,89.1"/>
+<polyline class="s thin ms" points="134.2,48 236.2,94"/>
+<polygon class="k" points="236.2,94 228.2,93.8 230.8,88.1"/>
+<polyline class="s thin ms" points="168.2,48 202.2,94"/>
+<polygon class="k" points="202.2,94 195.3,89.9 200.3,86.2"/>
+<polyline class="s thin ms" points="202.2,48 168.2,94"/>
+<polygon class="k" points="168.2,94 170.1,86.2 175.1,89.9"/>
+<polyline class="s thin ms" points="236.2,48 134.2,94"/>
+<polygon class="k" points="134.2,94 139.6,88.1 142.2,93.8"/>
+<polyline class="s thin ms" points="270.2,48 100.2,94"/>
+<polygon class="k" points="100.2,94 106.5,89.1 108.1,95.1"/>
+<polyline class="s thin ms" points="304.2,48 66.2,94"/>
+<polygon class="k" points="66.2,94 72.8,89.5 74,95.7"/>
+</svg>

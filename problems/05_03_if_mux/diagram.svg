@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="160" viewBox="0 0 400 160" role="img">
+<title>b is selected only when sel1 and sel2 are both 1</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<polygon class="s" points="200,22 234,34 234,66 200,78"/>
+<text class="t sm m" x="205" y="40" text-anchor="start" dominant-baseline="central">0</text>
+<text class="t sm m" x="205" y="60" text-anchor="start" dominant-baseline="central">1</text>
+<polyline class="s" points="40,40 200,40"/>
+<text class="t" x="34" y="40" text-anchor="end" dominant-baseline="central">a</text>
+<polyline class="s" points="40,60 200,60"/>
+<text class="t" x="34" y="60" text-anchor="end" dominant-baseline="central">b</text>
+<path class="s" d="M100,100 H126 A20,20 0 0 1 126,140 H100 Z"/>
+<polyline class="s" points="60,110 100,110"/>
+<text class="t" x="54" y="110" text-anchor="end" dominant-baseline="central">sel1</text>
+<polyline class="s" points="60,130 100,130"/>
+<text class="t" x="54" y="130" text-anchor="end" dominant-baseline="central">sel2</text>
+<polyline class="s" points="146,120 217,120 217,72"/>
+<polyline class="s" points="234,50 290,50"/>
+<text class="t a b" x="296" y="50" text-anchor="start" dominant-baseline="central">y_when, y_if</text>
+</svg>

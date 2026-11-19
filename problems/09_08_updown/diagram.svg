@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="377.4" height="134" viewBox="0 0 377.4 134" role="img">
+<title>up/down counter wrapping both ways</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<line class="s thin ms dash" x1="65.4" y1="8" x2="65.4" y2="128"/>
+<line class="s thin ms dash" x1="105.4" y1="8" x2="105.4" y2="128"/>
+<line class="s thin ms dash" x1="145.4" y1="8" x2="145.4" y2="128"/>
+<line class="s thin ms dash" x1="185.4" y1="8" x2="185.4" y2="128"/>
+<line class="s thin ms dash" x1="225.4" y1="8" x2="225.4" y2="128"/>
+<line class="s thin ms dash" x1="265.4" y1="8" x2="265.4" y2="128"/>
+<line class="s thin ms dash" x1="305.4" y1="8" x2="305.4" y2="128"/>
+<line class="s thin ms dash" x1="345.4" y1="8" x2="345.4" y2="128"/>
+<text class="t" x="33.4" y="23" text-anchor="end" dominant-baseline="central">clk</text>
+<line class="s" x1="45.4" y1="32" x2="65.4" y2="32"/>
+<line class="s" x1="65.4" y1="32" x2="65.4" y2="14"/>
+<line class="s" x1="65.4" y1="14" x2="85.4" y2="14"/>
+<line class="s" x1="85.4" y1="14" x2="85.4" y2="32"/>
+<line class="s" x1="85.4" y1="32" x2="105.4" y2="32"/>
+<line class="s" x1="105.4" y1="32" x2="105.4" y2="14"/>
+<line class="s" x1="105.4" y1="14" x2="125.4" y2="14"/>
+<line class="s" x1="125.4" y1="14" x2="125.4" y2="32"/>
+<line class="s" x1="125.4" y1="32" x2="145.4" y2="32"/>
+<line class="s" x1="145.4" y1="32" x2="145.4" y2="14"/>
+<line class="s" x1="145.4" y1="14" x2="165.4" y2="14"/>
+<line class="s" x1="165.4" y1="14" x2="165.4" y2="32"/>
+<line class="s" x1="165.4" y1="32" x2="185.4" y2="32"/>
+<line class="s" x1="185.4" y1="32" x2="185.4" y2="14"/>
+<line class="s" x1="185.4" y1="14" x2="205.4" y2="14"/>
+<line class="s" x1="205.4" y1="14" x2="205.4" y2="32"/>
+<line class="s" x1="205.4" y1="32" x2="225.4" y2="32"/>
+<line class="s" x1="225.4" y1="32" x2="225.4" y2="14"/>
+<line class="s" x1="225.4" y1="14" x2="245.4" y2="14"/>
+<line class="s" x1="245.4" y1="14" x2="245.4" y2="32"/>
+<line class="s" x1="245.4" y1="32" x2="265.4" y2="32"/>
+<line class="s" x1="265.4" y1="32" x2="265.4" y2="14"/>
+<line class="s" x1="265.4" y1="14" x2="285.4" y2="14"/>
+<line class="s" x1="285.4" y1="14" x2="285.4" y2="32"/>
+<line class="s" x1="285.4" y1="32" x2="305.4" y2="32"/>
+<line class="s" x1="305.4" y1="32" x2="305.4" y2="14"/>
+<line class="s" x1="305.4" y1="14" x2="325.4" y2="14"/>
+<line class="s" x1="325.4" y1="14" x2="325.4" y2="32"/>
+<line class="s" x1="325.4" y1="32" x2="345.4" y2="32"/>
+<line class="s" x1="345.4" y1="32" x2="345.4" y2="14"/>
+<line class="s" x1="345.4" y1="14" x2="365.4" y2="14"/>
+<text class="t" x="33.4" y="53" text-anchor="end" dominant-baseline="central">en</text>
+<line class="s" x1="45.4" y1="44" x2="245.4" y2="44"/>
+<line class="s" x1="245.4" y1="44" x2="245.4" y2="62"/>
+<line class="s" x1="245.4" y1="62" x2="285.4" y2="62"/>
+<line class="s" x1="285.4" y1="62" x2="285.4" y2="44"/>
+<line class="s" x1="285.4" y1="44" x2="365.4" y2="44"/>
+<text class="t" x="33.4" y="83" text-anchor="end" dominant-baseline="central">up</text>
+<line class="s" x1="45.4" y1="74" x2="125.4" y2="74"/>
+<line class="s" x1="125.4" y1="74" x2="125.4" y2="92"/>
+<line class="s" x1="125.4" y1="92" x2="325.4" y2="92"/>
+<line class="s" x1="325.4" y1="92" x2="325.4" y2="74"/>
+<line class="s" x1="325.4" y1="74" x2="365.4" y2="74"/>
+<text class="t a b" x="33.4" y="113" text-anchor="end" dominant-baseline="central">q</text>
+<polygon class="s af" points="45.4,113 49.4,104 61.4,104 65.4,113 61.4,122 49.4,122"/>
+<polygon class="s af" points="65.4,113 69.4,104 101.4,104 105.4,113 101.4,122 69.4,122"/>
+<text class="t" x="85.4" y="113" text-anchor="middle" dominant-baseline="central">255</text>
+<polygon class="s af" points="105.4,113 109.4,104 141.4,104 145.4,113 141.4,122 109.4,122"/>
+<text class="t" x="125.4" y="113" text-anchor="middle" dominant-baseline="central">0</text>
+<polygon class="s af" points="145.4,113 149.4,104 181.4,104 185.4,113 181.4,122 149.4,122"/>
+<text class="t" x="165.4" y="113" text-anchor="middle" dominant-baseline="central">255</text>
+<polygon class="s af" points="185.4,113 189.4,104 221.4,104 225.4,113 221.4,122 189.4,122"/>
+<text class="t" x="205.4" y="113" text-anchor="middle" dominant-baseline="central">254</text>
+<polygon class="s af" points="225.4,113 229.4,104 301.4,104 305.4,113 301.4,122 229.4,122"/>
+<text class="t" x="265.4" y="113" text-anchor="middle" dominant-baseline="central">253</text>
+<polygon class="s af" points="305.4,113 309.4,104 341.4,104 345.4,113 341.4,122 309.4,122"/>
+<text class="t" x="325.4" y="113" text-anchor="middle" dominant-baseline="central">252</text>
+<polygon class="s af" points="345.4,113 349.4,104 361.4,104 365.4,113 361.4,122 349.4,122"/>
+</svg>

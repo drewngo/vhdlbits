@@ -1,0 +1,40 @@
+{
+  "id": "05_02_clocked_process",
+  "section": 5,
+  "num": 2,
+  "name": "clocked_process",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "y_conc",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "y_comb",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "y_ff",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk"
+}

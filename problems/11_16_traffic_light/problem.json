@@ -1,0 +1,64 @@
+{
+  "id": "11_16_traffic_light",
+  "section": 11,
+  "num": 16,
+  "name": "traffic_light",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "car_side",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "main_g",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "main_y",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "main_r",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "side_g",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "side_y",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "side_r",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  },
+  "bias": {
+    "car_side": 0.3
+  },
+  "reset_prob": 0.01,
+  "cycles": 600
+}

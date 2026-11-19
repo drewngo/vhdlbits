@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="608.6" height="180" viewBox="0 0 608.6 180" role="img">
+<title>bit unstuffing: outputs pulse for the cycle after the edge that completes a pattern</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<line class="s thin ms dash" x1="86.6" y1="8" x2="86.6" y2="158"/>
+<line class="s thin ms dash" x1="106.6" y1="8" x2="106.6" y2="158"/>
+<line class="s thin ms dash" x1="126.6" y1="8" x2="126.6" y2="158"/>
+<line class="s thin ms dash" x1="146.6" y1="8" x2="146.6" y2="158"/>
+<line class="s thin ms dash" x1="166.6" y1="8" x2="166.6" y2="158"/>
+<line class="s thin ms dash" x1="186.6" y1="8" x2="186.6" y2="158"/>
+<line class="s thin ms dash" x1="206.6" y1="8" x2="206.6" y2="158"/>
+<line class="s thin ms dash" x1="226.6" y1="8" x2="226.6" y2="158"/>
+<line class="s thin ms dash" x1="246.6" y1="8" x2="246.6" y2="158"/>
+<line class="s thin ms dash" x1="266.6" y1="8" x2="266.6" y2="158"/>
+<line class="s thin ms dash" x1="286.6" y1="8" x2="286.6" y2="158"/>
+<line class="s thin ms dash" x1="306.6" y1="8" x2="306.6" y2="158"/>
+<line class="s thin ms dash" x1="326.6" y1="8" x2="326.6" y2="158"/>
+<line class="s thin ms dash" x1="346.6" y1="8" x2="346.6" y2="158"/>
+<line class="s thin ms dash" x1="366.6" y1="8" x2="366.6" y2="158"/>
+<line class="s thin ms dash" x1="386.6" y1="8" x2="386.6" y2="158"/>
+<line class="s thin ms dash" x1="406.6" y1="8" x2="406.6" y2="158"/>
+<line class="s thin ms dash" x1="426.6" y1="8" x2="426.6" y2="158"/>
+<line class="s thin ms dash" x1="446.6" y1="8" x2="446.6" y2="158"/>
+<line class="s thin ms dash" x1="466.6" y1="8" x2="466.6" y2="158"/>
+<line class="s thin ms dash" x1="486.6" y1="8" x2="486.6" y2="158"/>
+<line class="s thin ms dash" x1="506.6" y1="8" x2="506.6" y2="158"/>
+<line class="s thin ms dash" x1="526.6" y1="8" x2="526.6" y2="158"/>
+<line class="s thin ms dash" x1="546.6" y1="8" x2="546.6" y2="158"/>
+<line class="s thin ms dash" x1="566.6" y1="8" x2="566.6" y2="158"/>
+<line class="s thin ms dash" x1="586.6" y1="8" x2="586.6" y2="158"/>
+<text class="t" x="64.6" y="23" text-anchor="end" dominant-baseline="central">clk</text>
+<line class="s" x1="76.6" y1="32" x2="86.6" y2="32"/>
+<line class="s" x1="86.6" y1="32" x2="86.6" y2="14"/>
+<line class="s" x1="86.6" y1="14" x2="96.6" y2="14"/>
+<line class="s" x1="96.6" y1="14" x2="96.6" y2="32"/>
+<line class="s" x1="96.6" y1="32" x2="106.6" y2="32"/>
+<line class="s" x1="106.6" y1="32" x2="106.6" y2="14"/>
+<line class="s" x1="106.6" y1="14" x2="116.6" y2="14"/>
+<line class="s" x1="116.6" y1="14" x2="116.6" y2="32"/>
+<line class="s" x1="116.6" y1="32" x2="126.6" y2="32"/>
+<line class="s" x1="126.6" y1="32" x2="126.6" y2="14"/>
+<line class="s" x1="126.6" y1="14" x2="136.6" y2="14"/>
+<line class="s" x1="136.6" y1="14" x2="136.6" y2="32"/>
+<line class="s" x1="136.6" y1="32" x2="146.6" y2="32"/>
+<line class="s" x1="146.6" y1="32" x2="146.6" y2="14"/>
+<line class="s" x1="146.6" y1="14" x2="156.6" y2="14"/>
+<line class="s" x1="156.6" y1="14" x2="156.6" y2="32"/>
+<line class="s" x1="156.6" y1="32" x2="166.6" y2="32"/>
+<line class="s" x1="166.6" y1="32" x2="166.6" y2="14"/>
+<line class="s" x1="166.6" y1="14" x2="176.6" y2="14"/>
+<line class="s" x1="176.6" y1="14" x2="176.6" y2="32"/>
+<line class="s" x1="176.6" y1="32" x2="186.6" y2="32"/>
+<line class="s" x1="186.6" y1="32" x2="186.6" y2="14"/>
+<line class="s" x1="186.6" y1="14" x2="196.6" y2="14"/>
+<line class="s" x1="196.6" y1="14" x2="196.6" y2="32"/>
+<line class="s" x1="196.6" y1="32" x2="206.6" y2="32"/>
+<line class="s" x1="206.6" y1="32" x2="206.6" y2="14"/>
+<line class="s" x1="206.6" y1="14" x2="216.6" y2="14"/>
+<line class="s" x1="216.6" y1="14" x2="216.6" y2="32"/>
+<line class="s" x1="216.6" y1="32" x2="226.6" y2="32"/>
+<line class="s" x1="226.6" y1="32" x2="226.6" y2="14"/>
+<line class="s" x1="226.6" y1="14" x2="236.6" y2="14"/>
+<line class="s" x1="236.6" y1="14" x2="236.6" y2="32"/>
+<line class="s" x1="236.6" y1="32" x2="246.6" y2="32"/>
+<line class="s" x1="246.6" y1="32" x2="246.6" y2="14"/>
+<line class="s" x1="246.6" y1="14" x2="256.6" y2="14"/>
+<line class="s" x1="256.6" y1="14" x2="256.6" y2="32"/>
+<line class="s" x1="256.6" y1="32" x2="266.6" y2="32"/>
+<line class="s" x1="266.6" y1="32" x2="266.6" y2="14"/>
+<line class="s" x1="266.6" y1="14" x2="276.6" y2="14"/>
+<line class="s" x1="276.6" y1="14" x2="276.6" y2="32"/>
+<line class="s" x1="276.6" y1="32" x2="286.6" y2="32"/>
+<line class="s" x1="286.6" y1="32" x2="286.6" y2="14"/>
+<line class="s" x1="286.6" y1="14" x2="296.6" y2="14"/>
+<line class="s" x1="296.6" y1="14" x2="296.6" y2="32"/>
+<line class="s" x1="296.6" y1="32" x2="306.6" y2="32"/>
+<line class="s" x1="306.6" y1="32" x2="306.6" y2="14"/>
+<line class="s" x1="306.6" y1="14" x2="316.6" y2="14"/>
+<line class="s" x1="316.6" y1="14" x2="316.6" y2="32"/>
+<line class="s" x1="316.6" y1="32" x2="326.6" y2="32"/>
+<line class="s" x1="326.6" y1="32" x2="326.6" y2="14"/>
+<line class="s" x1="326.6" y1="14" x2="336.6" y2="14"/>
+<line class="s" x1="336.6" y1="14" x2="336.6" y2="32"/>
+<line class="s" x1="336.6" y1="32" x2="346.6" y2="32"/>
+<line class="s" x1="346.6" y1="32" x2="346.6" y2="14"/>
+<line class="s" x1="346.6" y1="14" x2="356.6" y2="14"/>
+<line class="s" x1="356.6" y1="14" x2="356.6" y2="32"/>
+<line class="s" x1="356.6" y1="32" x2="366.6" y2="32"/>
+<line class="s" x1="366.6" y1="32" x2="366.6" y2="14"/>
+<line class="s" x1="366.6" y1="14" x2="376.6" y2="14"/>
+<line class="s" x1="376.6" y1="14" x2="376.6" y2="32"/>
+<line class="s" x1="376.6" y1="32" x2="386.6" y2="32"/>
+<line class="s" x1="386.6" y1="32" x2="386.6" y2="14"/>
+<line class="s" x1="386.6" y1="14" x2="396.6" y2="14"/>
+<line class="s" x1="396.6" y1="14" x2="396.6" y2="32"/>
+<line class="s" x1="396.6" y1="32" x2="406.6" y2="32"/>
+<line class="s" x1="406.6" y1="32" x2="406.6" y2="14"/>
+<line class="s" x1="406.6" y1="14" x2="416.6" y2="14"/>
+<line class="s" x1="416.6" y1="14" x2="416.6" y2="32"/>
+<line class="s" x1="416.6" y1="32" x2="426.6" y2="32"/>
+<line class="s" x1="426.6" y1="32" x2="426.6" y2="14"/>
+<line class="s" x1="426.6" y1="14" x2="436.6" y2="14"/>
+<line class="s" x1="436.6" y1="14" x2="436.6" y2="32"/>
+<line class="s" x1="436.6" y1="32" x2="446.6" y2="32"/>
+<line class="s" x1="446.6" y1="32" x2="446.6" y2="14"/>
+<line class="s" x1="446.6" y1="14" x2="456.6" y2="14"/>
+<line class="s" x1="456.6" y1="14" x2="456.6" y2="32"/>
+<line class="s" x1="456.6" y1="32" x2="466.6" y2="32"/>
+<line class="s" x1="466.6" y1="32" x2="466.6" y2="14"/>
+<line class="s" x1="466.6" y1="14" x2="476.6" y2="14"/>
+<line class="s" x1="476.6" y1="14" x2="476.6" y2="32"/>
+<line class="s" x1="476.6" y1="32" x2="486.6" y2="32"/>
+<line class="s" x1="486.6" y1="32" x2="486.6" y2="14"/>
+<line class="s" x1="486.6" y1="14" x2="496.6" y2="14"/>
+<line class="s" x1="496.6" y1="14" x2="496.6" y2="32"/>
+<line class="s" x1="496.6" y1="32" x2="506.6" y2="32"/>
+<line class="s" x1="506.6" y1="32" x2="506.6" y2="14"/>
+<line class="s" x1="506.6" y1="14" x2="516.6" y2="14"/>
+<line class="s" x1="516.6" y1="14" x2="516.6" y2="32"/>
+<line class="s" x1="516.6" y1="32" x2="526.6" y2="32"/>
+<line class="s" x1="526.6" y1="32" x2="526.6" y2="14"/>
+<line class="s" x1="526.6" y1="14" x2="536.6" y2="14"/>
+<line class="s" x1="536.6" y1="14" x2="536.6" y2="32"/>
+<line class="s" x1="536.6" y1="32" x2="546.6" y2="32"/>
+<line class="s" x1="546.6" y1="32" x2="546.6" y2="14"/>
+<line class="s" x1="546.6" y1="14" x2="556.6" y2="14"/>
+<line class="s" x1="556.6" y1="14" x2="556.6" y2="32"/>
+<line class="s" x1="556.6" y1="32" x2="566.6" y2="32"/>
+<line class="s" x1="566.6" y1="32" x2="566.6" y2="14"/>
+<line class="s" x1="566.6" y1="14" x2="576.6" y2="14"/>
+<line class="s" x1="576.6" y1="14" x2="576.6" y2="32"/>
+<line class="s" x1="576.6" y1="32" x2="586.6" y2="32"/>
+<line class="s" x1="586.6" y1="32" x2="586.6" y2="14"/>
+<line class="s" x1="586.6" y1="14" x2="596.6" y2="14"/>
+<text class="t" x="64.6" y="53" text-anchor="end" dominant-baseline="central">din</text>
+<line class="s" x1="76.6" y1="62" x2="96.6" y2="62"/>
+<line class="s" x1="96.6" y1="62" x2="96.6" y2="44"/>
+<line class="s" x1="96.6" y1="44" x2="196.6" y2="44"/>
+<line class="s" x1="196.6" y1="44" x2="196.6" y2="62"/>
+<line class="s" x1="196.6" y1="62" x2="216.6" y2="62"/>
+<line class="s" x1="216.6" y1="62" x2="216.6" y2="44"/>
+<line class="s" x1="216.6" y1="44" x2="236.6" y2="44"/>
+<line class="s" x1="236.6" y1="44" x2="236.6" y2="62"/>
+<line class="s" x1="236.6" y1="62" x2="256.6" y2="62"/>
+<line class="s" x1="256.6" y1="62" x2="256.6" y2="44"/>
+<line class="s" x1="256.6" y1="44" x2="376.6" y2="44"/>
+<line class="s" x1="376.6" y1="44" x2="376.6" y2="62"/>
+<line class="s" x1="376.6" y1="62" x2="396.6" y2="62"/>
+<line class="s" x1="396.6" y1="62" x2="396.6" y2="44"/>
+<line class="s" x1="396.6" y1="44" x2="556.6" y2="44"/>
+<line class="s" x1="556.6" y1="44" x2="556.6" y2="62"/>
+<line class="s" x1="556.6" y1="62" x2="576.6" y2="62"/>
+<line class="s" x1="576.6" y1="62" x2="576.6" y2="44"/>
+<line class="s" x1="576.6" y1="44" x2="596.6" y2="44"/>
+<text class="t a b" x="64.6" y="83" text-anchor="end" dominant-baseline="central">discard</text>
+<line class="s" x1="76.6" y1="92" x2="206.6" y2="92"/>
+<line class="s" x1="206.6" y1="92" x2="206.6" y2="74"/>
+<line class="s" x1="206.6" y1="74" x2="226.6" y2="74"/>
+<line class="s" x1="226.6" y1="74" x2="226.6" y2="92"/>
+<line class="s" x1="226.6" y1="92" x2="596.6" y2="92"/>
+<text class="t a b" x="64.6" y="113" text-anchor="end" dominant-baseline="central">flag</text>
+<line class="s" x1="76.6" y1="122" x2="386.6" y2="122"/>
+<line class="s" x1="386.6" y1="122" x2="386.6" y2="104"/>
+<line class="s" x1="386.6" y1="104" x2="406.6" y2="104"/>
+<line class="s" x1="406.6" y1="104" x2="406.6" y2="122"/>
+<line class="s" x1="406.6" y1="122" x2="596.6" y2="122"/>
+<text class="t a b" x="64.6" y="143" text-anchor="end" dominant-baseline="central">err</text>
+<line class="s" x1="76.6" y1="152" x2="526.6" y2="152"/>
+<line class="s" x1="526.6" y1="152" x2="526.6" y2="134"/>
+<line class="s" x1="526.6" y1="134" x2="546.6" y2="134"/>
+<line class="s" x1="546.6" y1="134" x2="546.6" y2="152"/>
+<line class="s" x1="546.6" y1="152" x2="596.6" y2="152"/>
+<text class="t sm m" x="76.6" y="169" text-anchor="start" dominant-baseline="central">five 1s then 0: discard. six 1s then 0: flag. a seventh 1: err</text>
+</svg>

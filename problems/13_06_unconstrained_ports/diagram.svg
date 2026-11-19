@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="170" viewBox="0 0 440 170" role="img">
+<title>one rev entity, instantiated at two widths; the ports take their size from the actuals</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s thin ms dash" x="50" y="10" width="330" height="150" rx="4"/>
+<text class="t sm m" x="58" y="22" text-anchor="start" dominant-baseline="central">top_module (provided)</text>
+<rect class="s" x="160" y="40" width="110" height="50" rx="3"/>
+<text class="t b" x="215" y="54" text-anchor="middle" dominant-baseline="central">rev</text>
+<text class="t sm m" x="165" y="65" text-anchor="start" dominant-baseline="central">din</text>
+<text class="t sm m" x="265" y="65" text-anchor="end" dominant-baseline="central">dout</text>
+<text class="t sm a" x="215" y="74" text-anchor="middle" dominant-baseline="central">5 bits</text>
+<polyline class="s bus" points="50,65 160,65"/>
+<text class="t" x="44" y="65" text-anchor="end" dominant-baseline="central">a</text>
+<polyline class="s bus" points="270,65 380,65"/>
+<text class="t a b" x="386" y="65" text-anchor="start" dominant-baseline="central">ra</text>
+<rect class="s" x="160" y="110" width="110" height="50" rx="3"/>
+<text class="t b" x="215" y="124" text-anchor="middle" dominant-baseline="central">rev</text>
+<text class="t sm m" x="165" y="135" text-anchor="start" dominant-baseline="central">din</text>
+<text class="t sm m" x="265" y="135" text-anchor="end" dominant-baseline="central">dout</text>
+<text class="t sm a" x="215" y="144" text-anchor="middle" dominant-baseline="central">13 bits</text>
+<polyline class="s bus" points="50,135 160,135"/>
+<text class="t" x="44" y="135" text-anchor="end" dominant-baseline="central">b</text>
+<polyline class="s bus" points="270,135 380,135"/>
+<text class="t a b" x="386" y="135" text-anchor="start" dominant-baseline="central">rb</text>
+</svg>

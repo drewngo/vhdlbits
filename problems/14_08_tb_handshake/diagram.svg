@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="200" viewBox="0 0 660 200" role="img">
+<title>a producer process and a consumer process talk to the buffer through valid/ready</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s thin ms dash" x="10" y="10" width="640" height="180" rx="4"/>
+<text class="t sm m" x="18" y="22" text-anchor="start" dominant-baseline="central">tb</text>
+<rect class="s" x="30" y="50" width="140" height="100" rx="3"/>
+<text class="t sm b" x="100" y="86" text-anchor="middle" dominant-baseline="central">producer</text>
+<text class="t sm m" x="100" y="104" text-anchor="middle" dominant-baseline="central">send(byte) ×50+</text>
+<rect class="s" x="260" y="50" width="120" height="100" rx="3"/>
+<text class="t sm b" x="320" y="94" text-anchor="middle" dominant-baseline="central">skid1</text>
+<text class="t sm m" x="320" y="112" text-anchor="middle" dominant-baseline="central">DUT</text>
+<rect class="s" x="470" y="50" width="160" height="100" rx="3"/>
+<text class="t sm b" x="550" y="86" text-anchor="middle" dominant-baseline="central">consumer</text>
+<text class="t sm m" x="550" y="104" text-anchor="middle" dominant-baseline="central">expect(byte),</text>
+<text class="t sm m" x="550" y="120" text-anchor="middle" dominant-baseline="central">random out_ready</text>
+<polyline class="s" points="170,70 258,70"/>
+<polygon class="k" points="258,70 250.6,73.1 250.6,66.9"/>
+<text class="t sm" x="215" y="62" text-anchor="middle" dominant-baseline="central">in_valid</text>
+<polyline class="s bus" points="170,95 258,95"/>
+<polygon class="k" points="258,95 250.6,98.1 250.6,91.9"/>
+<text class="t sm" x="215" y="87" text-anchor="middle" dominant-baseline="central">in_data</text>
+<polyline class="s" points="260,125 172,125"/>
+<polygon class="k" points="172,125 179.4,121.9 179.4,128.1"/>
+<text class="t sm" x="215" y="117" text-anchor="middle" dominant-baseline="central">in_ready</text>
+<polyline class="s" points="380,70 468,70"/>
+<polygon class="k" points="468,70 460.6,73.1 460.6,66.9"/>
+<text class="t sm" x="425" y="62" text-anchor="middle" dominant-baseline="central">out_valid</text>
+<polyline class="s bus" points="380,95 468,95"/>
+<polygon class="k" points="468,95 460.6,98.1 460.6,91.9"/>
+<text class="t sm" x="425" y="87" text-anchor="middle" dominant-baseline="central">out_data</text>
+<polyline class="s" points="470,125 382,125"/>
+<polygon class="k" points="382,125 389.4,121.9 389.4,128.1"/>
+<text class="t sm" x="425" y="117" text-anchor="middle" dominant-baseline="central">out_ready</text>
+<text class="t sm m" x="330" y="176" text-anchor="middle" dominant-baseline="central">also check: in_ready = 1 whenever out_valid = 0</text>
+</svg>

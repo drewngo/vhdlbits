@@ -1,0 +1,42 @@
+{
+  "id": "03_04_bitwise_vs_logical",
+  "section": 3,
+  "num": 4,
+  "name": "bitwise_vs_logical",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 2,
+      "low": 0
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 2,
+      "low": 0
+    },
+    {
+      "name": "or_bitwise",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 2,
+      "low": 0
+    },
+    {
+      "name": "or_logical",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "not_both",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 5,
+      "low": 0
+    }
+  ]
+}

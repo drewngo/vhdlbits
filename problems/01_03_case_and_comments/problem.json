@@ -1,0 +1,19 @@
+{
+  "id": "01_03_case_and_comments",
+  "section": 1,
+  "num": 3,
+  "name": "case_and_comments",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

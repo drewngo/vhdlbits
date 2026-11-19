@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="567.4" height="72" viewBox="0 0 567.4 72" role="img">
+<title>din unpacked into an array of 8 bytes</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<text class="t" x="31.4" y="33" text-anchor="end" dominant-baseline="central">din</text>
+<rect class="s bg" x="41.4" y="18" width="64" height="30"/>
+<text class="t" x="73.4" y="33" text-anchor="middle" dominant-baseline="central">byte 7</text>
+<text class="t sm m" x="43.4" y="11" text-anchor="start" dominant-baseline="central">63</text>
+<text class="t sm m" x="103.4" y="11" text-anchor="end" dominant-baseline="central">56</text>
+<rect class="s bg" x="105.4" y="18" width="64" height="30"/>
+<text class="t" x="137.4" y="33" text-anchor="middle" dominant-baseline="central">byte 6</text>
+<text class="t sm m" x="107.4" y="11" text-anchor="start" dominant-baseline="central">55</text>
+<text class="t sm m" x="167.4" y="11" text-anchor="end" dominant-baseline="central">48</text>
+<rect class="s bg" x="169.4" y="18" width="64" height="30"/>
+<text class="t" x="201.4" y="33" text-anchor="middle" dominant-baseline="central">byte 5</text>
+<text class="t sm m" x="171.4" y="11" text-anchor="start" dominant-baseline="central">47</text>
+<text class="t sm m" x="231.4" y="11" text-anchor="end" dominant-baseline="central">40</text>
+<rect class="s bg" x="233.4" y="18" width="64" height="30"/>
+<text class="t" x="265.4" y="33" text-anchor="middle" dominant-baseline="central">byte 4</text>
+<text class="t sm m" x="235.4" y="11" text-anchor="start" dominant-baseline="central">39</text>
+<text class="t sm m" x="295.4" y="11" text-anchor="end" dominant-baseline="central">32</text>
+<rect class="s bg" x="297.4" y="18" width="64" height="30"/>
+<text class="t" x="329.4" y="33" text-anchor="middle" dominant-baseline="central">byte 3</text>
+<text class="t sm m" x="299.4" y="11" text-anchor="start" dominant-baseline="central">31</text>
+<text class="t sm m" x="359.4" y="11" text-anchor="end" dominant-baseline="central">24</text>
+<rect class="s bg" x="361.4" y="18" width="64" height="30"/>
+<text class="t" x="393.4" y="33" text-anchor="middle" dominant-baseline="central">byte 2</text>
+<text class="t sm m" x="363.4" y="11" text-anchor="start" dominant-baseline="central">23</text>
+<text class="t sm m" x="423.4" y="11" text-anchor="end" dominant-baseline="central">16</text>
+<rect class="s bg" x="425.4" y="18" width="64" height="30"/>
+<text class="t" x="457.4" y="33" text-anchor="middle" dominant-baseline="central">byte 1</text>
+<text class="t sm m" x="427.4" y="11" text-anchor="start" dominant-baseline="central">15</text>
+<text class="t sm m" x="487.4" y="11" text-anchor="end" dominant-baseline="central">8</text>
+<rect class="s bg" x="489.4" y="18" width="64" height="30"/>
+<text class="t" x="521.4" y="33" text-anchor="middle" dominant-baseline="central">byte 0</text>
+<text class="t sm m" x="491.4" y="11" text-anchor="start" dominant-baseline="central">7</text>
+<text class="t sm m" x="551.4" y="11" text-anchor="end" dominant-baseline="central">0</text>
+<text class="t sm m" x="41.4" y="60" text-anchor="start" dominant-baseline="central">bytes(i) := din(8*i+7 downto 8*i)</text>
+</svg>

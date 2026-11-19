@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VHDLBits</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/vhdl/vhdl.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/edit/matchbrackets.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+<style>
+  :root {
+    --bg: #ffffff; --panel: #f5f6f8; --text: #1d2125; --muted: #6b7280;
+    --border: #dfe2e6; --accent: #2a5db0; --pass: #1a7f37; --fail: #c62828;
+    --code-bg: #f3f4f6; --hover: #e9ecf0; --sel: #dbe6f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17191c; --panel: #1f2226; --text: #e4e6e9; --muted: #9aa0a8;
+      --border: #33373d; --accent: #7aa7ff; --pass: #4cc26a; --fail: #ff6b6b;
+      --code-bg: #24282d; --hover: #2a2e34; --sel: #2c3a52;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    display: grid; grid-template-columns: 250px 1fr; grid-template-rows: 44px 1fr;
+  }
+  header {
+    grid-column: 1 / -1; display: flex; align-items: center; gap: 12px;
+    padding: 0 16px; border-bottom: 1px solid var(--border); background: var(--panel);
+  }
+  header h1 { font-size: 16px; margin: 0; }
+  header .progress { color: var(--muted); font-size: 13px; }
+  header .spacer { flex: 1; }
+  #nav { overflow-y: auto; border-right: 1px solid var(--border); background: var(--panel); padding: 8px 0 24px; }
+  #nav h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 14px 14px 4px; }
+  #nav a {
+    display: flex; gap: 8px; padding: 3px 14px; color: var(--text); text-decoration: none; font-size: 14px;
+  }
+  #nav a:hover { background: var(--hover); }
+  #nav a.current { background: var(--sel); }
+  #nav .mark { width: 1em; text-align: center; color: var(--muted); }
+  #nav .mark.pass { color: var(--pass); }
+  #nav .mark.fail { color: var(--fail); }
+  #nav .num { color: var(--muted); min-width: 2.6em; }
+  main { overflow-y: auto; padding: 20px 28px 60px; }
+  #content { max-width: 980px; }
+  #readme h1 { font-size: 22px; margin-top: 0; }
+  #readme h2 { font-size: 17px; margin-top: 24px; border-bottom: 1px solid var(--border); padding-bottom: 4px; }
+  #readme code { background: var(--code-bg); padding: 1px 4px; border-radius: 3px; font-size: 13px; }
+  #readme pre { background: var(--code-bg); padding: 10px 12px; border-radius: 6px; overflow-x: auto; }
+  #readme pre code { background: none; padding: 0; }
+  #readme table { border-collapse: collapse; margin: 8px 0; }
+  #readme th, #readme td { border: 1px solid var(--border); padding: 3px 10px; }
+  #readme details { margin: 6px 0; }
+  #readme img { display: block; max-width: 100%; height: auto; margin: 12px 0; }
+  #readme summary { cursor: pointer; color: var(--accent); }
+  #readme h2:last-of-type, #readme h2:last-of-type + pre { display: none; } /* "## Check" section */
+  .tabs { display: flex; gap: 4px; margin-top: 18px; }
+  .tabs button { border: 1px solid var(--border); border-bottom: none; background: var(--panel); color: var(--text);
+                 padding: 4px 12px; border-radius: 6px 6px 0 0; cursor: pointer; font: inherit; font-size: 13px; }
+  .tabs button.active { background: var(--bg); font-weight: 600; }
+  #editor-wrap { border: 1px solid var(--border); border-radius: 0 6px 6px 6px; overflow: hidden; }
+  .CodeMirror { height: 420px; font-size: 13px; background: var(--bg); color: var(--text); }
+  .CodeMirror-gutters { background: var(--panel); border-right: 1px solid var(--border); }
+  .CodeMirror-cursor { border-left-color: var(--text); }
+  .CodeMirror-selected, .CodeMirror-focused .CodeMirror-selected { background: var(--sel); }
+  @media (prefers-color-scheme: dark) {
+    .cm-s-default .cm-keyword { color: #c792ea; } .cm-s-default .cm-string { color: #c3e88d; }
+    .cm-s-default .cm-number { color: #f78c6c; } .cm-s-default .cm-comment { color: #6c7a89; }
+    .cm-s-default .cm-variable-2, .cm-s-default .cm-builtin { color: #82aaff; }
+    .cm-s-default .cm-meta, .cm-s-default .cm-atom { color: #ffcb6b; }
+  }
+  textarea#fallback { width: 100%; height: 420px; font: 13px/1.4 ui-monospace, Menlo, monospace;
+                      background: var(--bg); color: var(--text); border: 0; padding: 8px; }
+  .actions { display: flex; align-items: center; gap: 10px; margin: 12px 0; }
+  .actions button { font: inherit; padding: 6px 16px; border-radius: 6px; cursor: pointer;
+                    border: 1px solid var(--border); background: var(--panel); color: var(--text); }
+  .actions button.primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .actions button:disabled { opacity: .6; cursor: default; }
+  .actions .hint { color: var(--muted); font-size: 13px; }
+  .actions .spacer { flex: 1; }
+  #result { display: none; border: 1px solid var(--border); border-left-width: 4px; border-radius: 6px; padding: 10px 14px; }
+  #result.pass { border-left-color: var(--pass); }
+  #result.fail { border-left-color: var(--fail); }
+  #result .verdict { font-weight: 700; margin-bottom: 6px; }
+  #result.pass .verdict { color: var(--pass); }
+  #result.fail .verdict { color: var(--fail); }
+  #result pre { margin: 0; white-space: pre-wrap; word-break: break-word; font: 12.5px/1.45 ui-monospace, Menlo, monospace; }
+  #reference { display: none; margin-top: 16px; border: 1px solid var(--border); border-radius: 6px; }
+  #reference summary { cursor: pointer; padding: 8px 14px; color: var(--accent); font-weight: 600; }
+  #reference summary .hint { color: var(--muted); font-weight: normal; font-size: 13px; margin-left: 6px; }
+  #reference[open] summary { border-bottom: 1px solid var(--border); }
+  #reference .CodeMirror { height: auto; max-height: 520px; }
+  #reference .CodeMirror-scroll { max-height: 520px; }
+  #reference pre { margin: 0; padding: 8px 12px; overflow-x: auto; font: 13px/1.4 ui-monospace, Menlo, monospace; }
+  @media (max-width: 760px) {
+    body { grid-template-columns: 1fr; grid-template-rows: 44px 180px 1fr; }
+    #nav { border-right: none; border-bottom: 1px solid var(--border); }
+    main { padding: 16px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>VHDLBits</h1>
+  <span class="progress" id="progress"></span>
+  <span class="spacer"></span>
+</header>
+<nav id="nav"></nav>
+<main>
+  <div id="content">
+    <div id="readme">Loading…</div>
+    <div class="tabs" id="tabs"></div>
+    <div id="editor-wrap"></div>
+    <div class="actions">
+      <button class="primary" id="submit">Submit</button>
+      <button id="save">Save</button>
+      <button id="load-solution" title="Load the code from your last passing submission">Load last solution</button>
+      <button id="load-draft" title="Load the code you last saved or submitted">Load last attempt</button>
+      <button id="reset" title="Back to the starter code">Reset</button>
+      <span class="hint" id="status-hint">⌘/Ctrl + Enter to submit</span>
+      <span class="spacer"></span>
+      <button id="prev">← Prev</button>
+      <button id="next">Next →</button>
+    </div>
+    <div id="turnstile"></div>
+    <div id="result"><div class="verdict"></div><pre></pre></div>
+    <details id="reference">
+      <summary>Reference solution <span class="hint">unlocked by solving this problem</span></summary>
+      <div id="reference-code"></div>
+    </details>
+  </div>
+</main>
+<script>
+const $ = (id) => document.getElementById(id);
+let problems = [];
+let current = null;        // {id, files: [{name, text, starter, draft, solution}]}
+let active = 0;            // index of the file being edited
+let dirty = false;
+let editor = null;
+let refViewer = null;      // read-only view of the reference solution
+
+function makeEditor() {
+  const wrap = $("editor-wrap");
+  if (window.CodeMirror) {
+    editor = CodeMirror(wrap, {
+      mode: "vhdl", lineNumbers: true, indentUnit: 2, tabSize: 2, matchBrackets: true,
+      extraKeys: {
+        Tab: (cm) => cm.replaceSelection("  "),
+        "Cmd-Enter": () => submit(), "Ctrl-Enter": () => submit(),
+        "Cmd-S": () => save(), "Ctrl-S": () => save(),
+      },
+    });
+    editor.on("change", () => { dirty = true; if (current) { stashActive(); updateVersionButtons(); } });
+    return;
+  }
+  // Offline: no CDN, so fall back to a plain textarea.
+  const ta = document.createElement("textarea");
+  ta.id = "fallback"; ta.spellcheck = false;
+  wrap.appendChild(ta);
+  ta.addEventListener("input", () => { dirty = true; if (current) { stashActive(); updateVersionButtons(); } });
+  ta.addEventListener("keydown", (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === "Enter") { e.preventDefault(); submit(); }
+    if ((e.metaKey || e.ctrlKey) && e.key === "s") { e.preventDefault(); save(); }
+    if (e.key === "Tab") { e.preventDefault(); document.execCommand("insertText", false, "  "); }
+  });
+  editor = { getValue: () => ta.value, setValue: (v) => { ta.value = v; }, refresh() {}, focus: () => ta.focus() };
+}
+
+function renderMarkdown(md) {
+  if (window.marked) return marked.parse(md);
+  const pre = document.createElement("pre");
+  pre.textContent = md;
+  return pre.outerHTML;
+}
+
+function mark(status) {
+  return status === "pass" ? "✓" : status === "fail" ? "✗" : "·";
+}
+
+function renderNav() {
+  const nav = $("nav");
+  nav.innerHTML = "";
+  let section = null;
+  for (const p of problems) {
+    if (p.section !== section) {
+      section = p.section;
+      const h = document.createElement("h2");
+      h.textContent = `${p.section}. ${p.section_title}`;
+      nav.appendChild(h);
+    }
+    const a = document.createElement("a");
+    a.href = `#${p.id}`;
+    a.dataset.id = p.id;
+    a.innerHTML = `<span class="mark ${p.status}">${mark(p.status)}</span>` +
+                  `<span class="num">${p.section}.${p.num}</span><span></span>`;
+    a.lastChild.textContent = p.name;
+    if (current && p.id === current.id) a.classList.add("current");
+    nav.appendChild(a);
+  }
+  const solved = problems.filter((p) => p.status === "pass").length;
+  $("progress").textContent = `${solved} / ${problems.length} solved`;
+}
+
+// Show the reference solution (only sent by the server once the problem has passed).
+function showReference(text) {
+  const box = $("reference");
+  if (!text) { box.style.display = "none"; box.open = false; return; }
+  box.style.display = "block";
+  const wrap = $("reference-code");
+  if (!refViewer) {
+    if (window.CodeMirror) {
+      refViewer = CodeMirror(wrap, { mode: "vhdl", lineNumbers: true, readOnly: true, viewportMargin: Infinity });
+      box.addEventListener("toggle", () => refViewer.refresh());
+    } else {
+      const pre = document.createElement("pre");
+      wrap.appendChild(pre);
+      refViewer = { setValue: (v) => { pre.textContent = v; }, refresh() {} };
+    }
+  }
+  refViewer.setValue(text);
+  refViewer.refresh();
+}
+
+function stashActive() {
+  if (current) current.files[active].text = editor.getValue();
+}
+
+function showFile(i) {
+  stashActive();
+  active = i;
+  const wasDirty = dirty;
+  editor.setValue(current.files[i].text);
+  dirty = wasDirty;
+  [...$("tabs").children].forEach((b, k) => b.classList.toggle("active", k === i));
+  editor.refresh();
+}
+
+async function api(path, body) {
+  const res = await fetch(path, body === undefined ? {} :
+    { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw Object.assign(new Error(data.error || `${res.status} ${res.statusText}`), { verify: data.verify });
+  return data;
+}
+
+// ./serve.py keeps the learner's work in problems/ and .solved/ and grades locally. The static
+// build (tools/build_static.py) sets STATIC_SITE: the problems are pre-rendered JSON, the
+// learner's work lives in localStorage, and Submit goes to the Cloudflare Worker.
+const STATIC = window.STATIC_SITE;
+
+const store = {
+  get(key) {
+    try { return JSON.parse(localStorage.getItem(`vhdlbits:${key}`)); } catch { return null; }
+  },
+  set(key, value) {
+    try { localStorage.setItem(`vhdlbits:${key}`, JSON.stringify(value)); } catch {}
+  },
+};
+const references = {};     // static: every problem's reference, shown once it has passed
+
+let tsWidget, tsWait;
+function turnstileToken() {
+  const sitekey = STATIC.turnstileSiteKey;
+  if (!sitekey) return Promise.resolve("");
+  if (!window.turnstile) return Promise.reject(new Error("The verification script didn't load. Reload the page."));
+  return new Promise((resolve, reject) => {
+    tsWait = { resolve, reject };
+    if (tsWidget === undefined) {
+      tsWidget = turnstile.render("#turnstile", {
+        sitekey, execution: "execute", appearance: "interaction-only",
+        callback: (token) => tsWait.resolve(token),
+        "error-callback": () => tsWait.reject(new Error("Verification failed. Reload the page and try again.")),
+        "timeout-callback": () => tsWait.reject(new Error("Verification timed out. Submit again.")),
+      });
+    } else {
+      turnstile.reset(tsWidget);
+    }
+    turnstile.execute(tsWidget);
+  });
+}
+
+const backend = !STATIC ? {
+  problems: () => api("/api/problems"),
+  problem: (id) => api(`/api/problem/${id}`),
+  asset: (id, src) => `/api/asset/${id}/${src}`,
+  save: (id, files) => api(`/api/save/${id}`, { files }),
+  check: (id, files) => api(`/api/check/${id}`, { files }),
+  saveOnUnload: (id, files) => navigator.sendBeacon(`/api/save/${id}`, JSON.stringify({ files })),
+} : {
+  async problems() {
+    const prog = store.get("progress") || {};
+    return (await api("problems.json")).map((p) => ({ ...p, status: prog[p.id] || "" }));
+  },
+  async problem(id) {
+    const p = await api(`p/${id}.json`);
+    const draft = store.get(`draft:${id}`) || {}, solved = store.get(`solved:${id}`) || {};
+    for (const f of p.files) {
+      f.draft = draft[f.name] ?? f.starter;
+      f.solution = solved[f.name] ?? null;
+    }
+    references[id] = p.reference;
+    if ((store.get("progress") || {})[id] !== "pass") p.reference = null;
+    return p;
+  },
+  asset: (id, src) => `p/${id}/${src}`,
+  async save(id, files) { store.set(`draft:${id}`, files); },
+  async check(id, files) {
+    store.set(`draft:${id}`, files);
+    // The Worker's session cookie skips Turnstile; without one it asks for a token first.
+    const send = (turnstile) => api(`/api/check/${id}`, { files, turnstile });
+    const r = await send().catch(async (e) => {
+      if (!e.verify) throw e;
+      return send(await turnstileToken());
+    });
+    // Same rules as ./check.py: a pass sticks until the next pass, errors don't count.
+    const prog = store.get("progress") || {};
+    if (["PASS", "FAIL", "COMPILE"].includes(r.status) && (r.passed || prog[id] !== "pass")) {
+      prog[id] = r.passed ? "pass" : "fail";
+      store.set("progress", prog);
+    }
+    if (r.passed) store.set(`solved:${id}`, files);
+    return { ...r, status: prog[id] || "", reference: prog[id] === "pass" ? r.reference ?? references[id] : null };
+  },
+  saveOnUnload(id, files) { store.set(`draft:${id}`, files); },
+};
+
+// Put one version ("starter", "draft" or "solution") of every file into the editor.
+function useVersion(key) {
+  stashActive();
+  for (const f of current.files) f.text = f[key] ?? f.starter;
+  editor.setValue(current.files[active].text);
+  dirty = false;
+  editor.focus();
+}
+
+function updateVersionButtons() {
+  const differs = (key) => current.files.some((f) => f.text !== f[key]);
+  const hasSolution = current.files.some((f) => f.solution !== null);
+  const hasDraft = current.files.some((f) => f.draft !== f.starter && f.draft !== f.solution);
+  $("load-solution").style.display = hasSolution ? "" : "none";
+  $("load-draft").style.display = hasDraft ? "" : "none";
+  $("load-solution").disabled = !differs("solution");
+  $("load-draft").disabled = !differs("draft");
+  $("reset").disabled = !differs("starter");
+}
+
+function editedFiles() {
+  stashActive();
+  return Object.fromEntries(current.files.map((f) => [f.name, f.text]));
+}
+
+async function save() {
+  if (!current) return;
+  await backend.save(current.id, editedFiles());
+  for (const f of current.files) f.draft = f.text;
+  dirty = false;
+  updateVersionButtons();
+  $("status-hint").textContent = "Saved";
+  setTimeout(() => { $("status-hint").textContent = "⌘/Ctrl + Enter to submit"; }, 1500);
+}
+
+async function load(id) {
+  if (current && dirty) await save();
+  const p = await backend.problem(id);
+  current = p;
+  active = 0;
+  for (const f of p.files) f.text = f.starter;   // like HDLBits: start fresh, load a solution on demand
+  $("readme").innerHTML = renderMarkdown(p.readme);
+  for (const img of $("readme").querySelectorAll("img")) {     // diagram.svg sits next to README.md
+    const src = img.getAttribute("src");
+    if (src && !/^([a-z]+:|\/)/i.test(src)) img.src = backend.asset(id, src);
+  }
+  const tabs = $("tabs");
+  tabs.innerHTML = "";
+  p.files.forEach((f, i) => {
+    const b = document.createElement("button");
+    b.textContent = f.name;
+    b.onclick = () => showFile(i);
+    tabs.appendChild(b);
+  });
+  tabs.style.visibility = p.files.length > 1 ? "visible" : "hidden";
+  editor.setValue(p.files[0].text);
+  dirty = false;
+  updateVersionButtons();
+  [...tabs.children].forEach((b, k) => b.classList.toggle("active", k === 0));
+  $("result").style.display = "none";
+  showReference(p.reference);
+  document.querySelectorAll("#nav a").forEach((a) => a.classList.toggle("current", a.dataset.id === id));
+  document.querySelector(`#nav a[data-id="${id}"]`)?.scrollIntoView({ block: "nearest" });
+  document.querySelector("main").scrollTop = 0;
+  editor.refresh();
+}
+
+async function submit() {
+  if (!current) return;
+  const btn = $("submit");
+  btn.disabled = true;
+  btn.textContent = "Checking…";
+  const result = $("result");
+  try {
+    const r = await backend.check(current.id, editedFiles());
+    for (const f of current.files) {
+      f.draft = f.text;
+      if (r.passed) f.solution = f.text;
+    }
+    dirty = false;
+    updateVersionButtons();
+    result.className = r.passed ? "pass" : "fail";
+    result.querySelector(".verdict").textContent = r.passed ? "Success!" : "Not yet";
+    result.querySelector("pre").textContent = r.output;
+    showReference(r.reference);
+    const p = problems.find((x) => x.id === current.id);
+    if (p) p.status = r.status;
+    renderNav();
+  } catch (e) {
+    result.className = "fail";
+    result.querySelector(".verdict").textContent = "Error";
+    result.querySelector("pre").textContent = String(e);
+  }
+  result.style.display = "block";
+  result.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  btn.disabled = false;
+  btn.textContent = "Submit";
+}
+
+function step(delta) {
+  const i = problems.findIndex((p) => current && p.id === current.id);
+  const next = problems[i + delta];
+  if (next) location.hash = next.id;
+}
+
+window.addEventListener("hashchange", () => load(location.hash.slice(1)));
+window.addEventListener("beforeunload", () => {
+  if (current && dirty) {
+    backend.saveOnUnload(current.id, editedFiles());
+  }
+});
+$("submit").onclick = submit;
+$("save").onclick = save;
+$("load-solution").onclick = () => useVersion("solution");
+$("load-draft").onclick = () => useVersion("draft");
+$("reset").onclick = () => useVersion("starter");
+$("prev").onclick = () => step(-1);
+$("next").onclick = () => step(1);
+
+(async () => {
+  makeEditor();
+  if (STATIC?.turnstileSiteKey) {
+    const s = document.createElement("script");
+    s.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+    s.async = true;
+    document.head.appendChild(s);
+  }
+  problems = await backend.problems();
+  const start = location.hash.slice(1) || (problems.find((p) => p.status !== "pass") || problems[0]).id;
+  renderNav();
+  if (location.hash.slice(1) === start) await load(start);
+  else location.hash = start;
+})();
+</script>
+</body>
+</html>

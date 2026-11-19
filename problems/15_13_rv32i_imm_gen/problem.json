@@ -1,0 +1,28 @@
+{
+  "id": "15_13_rv32i_imm_gen",
+  "section": 15,
+  "num": 13,
+  "name": "rv32i_imm_gen",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "instr",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    },
+    {
+      "name": "imm",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 31,
+      "low": 0
+    }
+  ],
+  "stimulus": "rv32i",
+  "stimulus_opts": {
+    "port": "instr"
+  },
+  "vectors": 3000
+}

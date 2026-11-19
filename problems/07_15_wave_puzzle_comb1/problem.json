@@ -1,0 +1,29 @@
+{
+  "id": "07_15_wave_puzzle_comb1",
+  "section": 7,
+  "num": 15,
+  "name": "wave_puzzle_comb1",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "c",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "q",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

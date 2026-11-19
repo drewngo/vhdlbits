@@ -1,0 +1,37 @@
+{
+  "id": "06_16_bin_to_bcd",
+  "section": 6,
+  "num": 16,
+  "name": "bin_to_bcd",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "bin",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "hundreds",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "tens",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "ones",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    }
+  ]
+}

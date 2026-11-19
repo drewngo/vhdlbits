@@ -1,0 +1,16 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity top_module is
+  port (
+    v                        : in  std_logic_vector(7 downto 0);
+    all_ones, any_one, parity : out std_logic
+  );
+end entity top_module;
+
+architecture rtl of top_module is
+begin
+  all_ones <= and v;
+  any_one  <= or v;
+  parity   <= xor v;
+end architecture rtl;

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="330" viewBox="0 0 460 330" role="img">
+<title>the four-state machine from the table</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<path class="s" d="M119.2,83 Q210,61.2 300.8,83"/>
+<polygon class="k" points="300.8,83 292.9,84.3 294.4,78.2"/>
+<path class="s" d="M63,103 C26.9,128.7 26.9,51.3 63,77"/>
+<polygon class="k" points="63,77 55.2,75.2 58.8,70.1"/>
+<path class="s" d="M357,77 C393.1,51.3 393.1,128.7 357,103"/>
+<polygon class="k" points="357,103 364.8,104.8 361.2,109.9"/>
+<path class="s" d="M309.6,112 Q229.2,198.8 118.2,239.6"/>
+<polygon class="k" points="118.2,239.6 124,234.2 126.1,240"/>
+<path class="s" d="M76.6,223.2 Q50,170 76.6,116.8"/>
+<polygon class="k" points="76.6,116.8 76.1,124.8 70.5,122"/>
+<path class="s" d="M119.2,243 Q210,221.2 300.8,243"/>
+<polygon class="k" points="300.8,243 292.9,244.3 294.4,238.2"/>
+<path class="s" d="M300.8,257 Q210,278.8 119.2,257"/>
+<polygon class="k" points="119.2,257 127.1,255.7 125.6,261.8"/>
+<path class="s" d="M316.6,223.2 Q290,170 316.6,116.8"/>
+<polygon class="k" points="316.6,116.8 316.1,124.8 310.5,122"/>
+<polyline class="s as" points="90,24 90,60"/>
+<polygon class="ak" points="90,60 86.9,52.6 93.1,52.6"/>
+<text class="t sm a" x="90" y="14" text-anchor="middle" dominant-baseline="central">reset</text>
+<circle class="s bg" cx="90" cy="90" r="30"/>
+<circle class="s" cx="90" cy="90" r="30"/>
+<text class="t b" x="90" y="90" text-anchor="middle" dominant-baseline="central">A</text>
+<circle class="s bg" cx="330" cy="90" r="30"/>
+<circle class="s" cx="330" cy="90" r="30"/>
+<text class="t b" x="330" y="90" text-anchor="middle" dominant-baseline="central">B</text>
+<circle class="s bg" cx="90" cy="250" r="30"/>
+<circle class="s" cx="90" cy="250" r="30"/>
+<text class="t b" x="90" y="250" text-anchor="middle" dominant-baseline="central">C</text>
+<circle class="s bg" cx="330" cy="250" r="30"/>
+<circle class="s" cx="330" cy="250" r="30"/>
+<text class="t b" x="330" y="243" text-anchor="middle" dominant-baseline="central">D</text>
+<text class="t sm a" x="330" y="259" text-anchor="middle" dominant-baseline="central">y=1</text>
+<rect class="bg" x="197.1" y="54.1" width="25.8" height="16"/>
+<text class="t sm" x="210" y="62.1" text-anchor="middle" dominant-baseline="central">x=1</text>
+<rect class="bg" x="-0.8" y="82" width="25.8" height="16"/>
+<text class="t sm" x="22" y="90" text-anchor="end" dominant-baseline="central">x=0</text>
+<rect class="bg" x="395" y="82" width="25.8" height="16"/>
+<text class="t sm" x="398" y="90" text-anchor="start" dominant-baseline="central">x=1</text>
+<rect class="bg" x="217.7" y="192.9" width="25.8" height="16"/>
+<text class="t sm" x="230.6" y="200.9" text-anchor="middle" dominant-baseline="central">x=0</text>
+<rect class="bg" x="34.5" y="162" width="25.8" height="16"/>
+<text class="t sm" x="47.4" y="170" text-anchor="middle" dominant-baseline="central">x=0</text>
+<rect class="bg" x="197.1" y="214.1" width="25.8" height="16"/>
+<text class="t sm" x="210" y="222.1" text-anchor="middle" dominant-baseline="central">x=1</text>
+<rect class="bg" x="197.1" y="269.9" width="25.8" height="16"/>
+<text class="t sm" x="210" y="277.9" text-anchor="middle" dominant-baseline="central">x=0</text>
+<rect class="bg" x="274.5" y="162" width="25.8" height="16"/>
+<text class="t sm" x="287.4" y="170" text-anchor="middle" dominant-baseline="central">x=1</text>
+</svg>

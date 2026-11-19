@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="190" viewBox="0 0 470 190" role="img">
+<title>two sum3 instances: y1 = sum3(a, b, c), y2 = sum3(y1, d, e)</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s thin ms dash" x="50" y="10" width="370" height="170" rx="4"/>
+<text class="t sm m" x="58" y="22" text-anchor="start" dominant-baseline="central">top_module</text>
+<rect class="s" x="120" y="30" width="80" height="70" rx="3"/>
+<text class="t b" x="160" y="65" text-anchor="middle" dominant-baseline="central">sum3</text>
+<text class="t sm m" x="125" y="47.5" text-anchor="start" dominant-baseline="central">a</text>
+<text class="t sm m" x="125" y="65" text-anchor="start" dominant-baseline="central">b</text>
+<text class="t sm m" x="125" y="82.5" text-anchor="start" dominant-baseline="central">c</text>
+<text class="t sm m" x="195" y="65" text-anchor="end" dominant-baseline="central">y</text>
+<rect class="s" x="260" y="90" width="80" height="70" rx="3"/>
+<text class="t b" x="300" y="125" text-anchor="middle" dominant-baseline="central">sum3</text>
+<text class="t sm m" x="265" y="107.5" text-anchor="start" dominant-baseline="central">a</text>
+<text class="t sm m" x="265" y="125" text-anchor="start" dominant-baseline="central">b</text>
+<text class="t sm m" x="265" y="142.5" text-anchor="start" dominant-baseline="central">c</text>
+<text class="t sm m" x="335" y="125" text-anchor="end" dominant-baseline="central">y</text>
+<polyline class="s" points="50,47.5 120,47.5"/>
+<text class="t" x="44" y="47.5" text-anchor="end" dominant-baseline="central">a</text>
+<polyline class="s" points="50,65 120,65"/>
+<text class="t" x="44" y="65" text-anchor="end" dominant-baseline="central">b</text>
+<polyline class="s" points="50,82.5 120,82.5"/>
+<text class="t" x="44" y="82.5" text-anchor="end" dominant-baseline="central">c</text>
+<polyline class="s" points="200,65 420,65"/>
+<text class="t a b" x="426" y="65" text-anchor="start" dominant-baseline="central">y1</text>
+<circle class="k" cx="230" cy="65" r="3"/>
+<polyline class="s" points="230,65 230,107.5 260,107.5"/>
+<polyline class="s" points="50,125 260,125"/>
+<text class="t" x="44" y="125" text-anchor="end" dominant-baseline="central">d</text>
+<polyline class="s" points="50,142.5 260,142.5"/>
+<text class="t" x="44" y="142.5" text-anchor="end" dominant-baseline="central">e</text>
+<polyline class="s" points="340,125 420,125"/>
+<text class="t a b" x="426" y="125" text-anchor="start" dominant-baseline="central">y2</text>
+</svg>

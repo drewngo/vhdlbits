@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="404.8" height="180" viewBox="0 0 404.8 180" role="img">
+<title>round-robin arbiter for two requesters</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<line class="s thin ms dash" x1="86.8" y1="8" x2="86.8" y2="158"/>
+<line class="s thin ms dash" x1="122.8" y1="8" x2="122.8" y2="158"/>
+<line class="s thin ms dash" x1="158.8" y1="8" x2="158.8" y2="158"/>
+<line class="s thin ms dash" x1="194.8" y1="8" x2="194.8" y2="158"/>
+<line class="s thin ms dash" x1="230.8" y1="8" x2="230.8" y2="158"/>
+<line class="s thin ms dash" x1="266.8" y1="8" x2="266.8" y2="158"/>
+<line class="s thin ms dash" x1="302.8" y1="8" x2="302.8" y2="158"/>
+<line class="s thin ms dash" x1="338.8" y1="8" x2="338.8" y2="158"/>
+<line class="s thin ms dash" x1="374.8" y1="8" x2="374.8" y2="158"/>
+<text class="t" x="56.8" y="23" text-anchor="end" dominant-baseline="central">clk</text>
+<line class="s" x1="68.8" y1="32" x2="86.8" y2="32"/>
+<line class="s" x1="86.8" y1="32" x2="86.8" y2="14"/>
+<line class="s" x1="86.8" y1="14" x2="104.8" y2="14"/>
+<line class="s" x1="104.8" y1="14" x2="104.8" y2="32"/>
+<line class="s" x1="104.8" y1="32" x2="122.8" y2="32"/>
+<line class="s" x1="122.8" y1="32" x2="122.8" y2="14"/>
+<line class="s" x1="122.8" y1="14" x2="140.8" y2="14"/>
+<line class="s" x1="140.8" y1="14" x2="140.8" y2="32"/>
+<line class="s" x1="140.8" y1="32" x2="158.8" y2="32"/>
+<line class="s" x1="158.8" y1="32" x2="158.8" y2="14"/>
+<line class="s" x1="158.8" y1="14" x2="176.8" y2="14"/>
+<line class="s" x1="176.8" y1="14" x2="176.8" y2="32"/>
+<line class="s" x1="176.8" y1="32" x2="194.8" y2="32"/>
+<line class="s" x1="194.8" y1="32" x2="194.8" y2="14"/>
+<line class="s" x1="194.8" y1="14" x2="212.8" y2="14"/>
+<line class="s" x1="212.8" y1="14" x2="212.8" y2="32"/>
+<line class="s" x1="212.8" y1="32" x2="230.8" y2="32"/>
+<line class="s" x1="230.8" y1="32" x2="230.8" y2="14"/>
+<line class="s" x1="230.8" y1="14" x2="248.8" y2="14"/>
+<line class="s" x1="248.8" y1="14" x2="248.8" y2="32"/>
+<line class="s" x1="248.8" y1="32" x2="266.8" y2="32"/>
+<line class="s" x1="266.8" y1="32" x2="266.8" y2="14"/>
+<line class="s" x1="266.8" y1="14" x2="284.8" y2="14"/>
+<line class="s" x1="284.8" y1="14" x2="284.8" y2="32"/>
+<line class="s" x1="284.8" y1="32" x2="302.8" y2="32"/>
+<line class="s" x1="302.8" y1="32" x2="302.8" y2="14"/>
+<line class="s" x1="302.8" y1="14" x2="320.8" y2="14"/>
+<line class="s" x1="320.8" y1="14" x2="320.8" y2="32"/>
+<line class="s" x1="320.8" y1="32" x2="338.8" y2="32"/>
+<line class="s" x1="338.8" y1="32" x2="338.8" y2="14"/>
+<line class="s" x1="338.8" y1="14" x2="356.8" y2="14"/>
+<line class="s" x1="356.8" y1="14" x2="356.8" y2="32"/>
+<line class="s" x1="356.8" y1="32" x2="374.8" y2="32"/>
+<line class="s" x1="374.8" y1="32" x2="374.8" y2="14"/>
+<line class="s" x1="374.8" y1="14" x2="392.8" y2="14"/>
+<text class="t" x="56.8" y="53" text-anchor="end" dominant-baseline="central">req(0)</text>
+<line class="s" x1="68.8" y1="62" x2="104.8" y2="62"/>
+<line class="s" x1="104.8" y1="62" x2="104.8" y2="44"/>
+<line class="s" x1="104.8" y1="44" x2="284.8" y2="44"/>
+<line class="s" x1="284.8" y1="44" x2="284.8" y2="62"/>
+<line class="s" x1="284.8" y1="62" x2="320.8" y2="62"/>
+<line class="s" x1="320.8" y1="62" x2="320.8" y2="44"/>
+<line class="s" x1="320.8" y1="44" x2="356.8" y2="44"/>
+<line class="s" x1="356.8" y1="44" x2="356.8" y2="62"/>
+<line class="s" x1="356.8" y1="62" x2="392.8" y2="62"/>
+<text class="t" x="56.8" y="83" text-anchor="end" dominant-baseline="central">req(1)</text>
+<line class="s" x1="68.8" y1="92" x2="104.8" y2="92"/>
+<line class="s" x1="104.8" y1="92" x2="104.8" y2="74"/>
+<line class="s" x1="104.8" y1="74" x2="212.8" y2="74"/>
+<line class="s" x1="212.8" y1="74" x2="212.8" y2="92"/>
+<line class="s" x1="212.8" y1="92" x2="248.8" y2="92"/>
+<line class="s" x1="248.8" y1="92" x2="248.8" y2="74"/>
+<line class="s" x1="248.8" y1="74" x2="356.8" y2="74"/>
+<line class="s" x1="356.8" y1="74" x2="356.8" y2="92"/>
+<line class="s" x1="356.8" y1="92" x2="392.8" y2="92"/>
+<text class="t a b" x="56.8" y="113" text-anchor="end" dominant-baseline="central">gnt(0)</text>
+<line class="s" x1="68.8" y1="122" x2="122.8" y2="122"/>
+<line class="s" x1="122.8" y1="122" x2="122.8" y2="104"/>
+<line class="s" x1="122.8" y1="104" x2="158.8" y2="104"/>
+<line class="s" x1="158.8" y1="104" x2="158.8" y2="122"/>
+<line class="s" x1="158.8" y1="122" x2="194.8" y2="122"/>
+<line class="s" x1="194.8" y1="122" x2="194.8" y2="104"/>
+<line class="s" x1="194.8" y1="104" x2="266.8" y2="104"/>
+<line class="s" x1="266.8" y1="104" x2="266.8" y2="122"/>
+<line class="s" x1="266.8" y1="122" x2="338.8" y2="122"/>
+<line class="s" x1="338.8" y1="122" x2="338.8" y2="104"/>
+<line class="s" x1="338.8" y1="104" x2="374.8" y2="104"/>
+<line class="s" x1="374.8" y1="104" x2="374.8" y2="122"/>
+<line class="s" x1="374.8" y1="122" x2="392.8" y2="122"/>
+<text class="t a b" x="56.8" y="143" text-anchor="end" dominant-baseline="central">gnt(1)</text>
+<line class="s" x1="68.8" y1="152" x2="158.8" y2="152"/>
+<line class="s" x1="158.8" y1="152" x2="158.8" y2="134"/>
+<line class="s" x1="158.8" y1="134" x2="194.8" y2="134"/>
+<line class="s" x1="194.8" y1="134" x2="194.8" y2="152"/>
+<line class="s" x1="194.8" y1="152" x2="266.8" y2="152"/>
+<line class="s" x1="266.8" y1="152" x2="266.8" y2="134"/>
+<line class="s" x1="266.8" y1="134" x2="338.8" y2="134"/>
+<line class="s" x1="338.8" y1="134" x2="338.8" y2="152"/>
+<line class="s" x1="338.8" y1="152" x2="392.8" y2="152"/>
+<text class="t sm m" x="68.8" y="169" text-anchor="start" dominant-baseline="central">when both ask, they take turns</text>
+</svg>

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="457" height="150" viewBox="0 0 457 150" role="img">
+<title>synchronous reset to 00</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<line class="s thin ms dash" x1="85" y1="8" x2="85" y2="128"/>
+<line class="s thin ms dash" x1="133" y1="8" x2="133" y2="128"/>
+<line class="s thin ms dash" x1="181" y1="8" x2="181" y2="128"/>
+<line class="s thin ms dash" x1="229" y1="8" x2="229" y2="128"/>
+<line class="s thin ms dash" x1="277" y1="8" x2="277" y2="128"/>
+<line class="s thin ms dash" x1="325" y1="8" x2="325" y2="128"/>
+<line class="s thin ms dash" x1="373" y1="8" x2="373" y2="128"/>
+<line class="s thin ms dash" x1="421" y1="8" x2="421" y2="128"/>
+<text class="t" x="49" y="23" text-anchor="end" dominant-baseline="central">clk</text>
+<line class="s" x1="61" y1="32" x2="85" y2="32"/>
+<line class="s" x1="85" y1="32" x2="85" y2="14"/>
+<line class="s" x1="85" y1="14" x2="109" y2="14"/>
+<line class="s" x1="109" y1="14" x2="109" y2="32"/>
+<line class="s" x1="109" y1="32" x2="133" y2="32"/>
+<line class="s" x1="133" y1="32" x2="133" y2="14"/>
+<line class="s" x1="133" y1="14" x2="157" y2="14"/>
+<line class="s" x1="157" y1="14" x2="157" y2="32"/>
+<line class="s" x1="157" y1="32" x2="181" y2="32"/>
+<line class="s" x1="181" y1="32" x2="181" y2="14"/>
+<line class="s" x1="181" y1="14" x2="205" y2="14"/>
+<line class="s" x1="205" y1="14" x2="205" y2="32"/>
+<line class="s" x1="205" y1="32" x2="229" y2="32"/>
+<line class="s" x1="229" y1="32" x2="229" y2="14"/>
+<line class="s" x1="229" y1="14" x2="253" y2="14"/>
+<line class="s" x1="253" y1="14" x2="253" y2="32"/>
+<line class="s" x1="253" y1="32" x2="277" y2="32"/>
+<line class="s" x1="277" y1="32" x2="277" y2="14"/>
+<line class="s" x1="277" y1="14" x2="301" y2="14"/>
+<line class="s" x1="301" y1="14" x2="301" y2="32"/>
+<line class="s" x1="301" y1="32" x2="325" y2="32"/>
+<line class="s" x1="325" y1="32" x2="325" y2="14"/>
+<line class="s" x1="325" y1="14" x2="349" y2="14"/>
+<line class="s" x1="349" y1="14" x2="349" y2="32"/>
+<line class="s" x1="349" y1="32" x2="373" y2="32"/>
+<line class="s" x1="373" y1="32" x2="373" y2="14"/>
+<line class="s" x1="373" y1="14" x2="397" y2="14"/>
+<line class="s" x1="397" y1="14" x2="397" y2="32"/>
+<line class="s" x1="397" y1="32" x2="421" y2="32"/>
+<line class="s" x1="421" y1="32" x2="421" y2="14"/>
+<line class="s" x1="421" y1="14" x2="445" y2="14"/>
+<text class="t" x="49" y="53" text-anchor="end" dominant-baseline="central">reset</text>
+<line class="s" x1="61" y1="62" x2="205" y2="62"/>
+<line class="s" x1="205" y1="62" x2="205" y2="44"/>
+<line class="s" x1="205" y1="44" x2="253" y2="44"/>
+<line class="s" x1="253" y1="44" x2="253" y2="62"/>
+<line class="s" x1="253" y1="62" x2="445" y2="62"/>
+<text class="t" x="49" y="83" text-anchor="end" dominant-baseline="central">d</text>
+<polygon class="s af" points="61,83 65,74 105,74 109,83 105,92 65,92"/>
+<text class="t" x="85" y="83" text-anchor="middle" dominant-baseline="central">A1</text>
+<polygon class="s af" points="109,83 113,74 153,74 157,83 153,92 113,92"/>
+<text class="t" x="133" y="83" text-anchor="middle" dominant-baseline="central">B2</text>
+<polygon class="s af" points="157,83 161,74 201,74 205,83 201,92 161,92"/>
+<text class="t" x="181" y="83" text-anchor="middle" dominant-baseline="central">C3</text>
+<polygon class="s af" points="205,83 209,74 249,74 253,83 249,92 209,92"/>
+<text class="t" x="229" y="83" text-anchor="middle" dominant-baseline="central">D4</text>
+<polygon class="s af" points="253,83 257,74 297,74 301,83 297,92 257,92"/>
+<text class="t" x="277" y="83" text-anchor="middle" dominant-baseline="central">E5</text>
+<polygon class="s af" points="301,83 305,74 345,74 349,83 345,92 305,92"/>
+<text class="t" x="325" y="83" text-anchor="middle" dominant-baseline="central">F6</text>
+<polygon class="s af" points="349,83 353,74 393,74 397,83 393,92 353,92"/>
+<text class="t" x="373" y="83" text-anchor="middle" dominant-baseline="central">17</text>
+<polygon class="s af" points="397,83 401,74 441,74 445,83 441,92 401,92"/>
+<text class="t" x="421" y="83" text-anchor="middle" dominant-baseline="central">28</text>
+<text class="t a b" x="49" y="113" text-anchor="end" dominant-baseline="central">q</text>
+<polygon class="s xf" points="61,113 65,104 81,104 85,113 81,122 65,122"/>
+<polygon class="s af" points="85,113 89,104 129,104 133,113 129,122 89,122"/>
+<text class="t" x="109" y="113" text-anchor="middle" dominant-baseline="central">A1</text>
+<polygon class="s af" points="133,113 137,104 177,104 181,113 177,122 137,122"/>
+<text class="t" x="157" y="113" text-anchor="middle" dominant-baseline="central">B2</text>
+<polygon class="s af" points="181,113 185,104 225,104 229,113 225,122 185,122"/>
+<text class="t" x="205" y="113" text-anchor="middle" dominant-baseline="central">C3</text>
+<polygon class="s af" points="229,113 233,104 273,104 277,113 273,122 233,122"/>
+<text class="t" x="253" y="113" text-anchor="middle" dominant-baseline="central">00</text>
+<polygon class="s af" points="277,113 281,104 321,104 325,113 321,122 281,122"/>
+<text class="t" x="301" y="113" text-anchor="middle" dominant-baseline="central">E5</text>
+<polygon class="s af" points="325,113 329,104 369,104 373,113 369,122 329,122"/>
+<text class="t" x="349" y="113" text-anchor="middle" dominant-baseline="central">F6</text>
+<polygon class="s af" points="373,113 377,104 417,104 421,113 417,122 377,122"/>
+<text class="t" x="397" y="113" text-anchor="middle" dominant-baseline="central">17</text>
+<polygon class="s af" points="421,113 425,104 441,104 445,113 441,122 425,122"/>
+<text class="t" x="433" y="113" text-anchor="middle" dominant-baseline="central">28</text>
+<text class="t sm m" x="61" y="139" text-anchor="start" dominant-baseline="central">reset only acts at a rising edge</text>
+</svg>

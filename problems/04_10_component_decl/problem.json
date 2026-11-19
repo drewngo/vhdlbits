@@ -1,0 +1,24 @@
+{
+  "id": "04_10_component_decl",
+  "section": 4,
+  "num": 10,
+  "name": "component_decl",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

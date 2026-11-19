@@ -1,0 +1,65 @@
+{
+  "id": "13_03_record_signal",
+  "section": 13,
+  "num": 3,
+  "name": "record_signal",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "v_in",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "a_in",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "d_in",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "v_out",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "a_out",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 3,
+      "low": 0
+    },
+    {
+      "name": "d_out",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  },
+  "extra_files": [
+    "my_pkg.vhd"
+  ]
+}

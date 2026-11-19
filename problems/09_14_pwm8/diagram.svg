@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="468.6" height="180" viewBox="0 0 468.6 180" role="img">
+<title>pwm is high while the free-running counter is below duty</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<line class="s thin ms dash" x1="95.6" y1="8" x2="95.6" y2="158"/>
+<line class="s thin ms dash" x1="133.6" y1="8" x2="133.6" y2="158"/>
+<line class="s thin ms dash" x1="171.6" y1="8" x2="171.6" y2="158"/>
+<line class="s thin ms dash" x1="209.6" y1="8" x2="209.6" y2="158"/>
+<line class="s thin ms dash" x1="247.6" y1="8" x2="247.6" y2="158"/>
+<line class="s thin ms dash" x1="285.6" y1="8" x2="285.6" y2="158"/>
+<line class="s thin ms dash" x1="323.6" y1="8" x2="323.6" y2="158"/>
+<line class="s thin ms dash" x1="361.6" y1="8" x2="361.6" y2="158"/>
+<line class="s thin ms dash" x1="399.6" y1="8" x2="399.6" y2="158"/>
+<line class="s thin ms dash" x1="437.6" y1="8" x2="437.6" y2="158"/>
+<text class="t" x="64.6" y="23" text-anchor="end" dominant-baseline="central">clk</text>
+<line class="s" x1="76.6" y1="32" x2="95.6" y2="32"/>
+<line class="s" x1="95.6" y1="32" x2="95.6" y2="14"/>
+<line class="s" x1="95.6" y1="14" x2="114.6" y2="14"/>
+<line class="s" x1="114.6" y1="14" x2="114.6" y2="32"/>
+<line class="s" x1="114.6" y1="32" x2="133.6" y2="32"/>
+<line class="s" x1="133.6" y1="32" x2="133.6" y2="14"/>
+<line class="s" x1="133.6" y1="14" x2="152.6" y2="14"/>
+<line class="s" x1="152.6" y1="14" x2="152.6" y2="32"/>
+<line class="s" x1="152.6" y1="32" x2="171.6" y2="32"/>
+<line class="s" x1="171.6" y1="32" x2="171.6" y2="14"/>
+<line class="s" x1="171.6" y1="14" x2="190.6" y2="14"/>
+<line class="s" x1="190.6" y1="14" x2="190.6" y2="32"/>
+<line class="s" x1="190.6" y1="32" x2="209.6" y2="32"/>
+<line class="s" x1="209.6" y1="32" x2="209.6" y2="14"/>
+<line class="s" x1="209.6" y1="14" x2="228.6" y2="14"/>
+<line class="s" x1="228.6" y1="14" x2="228.6" y2="32"/>
+<line class="s" x1="228.6" y1="32" x2="247.6" y2="32"/>
+<line class="s" x1="247.6" y1="32" x2="247.6" y2="14"/>
+<line class="s" x1="247.6" y1="14" x2="266.6" y2="14"/>
+<line class="s" x1="266.6" y1="14" x2="266.6" y2="32"/>
+<line class="s" x1="266.6" y1="32" x2="285.6" y2="32"/>
+<line class="s" x1="285.6" y1="32" x2="285.6" y2="14"/>
+<line class="s" x1="285.6" y1="14" x2="304.6" y2="14"/>
+<line class="s" x1="304.6" y1="14" x2="304.6" y2="32"/>
+<line class="s" x1="304.6" y1="32" x2="323.6" y2="32"/>
+<line class="s" x1="323.6" y1="32" x2="323.6" y2="14"/>
+<line class="s" x1="323.6" y1="14" x2="342.6" y2="14"/>
+<line class="s" x1="342.6" y1="14" x2="342.6" y2="32"/>
+<line class="s" x1="342.6" y1="32" x2="361.6" y2="32"/>
+<line class="s" x1="361.6" y1="32" x2="361.6" y2="14"/>
+<line class="s" x1="361.6" y1="14" x2="380.6" y2="14"/>
+<line class="s" x1="380.6" y1="14" x2="380.6" y2="32"/>
+<line class="s" x1="380.6" y1="32" x2="399.6" y2="32"/>
+<line class="s" x1="399.6" y1="32" x2="399.6" y2="14"/>
+<line class="s" x1="399.6" y1="14" x2="418.6" y2="14"/>
+<line class="s" x1="418.6" y1="14" x2="418.6" y2="32"/>
+<line class="s" x1="418.6" y1="32" x2="437.6" y2="32"/>
+<line class="s" x1="437.6" y1="32" x2="437.6" y2="14"/>
+<line class="s" x1="437.6" y1="14" x2="456.6" y2="14"/>
+<text class="t" x="64.6" y="53" text-anchor="end" dominant-baseline="central">reset</text>
+<line class="s" x1="76.6" y1="62" x2="456.6" y2="62"/>
+<text class="t" x="64.6" y="83" text-anchor="end" dominant-baseline="central">counter</text>
+<polygon class="s af" points="76.6,83 80.6,74 91.6,74 95.6,83 91.6,92 80.6,92"/>
+<polygon class="s af" points="95.6,83 99.6,74 129.6,74 133.6,83 129.6,92 99.6,92"/>
+<text class="t" x="114.6" y="83" text-anchor="middle" dominant-baseline="central">253</text>
+<polygon class="s af" points="133.6,83 137.6,74 167.6,74 171.6,83 167.6,92 137.6,92"/>
+<text class="t" x="152.6" y="83" text-anchor="middle" dominant-baseline="central">254</text>
+<polygon class="s af" points="171.6,83 175.6,74 205.6,74 209.6,83 205.6,92 175.6,92"/>
+<text class="t" x="190.6" y="83" text-anchor="middle" dominant-baseline="central">255</text>
+<polygon class="s af" points="209.6,83 213.6,74 243.6,74 247.6,83 243.6,92 213.6,92"/>
+<text class="t" x="228.6" y="83" text-anchor="middle" dominant-baseline="central">0</text>
+<polygon class="s af" points="247.6,83 251.6,74 281.6,74 285.6,83 281.6,92 251.6,92"/>
+<text class="t" x="266.6" y="83" text-anchor="middle" dominant-baseline="central">1</text>
+<polygon class="s af" points="285.6,83 289.6,74 319.6,74 323.6,83 319.6,92 289.6,92"/>
+<text class="t" x="304.6" y="83" text-anchor="middle" dominant-baseline="central">2</text>
+<polygon class="s af" points="323.6,83 327.6,74 357.6,74 361.6,83 357.6,92 327.6,92"/>
+<text class="t" x="342.6" y="83" text-anchor="middle" dominant-baseline="central">3</text>
+<polygon class="s af" points="361.6,83 365.6,74 395.6,74 399.6,83 395.6,92 365.6,92"/>
+<text class="t" x="380.6" y="83" text-anchor="middle" dominant-baseline="central">4</text>
+<polygon class="s af" points="399.6,83 403.6,74 433.6,74 437.6,83 433.6,92 403.6,92"/>
+<text class="t" x="418.6" y="83" text-anchor="middle" dominant-baseline="central">5</text>
+<polygon class="s af" points="437.6,83 441.6,74 452.6,74 456.6,83 452.6,92 441.6,92"/>
+<text class="t" x="447.1" y="83" text-anchor="middle" dominant-baseline="central">6</text>
+<text class="t" x="64.6" y="113" text-anchor="end" dominant-baseline="central">duty</text>
+<polygon class="s af" points="76.6,113 80.6,104 452.6,104 456.6,113 452.6,122 80.6,122"/>
+<text class="t" x="266.6" y="113" text-anchor="middle" dominant-baseline="central">3</text>
+<text class="t a b" x="64.6" y="143" text-anchor="end" dominant-baseline="central">pwm</text>
+<line class="s" x1="76.6" y1="152" x2="209.6" y2="152"/>
+<line class="s" x1="209.6" y1="152" x2="209.6" y2="134"/>
+<line class="s" x1="209.6" y1="134" x2="323.6" y2="134"/>
+<line class="s" x1="323.6" y1="134" x2="323.6" y2="152"/>
+<line class="s" x1="323.6" y1="152" x2="456.6" y2="152"/>
+<text class="t sm m" x="76.6" y="169" text-anchor="start" dominant-baseline="central">duty = 3: pwm is high for 3 of every 256 cycles</text>
+</svg>

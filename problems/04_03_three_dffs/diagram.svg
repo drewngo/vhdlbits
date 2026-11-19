@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="160" viewBox="0 0 520 160" role="img">
+<title>three my_dff instances chained: d -&gt; q1 -&gt; q2 -&gt; q</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s thin ms dash" x="50" y="10" width="430" height="140" rx="4"/>
+<text class="t sm m" x="58" y="22" text-anchor="start" dominant-baseline="central">top_module</text>
+<rect class="s" x="110" y="34" width="60" height="70" rx="3"/>
+<text class="t sm b" x="140" y="47" text-anchor="middle" dominant-baseline="central">my_dff</text>
+<text class="t sm m" x="115" y="65.5" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="110,84 119,90 110,96"/>
+<text class="t sm m" x="165" y="65.5" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s" x="240" y="34" width="60" height="70" rx="3"/>
+<text class="t sm b" x="270" y="47" text-anchor="middle" dominant-baseline="central">my_dff</text>
+<text class="t sm m" x="245" y="65.5" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="240,84 249,90 240,96"/>
+<text class="t sm m" x="295" y="65.5" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s" x="370" y="34" width="60" height="70" rx="3"/>
+<text class="t sm b" x="400" y="47" text-anchor="middle" dominant-baseline="central">my_dff</text>
+<text class="t sm m" x="375" y="65.5" text-anchor="start" dominant-baseline="central">d</text>
+<polyline class="s" points="370,84 379,90 370,96"/>
+<text class="t sm m" x="425" y="65.5" text-anchor="end" dominant-baseline="central">q</text>
+<polyline class="s" points="50,65.5 110,65.5"/>
+<text class="t" x="44" y="65.5" text-anchor="end" dominant-baseline="central">d</text>
+<polyline class="s" points="170,65.5 240,65.5"/>
+<text class="t sm m" x="197" y="55.5" text-anchor="middle" dominant-baseline="central">q1</text>
+<polyline class="s" points="300,65.5 370,65.5"/>
+<text class="t sm m" x="327" y="55.5" text-anchor="middle" dominant-baseline="central">q2</text>
+<polyline class="s" points="430,65.5 480,65.5"/>
+<text class="t a b" x="486" y="65.5" text-anchor="start" dominant-baseline="central">q</text>
+<polyline class="s" points="50,128 356,128"/>
+<text class="t" x="44" y="128" text-anchor="end" dominant-baseline="central">clk</text>
+<polyline class="s" points="96,128 96,90 110,90"/>
+<circle class="k" cx="96" cy="128" r="3"/>
+<polyline class="s" points="226,128 226,90 240,90"/>
+<circle class="k" cx="226" cy="128" r="3"/>
+<polyline class="s" points="356,128 356,90 370,90"/>
+</svg>

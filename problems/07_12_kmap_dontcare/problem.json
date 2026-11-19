@@ -1,0 +1,35 @@
+{
+  "id": "07_12_kmap_dontcare",
+  "section": 7,
+  "num": 12,
+  "name": "kmap_dontcare",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "c",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "d",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "y",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "dont_care": "(a << 3 | b << 2 | c << 1 | d) in (0, 1, 15)"
+}

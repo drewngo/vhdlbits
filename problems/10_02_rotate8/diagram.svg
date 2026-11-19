@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="388" height="136" viewBox="0 0 388 136" role="img">
+<title>ena = 01 rotates right: q0 wraps around to q7</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<text class="t" x="76" y="33" text-anchor="end" dominant-baseline="central">q</text>
+<rect class="s bg" x="86" y="18" width="36" height="30"/>
+<text class="t" x="104" y="33" text-anchor="middle" dominant-baseline="central">q7</text>
+<text class="t sm m" x="104" y="11" text-anchor="middle" dominant-baseline="central">7</text>
+<rect class="s bg" x="122" y="18" width="36" height="30"/>
+<text class="t" x="140" y="33" text-anchor="middle" dominant-baseline="central">q6</text>
+<text class="t sm m" x="140" y="11" text-anchor="middle" dominant-baseline="central">6</text>
+<rect class="s bg" x="158" y="18" width="36" height="30"/>
+<text class="t" x="176" y="33" text-anchor="middle" dominant-baseline="central">q5</text>
+<text class="t sm m" x="176" y="11" text-anchor="middle" dominant-baseline="central">5</text>
+<rect class="s bg" x="194" y="18" width="36" height="30"/>
+<text class="t" x="212" y="33" text-anchor="middle" dominant-baseline="central">q4</text>
+<text class="t sm m" x="212" y="11" text-anchor="middle" dominant-baseline="central">4</text>
+<rect class="s bg" x="230" y="18" width="36" height="30"/>
+<text class="t" x="248" y="33" text-anchor="middle" dominant-baseline="central">q3</text>
+<text class="t sm m" x="248" y="11" text-anchor="middle" dominant-baseline="central">3</text>
+<rect class="s bg" x="266" y="18" width="36" height="30"/>
+<text class="t" x="284" y="33" text-anchor="middle" dominant-baseline="central">q2</text>
+<text class="t sm m" x="284" y="11" text-anchor="middle" dominant-baseline="central">2</text>
+<rect class="s bg" x="302" y="18" width="36" height="30"/>
+<text class="t" x="320" y="33" text-anchor="middle" dominant-baseline="central">q1</text>
+<text class="t sm m" x="320" y="11" text-anchor="middle" dominant-baseline="central">1</text>
+<rect class="s bg" x="338" y="18" width="36" height="30"/>
+<text class="t" x="356" y="33" text-anchor="middle" dominant-baseline="central">q0</text>
+<text class="t sm m" x="356" y="11" text-anchor="middle" dominant-baseline="central">0</text>
+<text class="t" x="76" y="113" text-anchor="end" dominant-baseline="central">ena = 01</text>
+<rect class="s af" x="86" y="98" width="36" height="30"/>
+<text class="t" x="104" y="113" text-anchor="middle" dominant-baseline="central">q0</text>
+<text class="t sm m" x="104" y="91" text-anchor="middle" dominant-baseline="central">7</text>
+<rect class="s bg" x="122" y="98" width="36" height="30"/>
+<text class="t" x="140" y="113" text-anchor="middle" dominant-baseline="central">q7</text>
+<text class="t sm m" x="140" y="91" text-anchor="middle" dominant-baseline="central">6</text>
+<rect class="s bg" x="158" y="98" width="36" height="30"/>
+<text class="t" x="176" y="113" text-anchor="middle" dominant-baseline="central">q6</text>
+<text class="t sm m" x="176" y="91" text-anchor="middle" dominant-baseline="central">5</text>
+<rect class="s bg" x="194" y="98" width="36" height="30"/>
+<text class="t" x="212" y="113" text-anchor="middle" dominant-baseline="central">q5</text>
+<text class="t sm m" x="212" y="91" text-anchor="middle" dominant-baseline="central">4</text>
+<rect class="s bg" x="230" y="98" width="36" height="30"/>
+<text class="t" x="248" y="113" text-anchor="middle" dominant-baseline="central">q4</text>
+<text class="t sm m" x="248" y="91" text-anchor="middle" dominant-baseline="central">3</text>
+<rect class="s bg" x="266" y="98" width="36" height="30"/>
+<text class="t" x="284" y="113" text-anchor="middle" dominant-baseline="central">q3</text>
+<text class="t sm m" x="284" y="91" text-anchor="middle" dominant-baseline="central">2</text>
+<rect class="s bg" x="302" y="98" width="36" height="30"/>
+<text class="t" x="320" y="113" text-anchor="middle" dominant-baseline="central">q2</text>
+<text class="t sm m" x="320" y="91" text-anchor="middle" dominant-baseline="central">1</text>
+<rect class="s bg" x="338" y="98" width="36" height="30"/>
+<text class="t" x="356" y="113" text-anchor="middle" dominant-baseline="central">q1</text>
+<text class="t sm m" x="356" y="91" text-anchor="middle" dominant-baseline="central">0</text>
+<polyline class="s thin ms" points="104,48 140,84"/>
+<polygon class="k" points="140,84 132.6,81 137,76.6"/>
+<polyline class="s thin ms" points="140,48 176,84"/>
+<polygon class="k" points="176,84 168.6,81 173,76.6"/>
+<polyline class="s thin ms" points="176,48 212,84"/>
+<polygon class="k" points="212,84 204.6,81 209,76.6"/>
+<polyline class="s thin ms" points="212,48 248,84"/>
+<polygon class="k" points="248,84 240.6,81 245,76.6"/>
+<polyline class="s thin ms" points="248,48 284,84"/>
+<polygon class="k" points="284,84 276.6,81 281,76.6"/>
+<polyline class="s thin ms" points="284,48 320,84"/>
+<polygon class="k" points="320,84 312.6,81 317,76.6"/>
+<polyline class="s thin ms" points="320,48 356,84"/>
+<polygon class="k" points="356,84 348.6,81 353,76.6"/>
+<polyline class="s thin ms" points="356,48 104,84"/>
+<polygon class="k" points="104,84 110.9,79.9 111.7,86"/>
+</svg>

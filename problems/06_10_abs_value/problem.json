@@ -1,0 +1,28 @@
+{
+  "id": "06_10_abs_value",
+  "section": 6,
+  "num": 10,
+  "name": "abs_value",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "mag",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 7,
+      "low": 0
+    },
+    {
+      "name": "neg",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "07_13_sop_and_pos",
+  "section": 7,
+  "num": 13,
+  "name": "sop_and_pos",
+  "mode": "comb",
+  "ports": [
+    {
+      "name": "a",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "b",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "c",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "d",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "y_sop",
+      "dir": "out",
+      "type": "std_logic"
+    },
+    {
+      "name": "y_pos",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="290" viewBox="0 0 440 290" role="img">
+<title>a 32-bit adder from two add16: the lower half&#x27;s carry-out feeds the upper half&#x27;s cin</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<rect class="s" x="150" y="40" width="120" height="70" rx="3"/>
+<text class="t b" x="210" y="75" text-anchor="middle" dominant-baseline="central">add16</text>
+<text class="t sm m" x="155" y="63.3" text-anchor="start" dominant-baseline="central">a</text>
+<text class="t sm m" x="155" y="86.7" text-anchor="start" dominant-baseline="central">b</text>
+<text class="t sm m" x="265" y="75" text-anchor="end" dominant-baseline="central">sum</text>
+<text class="t sm m" x="210" y="50" text-anchor="middle" dominant-baseline="central">cout</text>
+<text class="t sm m" x="210" y="100" text-anchor="middle" dominant-baseline="central">cin</text>
+<rect class="s" x="150" y="160" width="120" height="70" rx="3"/>
+<text class="t b" x="210" y="195" text-anchor="middle" dominant-baseline="central">add16</text>
+<text class="t sm m" x="155" y="183.3" text-anchor="start" dominant-baseline="central">a</text>
+<text class="t sm m" x="155" y="206.7" text-anchor="start" dominant-baseline="central">b</text>
+<text class="t sm m" x="265" y="195" text-anchor="end" dominant-baseline="central">sum</text>
+<text class="t sm m" x="210" y="170" text-anchor="middle" dominant-baseline="central">cout</text>
+<text class="t sm m" x="210" y="220" text-anchor="middle" dominant-baseline="central">cin</text>
+<polyline class="s" points="210,160 210,110"/>
+<text class="t sm m" x="216" y="135" text-anchor="start" dominant-baseline="central">carry</text>
+<polyline class="s bus" points="80,63.3 150,63.3"/>
+<text class="t sm" x="76" y="63.3" text-anchor="end" dominant-baseline="central">a(31:16)</text>
+<polyline class="s bus" points="80,86.7 150,86.7"/>
+<text class="t sm" x="76" y="86.7" text-anchor="end" dominant-baseline="central">b(31:16)</text>
+<polyline class="s bus" points="270,75 320,75"/>
+<text class="t sm a b" x="324" y="75" text-anchor="start" dominant-baseline="central">sum(31:16)</text>
+<polyline class="s bus" points="80,183.3 150,183.3"/>
+<text class="t sm" x="76" y="183.3" text-anchor="end" dominant-baseline="central">a(15:0)</text>
+<polyline class="s bus" points="80,206.7 150,206.7"/>
+<text class="t sm" x="76" y="206.7" text-anchor="end" dominant-baseline="central">b(15:0)</text>
+<polyline class="s bus" points="270,195 320,195"/>
+<text class="t sm a b" x="324" y="195" text-anchor="start" dominant-baseline="central">sum(15:0)</text>
+<polyline class="s" points="210,40 210,24"/>
+<text class="t sm m" x="210" y="18" text-anchor="middle" dominant-baseline="central">(unused)</text>
+<polyline class="s" points="210,230 210,246"/>
+<text class="t sm" x="210" y="256" text-anchor="middle" dominant-baseline="central">&#x27;0&#x27;</text>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="300" viewBox="0 0 420 300" role="img">
+<title>two AND-OR halves: p1y from three-input ANDs, p2y from two-input ANDs</title>
+<style>
+.s{stroke:#1d2125;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1}
+.bus{stroke-width:3.5}
+.dash{stroke-dasharray:4 4}
+.t{fill:#1d2125;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+.sm{font-size:11px}
+.b{font-weight:700}
+.m{fill:#6b7280}
+.ms{stroke:#9aa0a8}
+.a{fill:#2a5db0}
+.as{stroke:#2a5db0}
+.af{fill:#dbe6f7}
+.bg{fill:#ffffff}
+.xf{fill:#e5e7eb}
+.k{fill:#1d2125}
+.ak{fill:#2a5db0}
+@media (prefers-color-scheme:dark){
+.s{stroke:#e4e6e9}.t{fill:#e4e6e9}.m{fill:#9aa0a8}.ms{stroke:#6b7280}
+.a{fill:#7aa7ff}.as{stroke:#7aa7ff}.af{fill:#2c3a52}.bg{fill:#17191c}
+.xf{fill:#3a3f46}.k{fill:#e4e6e9}.ak{fill:#7aa7ff}}
+</style>
+<path class="s" d="M100,15 H126 A30,30 0 0 1 126,75 H100 Z"/>
+<path class="s" d="M100,85 H126 A30,30 0 0 1 126,145 H100 Z"/>
+<path class="s" d="M100,175 H126 A20,20 0 0 1 126,215 H100 Z"/>
+<path class="s" d="M100,235 H126 A20,20 0 0 1 126,275 H100 Z"/>
+<polyline class="s" points="50,25 100,25"/>
+<text class="t" x="44" y="25" text-anchor="end" dominant-baseline="central">p1a</text>
+<polyline class="s" points="50,45 100,45"/>
+<text class="t" x="44" y="45" text-anchor="end" dominant-baseline="central">p1b</text>
+<polyline class="s" points="50,65 100,65"/>
+<text class="t" x="44" y="65" text-anchor="end" dominant-baseline="central">p1c</text>
+<polyline class="s" points="50,95 100,95"/>
+<text class="t" x="44" y="95" text-anchor="end" dominant-baseline="central">p1d</text>
+<polyline class="s" points="50,115 100,115"/>
+<text class="t" x="44" y="115" text-anchor="end" dominant-baseline="central">p1e</text>
+<polyline class="s" points="50,135 100,135"/>
+<text class="t" x="44" y="135" text-anchor="end" dominant-baseline="central">p1f</text>
+<polyline class="s" points="50,185 100,185"/>
+<text class="t" x="44" y="185" text-anchor="end" dominant-baseline="central">p2a</text>
+<polyline class="s" points="50,205 100,205"/>
+<text class="t" x="44" y="205" text-anchor="end" dominant-baseline="central">p2b</text>
+<polyline class="s" points="50,245 100,245"/>
+<text class="t" x="44" y="245" text-anchor="end" dominant-baseline="central">p2c</text>
+<polyline class="s" points="50,265 100,265"/>
+<text class="t" x="44" y="265" text-anchor="end" dominant-baseline="central">p2d</text>
+<path class="s" d="M230,60 Q257.6,60 276,80 Q257.6,100 230,100 Q241.5,80 230,60 Z"/>
+<path class="s" d="M230,205 Q257.6,205 276,225 Q257.6,245 230,245 Q241.5,225 230,205 Z"/>
+<polyline class="s" points="156,45 200,45 200,70 234.3,70"/>
+<polyline class="s" points="156,115 200,115 200,90 234.3,90"/>
+<polyline class="s" points="146,195 200,195 200,215 234.3,215"/>
+<polyline class="s" points="146,255 200,255 200,235 234.3,235"/>
+<polyline class="s" points="276,80 360,80"/>
+<text class="t a b" x="366" y="80" text-anchor="start" dominant-baseline="central">p1y</text>
+<polyline class="s" points="276,225 360,225"/>
+<text class="t a b" x="366" y="225" text-anchor="start" dominant-baseline="central">p2y</text>
+</svg>
