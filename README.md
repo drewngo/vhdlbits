@@ -10,6 +10,8 @@ kept in your browser.
 This repository is the source for that site. It isn't set up as a kit to install, but
 everything is here: the problems, the grader, the reference answers, and the site itself.
 
+Inspired by [HDLBits](https://hdlbits.01xz.net) by Henry Wong. Not affiliated.
+
 ## How grading works
 
 The grader compiles your design into a library called `dut` and the reference answer into

@@ -36,6 +36,9 @@
   header h1 { font-size: 16px; margin: 0; }
   header .progress { color: var(--muted); font-size: 13px; }
   header .spacer { flex: 1; }
+  header .progress, header .credit { white-space: nowrap; }
+  header .credit { color: var(--muted); font-size: 13px; }
+  header .credit a { color: inherit; }
   #nav { overflow-y: auto; border-right: 1px solid var(--border); background: var(--panel); padding: 8px 0 24px; }
   #nav h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 14px 14px 4px; }
   #nav a {
@@ -102,6 +105,7 @@
     body { grid-template-columns: 1fr; grid-template-rows: 44px 180px 1fr; }
     #nav { border-right: none; border-bottom: 1px solid var(--border); }
     main { padding: 16px; }
+    header .credit .long { display: none; }
   }
 </style>
 </head>
@@ -110,6 +114,7 @@
   <h1>VHDLBits</h1>
   <span class="progress" id="progress"></span>
   <span class="spacer"></span>
+  <span class="credit">Inspired by <a href="https://hdlbits.01xz.net" target="_blank" rel="noopener">HDLBits</a><span class="long">. Not affiliated.</span></span>
 </header>
 <nav id="nav"></nav>
 <main>
