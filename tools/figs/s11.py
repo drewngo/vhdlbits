@@ -1,4 +1,5 @@
 from diagrams import Svg, box, clocked, fsm, wave
+from refwave import ref_wave
 
 
 def toggle():
@@ -282,4 +283,21 @@ FIGURES = {
     "detect_then_enable": detect_then_enable(),
     "timer_unit": timer_unit(),
     "elevator3": elevator(),
+    "wave_puzzle_seq1": lambda p: ref_wave(p, {
+        "reset": [1] + [0] * 21,
+        "a": [0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0]},
+        title="waveform of a and q"),
+    "wave_puzzle_seq2": lambda p: ref_wave(p, {
+        "reset": [1] + [0] * 19,
+        "a": [0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0],
+        "b": [0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0]},
+        title="waveform of a, b, p and q"),
+    "wave_puzzle_seq3": lambda p: ref_wave(p, {
+        "reset": [1] + [0] * 25 + [1, 0],
+        "x": [0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1]},
+        slot=16, title="waveform of x and q"),
+    "wave_puzzle_seq4": lambda p: ref_wave(p, {
+        "reset": [1] + [0] * 29,
+        "x": [0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0]},
+        slot=14, title="waveform of x and z"),
 }

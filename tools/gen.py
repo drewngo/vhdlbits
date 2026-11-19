@@ -25,7 +25,8 @@ Each defs module exports PROBLEMS, a list of dicts. Keys:
 Diagrams live apart from the text, in tools/figs/sNN.py: FIGURES maps a problem name to an
 SVG string (or a list of them) built with tools/diagrams.py. Each is written next to the
 README as diagram.svg (diagram_2.svg, ...) and shown under the task, using the SVG's <title>
-as the alt text.
+as the alt text. A figure may also be a function of the problem (its problem.json, with "dir"),
+called once problem.json is written: tools/refwave.py draws waveforms from the reference.
 """
 import importlib.util
 import json
@@ -211,7 +212,7 @@ def load_figures(stem):
     if str(FIGS.parent) not in sys.path:
         sys.path.insert(0, str(FIGS.parent))         # so figs can `import diagrams`
     figs = load_module(path).FIGURES
-    return {k: [v] if isinstance(v, str) else list(v) for k, v in figs.items()}
+    return {k: [v] if isinstance(v, str) or callable(v) else list(v) for k, v in figs.items()}
 
 
 def main():
@@ -230,13 +231,14 @@ def main():
             d.mkdir(parents=True, exist_ok=True)
             stub = pdef.get("stub") or default_stub(pdef)
             stub = md(stub) + "\n"
-            svgs = figures.get(pdef["name"], [])
+            (d / "problem.json").write_text(json.dumps(problem_json(sec, pdef), indent=2) + "\n")
+            pj = {**json.loads((d / "problem.json").read_text()), "dir": d}
+            svgs = [f(pj) if callable(f) else f for f in figures.get(pdef["name"], [])]
             (d / "README.md").write_text(readme(sec, pdef, stub, svgs))
             for old in d.glob("diagram*.svg"):
                 old.unlink()
             for fname, svg in zip(diagram_names(svgs), svgs):
                 (d / fname).write_text(svg)
-            (d / "problem.json").write_text(json.dumps(problem_json(sec, pdef), indent=2) + "\n")
             learner = {("tb.vhd" if pdef.get("mode") == "tb" else "top_module.vhd"): stub}
             learner.update({k: md(v) + "\n" for k, v in pdef.get("extra", {}).items()})
             (d / "starter").mkdir(exist_ok=True)

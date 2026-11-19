@@ -38,6 +38,10 @@ SEQ_DEFAULT_CYCLES = 300
 STATEFUL_DEFAULT_STEPS = 500
 DEFAULT_RESET_PROB = 0.05
 RUN_TIMEOUT = 600
+CLOCK_PERIOD = 10                  # ns, set by the generated testbench
+# Waveform window, in cycles (vectors for combinational problems): the start of a passing
+# run, or this much either side of the first mismatch.
+WAVE_PASS, WAVE_BEFORE, WAVE_AFTER = 24, 12, 8
 
 SECTION_TITLES = {
     1: "Getting Started", 2: "Language Basics", 3: "Vectors",
@@ -406,11 +410,18 @@ def vhdl_value(v):
     return str(v)
 
 
-def gen_tb(p, ports, generics, nrows, trace):
+def wave_samples(mode):
+    """Samples per cycle (or vector): seq logs one after each rising edge as well."""
+    return 3 if mode == "seq" else 1
+
+
+def gen_tb(p, ports, generics, nrows, trace, wave_pass=WAVE_PASS):
     mode = p["mode"]
     clock = p.get("clock")
     ins = [x for x in ports if x.dir == "in" and x.name != clock]
     outs = [x for x in ports if x.dir == "out"]
+    per = wave_samples(mode)
+    w_pass, w_before, w_after = wave_pass * per, (WAVE_BEFORE + 2) * per, WAVE_AFTER * per
     L = [TB_HEADER]
     if clock:
         L.append(f"  signal {clock} : std_logic := '0';")
@@ -445,11 +456,65 @@ def gen_tb(p, ports, generics, nrows, trace):
     L.append("    variable tb_samples, tb_bad : natural := 0;")
     for x in ins:
         L.append(f"    variable tb_v_{x.name} : std_logic_vector({x.width - 1} downto 0);")
+    # Waveform log (wave.txt): every sample of the first wave_pass cycles, and the samples
+    # around the first mismatch, kept in a ring buffer until a mismatch shows up. A sample is
+    # one vector (the inputs, then each output's reference and dut values); only the samples
+    # that get written are formatted.
+    fields = [x.to_slv(x.name) for x in ins]
+    widths = [x.width for x in ins]
+    for x in outs:
+        fields += [x.to_slv(x.name + "_ref"), x.to_slv(x.name + "_dut")]
+        widths += [x.width, x.width]
+    L.append('    file tb_wf : text open write_mode is "wave.txt";')
+    L.append("    type tb_rec_t is record")
+    L.append("      ph : character; t : time; en : boolean;")
+    L.append(f"      v : std_logic_vector({sum(widths) - 1} downto 0);")
+    L.append("    end record;")
+    L.append(f"    type tb_ring_t is array (0 to {w_before - 1}) of tb_rec_t;")
+    L.append("    variable tb_ring : tb_ring_t;")
+    L.append("    variable tb_idx : natural := 0;")
+    L.append("    variable tb_first : integer := -1;")
+    L.append("")
+    L.append("    procedure tb_emit(tb_k : natural; tb_r : tb_rec_t) is")
+    L.append("      variable tb_wl : line;")
+    L.append("    begin")
+    L.append("      write(tb_wl, tb_k); write(tb_wl, ' '); write(tb_wl, tb_r.ph); write(tb_wl, ' ');")
+    L.append("      write(tb_wl, tb_r.t, right, 0, ps);")
+    L.append("      if tb_r.en then write(tb_wl, string'(\" 1\")); else write(tb_wl, string'(\" 0\")); end if;")
+    hi = sum(widths) - 1
+    for w in widths:
+        L.append(f"      write(tb_wl, ' '); write(tb_wl, to_string(tb_r.v({hi} downto {hi - w + 1})));")
+        hi -= w
+    L.append("      writeline(tb_wf, tb_wl);")
+    L.append("    end procedure;")
+    L.append("")
+    L.append("    procedure tb_log(tb_ph : character; tb_en, tb_miss : boolean) is")
+    L.append("      variable tb_r : tb_rec_t;")
+    L.append("    begin")
+    L.append(f"      if tb_first < 0 or tb_idx <= tb_first + {w_after} or tb_idx < {w_pass} then")
+    L.append("        tb_r := (tb_ph, now, tb_en, " + " & ".join(fields) + ");")
+    L.append("        if tb_miss and tb_first < 0 then")
+    L.append("          tb_first := tb_idx;")
+    L.append(f"          for tb_j in maximum(tb_idx - {w_before}, {w_pass}) to tb_idx - 1 loop")
+    L.append(f"            tb_emit(tb_j, tb_ring(tb_j mod {w_before}));")
+    L.append("          end loop;")
+    L.append("        end if;")
+    L.append(f"        if tb_idx < {w_pass} or tb_first >= 0 then")
+    L.append("          tb_emit(tb_idx, tb_r);")
+    L.append("        else")
+    L.append(f"          tb_ring(tb_idx mod {w_before}) := tb_r;")
+    L.append("        end if;")
+    L.append("      end if;")
+    L.append("      tb_idx := tb_idx + 1;")
+    L.append("    end procedure;")
     L.append("")
     L.append("    procedure tb_check(tb_ph : character; tb_en : boolean) is")
     L.append("      variable tb_l : line;")
     L.append("      variable tb_miss : boolean := false;")
     L.append("    begin")
+    for x in outs:
+        L.append(f"      tb_miss := tb_miss or ({x.to_slv(x.name + '_dut')} /= {x.to_slv(x.name + '_ref')});")
+    L.append("      tb_log(tb_ph, tb_en, tb_en and tb_miss);")
     if trace:
         L.append("      write(tb_l, tb_ph);")
         L.append("      if tb_en then write(tb_l, string'(\" 1\")); else write(tb_l, string'(\" 0\")); end if;")
@@ -458,8 +523,6 @@ def gen_tb(p, ports, generics, nrows, trace):
         L.append("      writeline(tb_tf, tb_l);")
     L.append("      if not tb_en then return; end if;")
     L.append("      tb_samples := tb_samples + 1;")
-    for x in outs:
-        L.append(f"      tb_miss := tb_miss or ({x.to_slv(x.name + '_dut')} /= {x.to_slv(x.name + '_ref')});")
     L.append("      if not tb_miss then return; end if;")
     L.append("      tb_bad := tb_bad + 1;")
     L.append(f"      if tb_bad > {MAX_SHOWN} then return; end if;")
@@ -508,6 +571,9 @@ def gen_tb(p, ports, generics, nrows, trace):
         L.append("      tb_apply;")
         L.append("      wait for 1 ns;")
         L.append("      tb_check('b', tb_en);")
+        L.append(f"      wait until rising_edge({clock});")       # for the waveform only, not graded
+        L.append("      wait for 1 ns;")
+        L.append("      tb_log('r', false, false);")
         L.append("    end loop;")
         L.append(f"    wait until falling_edge({clock});")
         L.append("    tb_check('a', tb_en);")
@@ -596,8 +662,12 @@ def verilog_hints(files):
     return found
 
 
-def grade(p, dut_files, generics_override=None, waves=True, trace=False, tag=""):
-    """Returns (status, detail) where status is PASS, FAIL, COMPILE, ERROR."""
+def grade(p, dut_files, generics_override=None, waves=True, trace=False, tag="", stimulus=None,
+          wave_pass=WAVE_PASS):
+    """Returns (status, detail) where status is PASS, FAIL, COMPILE, ERROR.
+
+    stimulus replaces the generated [(compare, [input values])]; wave_pass is the length of the
+    waveform of a passing run, in cycles (vectors)."""
     if p["mode"] == "tb":
         return grade_tb(p, dut_files, waves, tag)
     generics = dict(p.get("generics", {}))
@@ -622,7 +692,9 @@ def grade(p, dut_files, generics_override=None, waves=True, trace=False, tag="")
     clock = p.get("clock")
     ins = [x for x in ports if x.dir == "in" and x.name != clock]
     mode = p["mode"]
-    if mode == "comb":
+    if stimulus is not None:
+        rows = stimulus
+    elif mode == "comb":
         rows = gen_comb_stimulus(p, ins, rng)
     elif mode == "stateful_comb":
         rows = gen_stateful_stimulus(p, ins, rng)
@@ -633,7 +705,7 @@ def grade(p, dut_files, generics_override=None, waves=True, trace=False, tag="")
     with open(bdir / "stim.txt", "w") as f:
         for cmp, vals in rows:
             f.write(" ".join([str(cmp)] + [bits(v, x.width) for v, x in zip(vals, ins)]) + "\n")
-    (bdir / "tb.vhd").write_text(gen_tb(p, ports, generics, len(rows), trace))
+    (bdir / "tb.vhd").write_text(gen_tb(p, ports, generics, len(rows), trace, wave_pass))
 
     g = ghdl_bin()
     libs = [f"-P{bdir / 'dut'}", f"-P{bdir / 'ref'}"]
@@ -657,10 +729,85 @@ def grade(p, dut_files, generics_override=None, waves=True, trace=False, tag="")
             return "COMPILE", (None, out.strip(), [])
         return "ERROR", "simulation stopped early:\n" + tail(out)
     samples, bad = int(summary.group(1)), int(summary.group(2))
+    wave = build_wave(p, ports, bdir / "wave.txt", bad, wave_pass)
+    if wave:
+        (bdir / "wave.json").write_text(json.dumps(wave, separators=(",", ":")))
     mism = [line.split("|") for line in out.splitlines() if line.startswith("MISMATCH|")]
     if bad == 0:
         return "PASS", samples
     return "FAIL", (samples, bad, mism)
+
+
+def read_wave_log(path, nin, nout):
+    """wave.txt -> [{idx, ph, t (ns), en, ins, ref, dut}] in sample order."""
+    out = {}
+    if not path.is_file():
+        return []
+    for line in path.read_text().splitlines():
+        f = line.split()
+        if len(f) != 5 + nin + 2 * nout:
+            continue
+        vals = f[5:]
+        out[int(f[0])] = {"idx": int(f[0]), "ph": f[1], "t": int(f[2]) / 1000, "en": f[4] == "1",
+                          "ins": vals[:nin], "ref": vals[nin::2], "dut": vals[nin + 1::2]}
+    return [out[k] for k in sorted(out)]
+
+
+def build_wave(p, ports, path, bad, wave_pass=WAVE_PASS):
+    """The sampled run as a waveform for the web page (None if nothing was logged).
+
+    Samples are moved to where the change they show happened: inputs change 1 ns before the
+    'b'/'c' sample, and an 'r' sample (1 ns after a rising edge) shows what the edge did.
+    {t0, t1, period, clock, first, mismatches: [t], total,
+     signals: [{name, dir, width, wave: [[t, bits]]} | {name, dir: "out", width, ref, dut}]}
+    """
+    mode, clock = p["mode"], p.get("clock")
+    ins = [x for x in ports if x.dir == "in" and x.name != clock]
+    outs = [x for x in ports if x.dir == "out"]
+    log = read_wave_log(path, len(ins), len(outs))
+    if not log:
+        return None
+    period = CLOCK_PERIOD if mode == "seq" else None
+    step = period or 1
+    for s in log:
+        s["at"] = s["t"] if s["ph"] == "a" else s["t"] - 1
+    miss = [s for s in log if s["en"] and s["ref"] != s["dut"]]
+    first = miss[0]["t"] if bad and miss else None      # as the text report gives it
+    if first is None:
+        t0 = 0
+        t1 = wave_pass * step
+    else:
+        k = int(miss[0]["at"] // step) - (1 if mode == "seq" and miss[0]["ph"] == "a" else 0)
+        t0 = max(0, k - WAVE_BEFORE) * step
+        t1 = (k + WAVE_AFTER) * step
+    t1 = max(t1, wave_pass * step)                # the first wave_pass cycles are always logged
+    t1 = min(t1, max(s["at"] for s in log) + step)
+    t1 = max(t1, t0 + step)
+
+    def track(get):
+        """[[t, value]] of the changes within [t0, t1), starting with the value at t0."""
+        pts = []
+        for s in log:
+            v, t = get(s), max(s["at"], t0)       # anything before the window collapses onto t0
+            if t >= t1 or s["at"] < t0 - 2 * step:   # (the log has a gap before the ring buffer)
+                continue
+            if pts and pts[-1][0] == t:
+                pts[-1][1] = v
+                if len(pts) > 1 and pts[-2][1] == v:
+                    pts.pop()
+            elif not pts or pts[-1][1] != v:
+                pts.append([t, v])
+        return pts
+
+    signals = []
+    for i, x in enumerate(ins):
+        signals.append({"name": x.name, "dir": "in", "width": x.width,
+                        "wave": track(lambda s, i=i: s["ins"][i])})
+    for i, x in enumerate(outs):
+        signals.append({"name": x.name, "dir": "out", "width": x.width,
+                        "ref": track(lambda s, i=i: s["ref"][i]), "dut": track(lambda s, i=i: s["dut"][i])})
+    return {"t0": t0, "t1": t1, "period": period, "clock": clock, "first": first, "total": bad,
+            "signals": signals, "mismatches": sorted({s["at"] for s in miss if t0 <= s["at"] < t1})}
 
 
 # --------------------------------------------------------------------------

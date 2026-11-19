@@ -1,0 +1,42 @@
+{
+  "id": "11_24_wave_puzzle_seq3",
+  "section": 11,
+  "num": 24,
+  "name": "wave_puzzle_seq3",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "x",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "q",
+      "dir": "out",
+      "type": "std_logic_vector",
+      "high": 2,
+      "low": 0
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  },
+  "stimulus": "runs",
+  "stimulus_opts": {
+    "port": "x",
+    "min": 1,
+    "max": 10
+  }
+}

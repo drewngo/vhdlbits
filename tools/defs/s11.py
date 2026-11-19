@@ -549,4 +549,83 @@ PROBLEMS = [
             "Keep `p` as a `std_logic_vector(2 downto 0)` and the floor as an integer `0 to 2`.",
         ],
     ),
+    dict(
+        num=22, name="wave_puzzle_seq1", mode="seq",
+        concept="reverse-engineering a sequential circuit from a waveform.",
+        intro="""
+            7.15 recovered a truth table from a trace. With a clock, an output can depend on
+            earlier inputs too, so read the waveform edge by edge: at each rising edge, which
+            inputs (now and at earlier edges) decide what `q` becomes?
+        """,
+        verilog="Nothing language-specific here.",
+        task="""
+            Build the circuit that produced this waveform. `reset` is synchronous and active
+            high, and clears everything. The waveform was drawn by simulating the reference
+            answer, so it is exact.
+        """,
+        ports="clk, reset, a: in sl; q: out sl",
+        hints=[
+            "Find the edges where `q` becomes 1. What was `a` at that edge, and at the edge before?",
+            "One flip-flop remembers the previous `a`, a second one is `q`.",
+        ],
+    ),
+    dict(
+        num=23, name="wave_puzzle_seq2", mode="seq",
+        concept="telling registered outputs from combinational ones in a waveform.",
+        intro="""
+            An output that changes only at rising edges is registered. One that also changes
+            when an input does, between edges, is (at least partly) combinational: a Mealy
+            output.
+        """,
+        verilog="Nothing language-specific here.",
+        task="""
+            Build the circuit that produced this waveform: one output is a flip-flop and the
+            other is combinational. `reset` is synchronous and active high, and clears the
+            flip-flop.
+        """,
+        ports="clk, reset, a, b: in sl; p, q: out sl",
+        hints=[
+            "`q` only moves at rising edges. At which edges does it change, and what are `a` and `b` there?",
+            "`p` changes whenever `b` or `q` does. Compare `p` with `q` while `b = 0`, then while `b = 1`.",
+        ],
+    ),
+    dict(
+        num=24, name="wave_puzzle_seq3", mode="seq", numeric=True,
+        concept="reverse-engineering a counter from a waveform.",
+        intro="""
+            Bus values in a waveform are often counts. Look at how the value moves from edge to
+            edge, and pay attention to what happens at the ends of its range.
+        """,
+        verilog="Nothing language-specific here.",
+        task="""
+            Build the circuit that produced this waveform (values of `q` are shown in decimal).
+            `reset` is synchronous and active high, and sets `q` to 0.
+        """,
+        ports="clk, reset, x: in sl; q: out slv(2:0)",
+        options={"stimulus": "runs", "stimulus_opts": {"port": "x", "min": 1, "max": 10}},
+        hints=[
+            "Which way does `q` move when `x = 1`? When `x = 0`?",
+            "`q` never goes below 0, and never above one particular value: it saturates instead of wrapping.",
+        ],
+    ),
+    dict(
+        num=25, name="wave_puzzle_seq4", mode="seq",
+        concept="reverse-engineering a small state machine from a waveform.",
+        intro="""
+            A state machine shows up in a waveform as an output that depends on *how* the
+            inputs got where they are. Line up each pulse of the output with the history of
+            the input just before it.
+        """,
+        verilog="Nothing language-specific here.",
+        task="""
+            Build the circuit that produced this waveform. `z` is a Moore output (it changes
+            only at rising edges). `reset` is synchronous and active high.
+        """,
+        ports="clk, reset, x: in sl; z: out sl",
+        options={"stimulus": "runs", "stimulus_opts": {"port": "x", "min": 1, "max": 5}},
+        hints=[
+            "`z` pulses right after `x` falls, but not every time. Count how many edges `x` was high before each fall.",
+            "Count consecutive edges with `x = 1`, saturating at the threshold you found; check the count when `x` is 0.",
+        ],
+    ),
 ]

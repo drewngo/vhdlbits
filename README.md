@@ -1,6 +1,6 @@
 # VHDLBits
 
-216 small VHDL-2008 problems for people who already know Verilog, from one-line
+220 small VHDL-2008 problems for people who already know Verilog, from one-line
 assignments up to FSMs, testbenches, and a few bigger builds. Each problem introduces one
 idea. Your design is checked automatically by simulating it against a reference design.
 
@@ -40,6 +40,11 @@ and a summary such as `FAIL: 37 mismatches in 600 samples`. Compile errors are s
 reports them, with a one-line hint when a Verilog habit shows up (`1'b1`, `assign`,
 `always`, `==`, …).
 
+On the web page every check also draws a waveform of the run: your outputs next to the
+reference's, with the differences shaded. A pass shows the first 24 cycles (or input
+vectors); a failure shows the cycles around the first mismatch. The testbench keeps the
+recent samples in a ring buffer and writes only that window, so it costs almost nothing.
+
 ## Sections
 
 | # | Section | Problems |
@@ -54,7 +59,7 @@ reports them, with a one-line hint when a Verilog habit shows up (`1'b1`, `assig
 | 8 | Sequential Basics | 15 |
 | 9 | Counters | 14 |
 | 10 | Shift Registers & Automata | 12 |
-| 11 | Finite State Machines | 21 |
+| 11 | Finite State Machines | 25 |
 | 12 | Memories | 8 |
 | 13 | Packages, Records & Types | 7 |
 | 14 | Writing Testbenches | 8 |

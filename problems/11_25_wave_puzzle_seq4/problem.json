@@ -1,0 +1,40 @@
+{
+  "id": "11_25_wave_puzzle_seq4",
+  "section": 11,
+  "num": 25,
+  "name": "wave_puzzle_seq4",
+  "mode": "seq",
+  "ports": [
+    {
+      "name": "clk",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "reset",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "x",
+      "dir": "in",
+      "type": "std_logic"
+    },
+    {
+      "name": "z",
+      "dir": "out",
+      "type": "std_logic"
+    }
+  ],
+  "clock": "clk",
+  "reset": {
+    "name": "reset",
+    "active": "1"
+  },
+  "stimulus": "runs",
+  "stimulus_opts": {
+    "port": "x",
+    "min": 1,
+    "max": 5
+  }
+}

@@ -145,7 +145,9 @@ class Handler(BaseHTTPRequestHandler):
             r = subprocess.run([sys.executable, str(ROOT / "check.py"), p["id"]],
                                cwd=ROOT, capture_output=True, text=True)
         out = (r.stdout + r.stderr).strip()
+        wave = check.BUILD / p["id"] / "wave.json"
         self.send_json({"passed": r.returncode == 0, "output": out,
+                        "wave": json.loads(wave.read_text()) if wave.is_file() else None,
                         "status": check.load_progress().get(p["id"], ""),
                         "reference": reference(p)})
 

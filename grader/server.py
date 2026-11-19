@@ -2,7 +2,8 @@
 """VHDLBits cloud grader: grades one submission per request, keeps nothing.
 
   POST /check/<id>   {"files": {"top_module.vhd": "..."}}
-                  -> {"status": "PASS", "passed": true, "output": "...", "reference": "..." | null}
+                  -> {"status": "PASS", "passed": true, "output": "...", "reference": "..." | null,
+                      "wave": {...} | null}   (the waveform, see check.build_wave)
   GET  /health
 
 Runs on Cloud Run behind a Cloudflare Worker, which checks Turnstile and forwards the request
@@ -66,7 +67,9 @@ def grade_one(pid, work):
         status, detail = check.grade(p, files, waves=False)
         check.report(p, status, detail)
     text = out.getvalue().replace(f"{work}/src/", "").replace(f"{work}/", "")
-    print(json.dumps({"status": status, "output": text.strip()}))
+    wave = check.BUILD / p["id"] / "wave.json"
+    print(json.dumps({"status": status, "output": text.strip(),
+                      "wave": json.loads(wave.read_text()) if wave.is_file() else None}))
 
 
 def limit_child():

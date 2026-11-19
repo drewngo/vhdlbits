@@ -94,6 +94,27 @@
   #result.pass .verdict { color: var(--pass); }
   #result.fail .verdict { color: var(--fail); }
   #result pre { margin: 0; white-space: pre-wrap; word-break: break-word; font: 12.5px/1.45 ui-monospace, Menlo, monospace; }
+  #wave { display: none; margin-top: 12px; border-top: 1px solid var(--border); padding-top: 8px; }
+  #wave .bar { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+  #wave .bar b { color: var(--text); }
+  #wave .bar .spacer { flex: 1; }
+  #wave .bar select { font: inherit; font-size: 12px; background: var(--bg); color: var(--text);
+                      border: 1px solid var(--border); border-radius: 4px; padding: 1px 4px; }
+  #wave .scroll { overflow-x: auto; }
+  #wave svg { display: block; font: 11.5px ui-monospace, Menlo, monospace; }
+  #wave .w { stroke: var(--text); fill: none; stroke-width: 1.3; }
+  #wave .w.out { stroke: var(--accent); }
+  #wave .w.z { stroke: var(--muted); stroke-dasharray: 3 2; }
+  #wave .xx { fill: var(--fail); fill-opacity: .18; stroke: var(--fail); stroke-width: 1; }
+  #wave .grid { stroke: var(--border); stroke-dasharray: 3 3; }
+  #wave .diff { fill: var(--fail); fill-opacity: .14; }
+  #wave .mm { stroke: var(--fail); stroke-width: 2; }
+  #wave .cursor { stroke: var(--muted); stroke-width: 1; }
+  #wave text { fill: var(--text); }
+  #wave text.m { fill: var(--muted); }
+  #wave text.o { fill: var(--accent); font-weight: 600; }
+  #wave text.f { fill: var(--fail); font-weight: 600; }
+  #wave .sep { stroke: var(--border); }
   #reference { display: none; margin-top: 16px; border: 1px solid var(--border); border-radius: 6px; }
   #reference summary { cursor: pointer; padding: 8px 14px; color: var(--accent); font-weight: 600; }
   #reference summary .hint { color: var(--muted); font-weight: normal; font-size: 13px; margin-left: 6px; }
@@ -134,7 +155,7 @@
       <button id="next">Next →</button>
     </div>
     <div id="turnstile"></div>
-    <div id="result"><div class="verdict"></div><pre></pre></div>
+    <div id="result"><div class="verdict"></div><pre></pre><div id="wave"></div></div>
     <details id="reference">
       <summary>Reference solution <span class="hint">unlocked by solving this problem</span></summary>
       <div id="reference-code"></div>
@@ -419,6 +440,7 @@ async function submit() {
     result.className = r.passed ? "pass" : "fail";
     result.querySelector(".verdict").textContent = r.passed ? "Success!" : "Not yet";
     result.querySelector("pre").textContent = r.output;
+    renderWave(r.wave);
     showReference(r.reference);
     const p = problems.find((x) => x.id === current.id);
     if (p) p.status = r.status;
@@ -427,11 +449,155 @@ async function submit() {
     result.className = "fail";
     result.querySelector(".verdict").textContent = "Error";
     result.querySelector("pre").textContent = String(e);
+    renderWave(null);
   }
   result.style.display = "block";
   result.scrollIntoView({ behavior: "smooth", block: "nearest" });
   btn.disabled = false;
   btn.textContent = "Submit";
+}
+
+// ---- Waveform: the grader's sampled run (check.py build_wave), drawn like a logic analyzer.
+// Each output gets two rows, yours and the reference's; where they differ is shaded.
+
+let lastWave = null;
+
+function fmtValue(bits, radix) {
+  if (bits.length === 1) return bits;
+  if (/[^01]/.test(bits)) {
+    if (/^(.)\1*$/.test(bits)) return bits[0];
+    return bits.length <= 8 ? bits : "X";
+  }
+  const r = radix === "auto" ? (bits.length <= 4 ? "bin" : "hex") : radix;
+  if (r === "bin") return bits;
+  if (r === "dec") return BigInt("0b" + bits).toString();
+  return BigInt("0b" + bits).toString(16).toUpperCase().padStart(Math.ceil(bits.length / 4), "0");
+}
+
+// [[t, v], ...] -> [[t_start, t_end, v], ...] clipped to [t0, t1)
+function segments(pts, t1) {
+  return pts.map(([t, v], i) => [t, i + 1 < pts.length ? pts[i + 1][0] : t1, v]);
+}
+
+function valueAt(pts, t) {
+  let v = pts.length ? pts[0][1] : "";
+  for (const [tt, vv] of pts) { if (tt <= t) v = vv; else break; }
+  return v;
+}
+
+function renderWave(w) {
+  const box = $("wave");
+  lastWave = w;
+  if (!w) { box.style.display = "none"; box.innerHTML = ""; return; }
+  const radix = store.get("radix") || "auto";
+  const NAMES = 132, ROW = 26, TOP = 22, H = 16;
+  const span = w.t1 - w.t0;
+  const px = w.period ? 44 / w.period : 40;           // pixels per ns: 44 per cycle or per vector
+  const X = (t) => NAMES + (t - w.t0) * px;
+  const width = Math.ceil(X(w.t1)) + 10;
+  const rows = [];
+  if (w.period) rows.push({ kind: "clock", name: w.clock || "clk" });
+  for (const s of w.signals) if (s.dir === "in") rows.push({ kind: "sig", name: s.name, width: s.width, pts: s.wave });
+  const outs = w.signals.filter((s) => s.dir === "out");
+  if (outs.length) rows.push({ kind: "sep" });
+  for (const s of outs) {
+    rows.push({ kind: "sig", name: s.name, tag: "yours", width: s.width, pts: s.dut, ref: s.ref, out: true });
+    rows.push({ kind: "sig", name: s.name, tag: "ref", width: s.width, pts: s.ref, out: true });
+  }
+  if (w.mismatches.length) rows.push({ kind: "mm" });
+  let y = TOP;
+  for (const r of rows) { r.y = y; y += r.kind === "sep" ? 8 : ROW; }
+  const height = y + 4;
+  const svg = [];
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  const step = w.period || 1;
+  const every = Math.max(1, Math.ceil(36 / (step * px)));        // label spacing in steps
+  for (let t = Math.ceil(w.t0 / step) * step, k = 0; t <= w.t1; t += step, k++) {
+    const x = X(t);
+    if (k % every === 0) svg.push(`<text x="${x}" y="12" text-anchor="middle" class="m">${+t.toFixed(3)}</text>`);
+    if (w.period) svg.push(`<line class="grid" x1="${X(t + step / 2)}" y1="${TOP - 4}" x2="${X(t + step / 2)}" y2="${height - 2}"/>`);
+  }
+  svg.push(`<text x="4" y="12" class="m">ns</text>`);
+  for (const r of rows) {
+    const yh = r.y + 4, yl = r.y + 4 + H, ym = r.y + 4 + H / 2;
+    if (r.kind === "sep") { svg.push(`<line class="sep" x1="0" y1="${r.y + 4}" x2="${width}" y2="${r.y + 4}"/>`); continue; }
+    if (r.kind === "mm") {
+      svg.push(`<text x="${NAMES - 10}" y="${ym + 4}" text-anchor="end" class="f">mismatch</text>`);
+      for (const t of w.mismatches) svg.push(`<line class="mm" x1="${X(t)}" y1="${yh}" x2="${X(t)}" y2="${yl}"><title>${t} ns</title></line>`);
+      continue;
+    }
+    const label = r.tag ? `${esc(r.name)} <tspan class="m">${r.tag}</tspan>` : esc(r.name);
+    svg.push(`<text x="${NAMES - 10}" y="${ym + 4}" text-anchor="end"${r.out ? ' class="o"' : ""}>${label}</text>`);
+    if (r.kind === "clock") {
+      let d = "";
+      for (let t = Math.floor(w.t0 / step) * step; t < w.t1; t += step) {
+        const a = Math.max(t, w.t0), m = Math.max(t + step / 2, w.t0), b = Math.min(t + step, w.t1);
+        if (m < b) d += `M${X(a)},${yl}H${X(m)}V${yh}H${X(b)}V${yl}`;
+        else d += `M${X(a)},${yl}H${X(b)}`;
+      }
+      svg.push(`<path class="w" d="${d}"/>`);
+      continue;
+    }
+    // shade where yours differs from the reference
+    if (r.ref) {
+      const ts = [...new Set([...r.pts, ...r.ref].map((p) => p[0]))].sort((a, b) => a - b);
+      ts.forEach((t, i) => {
+        const e = i + 1 < ts.length ? ts[i + 1] : w.t1;
+        if (valueAt(r.pts, t) !== valueAt(r.ref, t))
+          svg.push(`<rect class="diff" x="${X(t)}" y="${r.y + 1}" width="${X(e) - X(t)}" height="${ROW - 2}"/>`);
+      });
+    }
+    const cls = r.out ? "w out" : "w";
+    if (r.width === 1) {
+      let prevY = null, d = "";
+      for (const [a, b, v] of segments(r.pts, w.t1)) {
+        const xa = X(a), xb = X(b);
+        if (/[UXW-]/i.test(v)) {
+          svg.push(`<rect class="xx" x="${xa}" y="${yh}" width="${xb - xa}" height="${H}"><title>${v}</title></rect>`);
+          prevY = null;
+          continue;
+        }
+        if (v === "Z") { svg.push(`<line class="w z" x1="${xa}" y1="${ym}" x2="${xb}" y2="${ym}"/>`); prevY = null; continue; }
+        const yy = v === "1" || v === "H" ? yh : yl;
+        d += prevY === null ? `M${xa},${yy}` : `V${yy}`;
+        d += `H${xb}`;
+        prevY = yy;
+      }
+      if (d) svg.push(`<path class="${cls}" d="${d}"/>`);
+      continue;
+    }
+    for (const [a, b, v] of segments(r.pts, w.t1)) {
+      const xa = X(a), xb = X(b), e = Math.min(3, (xb - xa) / 3);
+      const text = fmtValue(v, radix);
+      const unknown = /[^01]/.test(v);
+      svg.push(`<path class="${unknown ? "xx" : cls}" d="M${xa},${ym}L${xa + e},${yh}H${xb - e}L${xb},${ym}L${xb - e},${yl}H${xa + e}Z">` +
+               `<title>${esc(r.name)} = ${esc(fmtValue(v, "hex"))} (${v.length <= 64 ? v : v.length + " bits"})</title></path>`);
+      const room = xb - xa - 2 * e - 4;
+      const shown = text.length * 7 <= room ? text : room >= 14 ? text.slice(0, Math.floor(room / 7) - 1) + "…" : "";
+      if (shown) svg.push(`<text x="${(xa + xb) / 2}" y="${ym + 4}" text-anchor="middle" pointer-events="none">${esc(shown)}</text>`);
+    }
+  }
+  const where = w.first === null
+    ? `the first ${Math.round(span / step)} ${w.period ? "cycles" : "input vectors"}`
+    : `around the first mismatch at ${w.first} ns`;
+  box.innerHTML =
+    `<div class="bar"><b>Waveform</b><span>${where}</span><span class="spacer"></span>` +
+    `<span id="wave-time"></span><label>values <select id="radix">` +
+    ["auto", "hex", "dec", "bin"].map((r) => `<option${r === radix ? " selected" : ""}>${r}</option>`).join("") +
+    `</select></label></div><div class="scroll"><svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">` +
+    svg.join("") + `<line class="cursor" id="wave-cursor" y1="${TOP - 4}" y2="${height}" x1="-9" x2="-9"/></svg></div>`;
+  box.style.display = "block";
+  $("radix").onchange = (e) => { store.set("radix", e.target.value); renderWave(lastWave); };
+  const el = box.querySelector("svg");
+  el.addEventListener("mousemove", (e) => {
+    const x = e.clientX - el.getBoundingClientRect().left;
+    const t = w.t0 + (x - NAMES) / px;
+    const ok = x >= NAMES && t <= w.t1;
+    $("wave-cursor").setAttribute("x1", ok ? x : -9);
+    $("wave-cursor").setAttribute("x2", ok ? x : -9);
+    $("wave-time").textContent = ok ? `${t.toFixed(1)} ns` : "";
+  });
+  el.addEventListener("mouseleave", () => { $("wave-cursor").setAttribute("x1", -9); $("wave-cursor").setAttribute("x2", -9); $("wave-time").textContent = ""; });
 }
 
 function step(delta) {

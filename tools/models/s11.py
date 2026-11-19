@@ -379,6 +379,53 @@ class Elevator(Machine):
         return {"floor": self.floor, "door": int(self.phase == "DOOR")}
 
 
+class PuzzleSeq1(Machine):
+    def reset_state(self):
+        self.a_d, self.q = 0, 0
+
+    def step(self, i):
+        self.a_d, self.q = i["a"], i["a"] & self.a_d
+
+    def outs(self, i):
+        return {"q": self.q}
+
+
+class PuzzleSeq2(Machine):
+    def reset_state(self):
+        self.s = 0
+
+    def step(self, i):
+        self.s ^= i["a"] & i["b"]
+
+    def outs(self, i):
+        return {"p": self.s ^ i["b"], "q": self.s}
+
+
+class PuzzleSeq3(Machine):
+    def reset_state(self):
+        self.q = 0
+
+    def step(self, i):
+        self.q = min(self.q + 1, 6) if i["x"] else max(self.q - 1, 0)
+
+    def outs(self, i):
+        return {"q": self.q}
+
+
+class PuzzleSeq4(Machine):
+    def reset_state(self):
+        self.run, self.z = 0, 0
+
+    def step(self, i):
+        if i["x"]:
+            self.run, self.z = min(self.run + 1, 3), 0
+        else:
+            self.run, self.z = 0, int(self.run == 3)
+
+    def outs(self, i):
+        return {"z": self.z}
+
+
 MODELS = {
     "fsm_toggle": Toggle, "fsm_mealy": Mealy, "seq_1011": Seq1011, "walker": Walker,
     "walker_fall": WalkerFall, "debounce": Debounce, "uart_rx_byte": UartRx,
@@ -387,4 +434,6 @@ MODELS = {
     "bit_unstuff": Unstuff, "vending": Vending, "traffic_light": Traffic,
     "arbiter_fixed3": Fixed3, "arbiter_rr2": RR2, "detect_then_enable": DetectEnable,
     "timer_unit": TimerUnit, "elevator3": Elevator,
+    "wave_puzzle_seq1": PuzzleSeq1, "wave_puzzle_seq2": PuzzleSeq2, "wave_puzzle_seq3": PuzzleSeq3,
+    "wave_puzzle_seq4": PuzzleSeq4,
 }
